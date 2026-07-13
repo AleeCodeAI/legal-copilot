@@ -6,7 +6,7 @@ from uuid import uuid4
 
 from docling.chunking import HybridChunker
 from docling_core.types.doc import DoclingDocument
-from tokenizer import OpenAITokenizerWrapper
+from utils.tokenizer import OpenAITokenizerWrapper
 
 
 # =============================================================================

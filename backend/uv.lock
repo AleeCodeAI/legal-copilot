@@ -111,6 +111,7 @@ dependencies = [
 dev = [
     { name = "docling" },
     { name = "ipykernel" },
+    { name = "pandas" },
     { name = "tiktoken" },
 ]
 
@@ -133,6 +134,7 @@ requires-dist = [
 dev = [
     { name = "docling", specifier = ">=2.112.0" },
     { name = "ipykernel", specifier = ">=7.3.0" },
+    { name = "pandas", specifier = ">=3.0.3" },
     { name = "tiktoken", specifier = ">=0.13.0" },
 ]
 

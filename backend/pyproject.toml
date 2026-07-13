@@ -22,5 +22,6 @@ dependencies = [
 dev = [
     "docling>=2.112.0",
     "ipykernel>=7.3.0",
+    "pandas>=3.0.3",
     "tiktoken>=0.13.0",
 ]

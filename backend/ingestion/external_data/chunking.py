@@ -1,35 +1,23 @@
 import json
 from pathlib import Path
 from typing import List
-from pydantic import BaseModel
-from uuid import uuid4
+from datetime import datetime
 
 from docling.chunking import HybridChunker
 from docling_core.types.doc import DoclingDocument
 from utils.tokenizer import OpenAITokenizerWrapper
+from timescale_vector.client import uuid_from_time
 
-
-# =============================================================================
-# PYDANTIC SCHEMAS
-# ============================================================================
-
-class ChunkMetadata(BaseModel):
-    page_number: str | None = None
-    headings: List[str] = []
-    filename: str
-
-
-class Chunk(BaseModel):
-    chunk_id: str
-    text: str
-    metadata: ChunkMetadata
+from schemas import Chunk, ChunkMetadata
+from configs.settings import get_settings
 
 
 # =============================================================================
 # CONFIGURATION
 # ============================================================================
 
-MAX_TOKENS = 900
+settings = get_settings()
+MAX_TOKENS = settings.vector_store.chunk_size  # Use chunk_size from settings
 
 
 # =============================================================================
@@ -64,7 +52,7 @@ def process_document(json_path: Path, filename: str) -> List[Chunk]:
         
         processed.append(
             Chunk(
-            chunk_id=f"chunk_{uuid4()}",
+            chunk_id=str(uuid_from_time(datetime.now())),
             text=chunk.text,
             metadata=ChunkMetadata(
                 page_number=page,

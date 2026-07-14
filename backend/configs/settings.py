@@ -25,11 +25,11 @@ class LLMSettings(BaseModel):
     max_retries: int = 3
 
 
-class OpenAISettings(LLMSettings):
-    """OpenAI-specific settings extending LLMSettings."""
+class OpenRouterSettings(LLMSettings):
+    """OpenRouter-specific settings extending LLMSettings."""
 
     api_key: str = Field(default_factory=lambda: os.getenv("OPENROUTER_API_KEY"))
-    base_url: str = Field(default_factory=lambda: os.getenv("OPENROUTER_BASE_URL"))
+    base_url: str = Field(default_factory=lambda: os.getenv("OPENROUTER_URL"))
     default_model: str = Field(default="gpt-4o-mini")
     embedding_model: str = Field(default="text-embedding-3-small")
 
@@ -52,12 +52,13 @@ class VectorStoreSettings(BaseModel):
     table_name: str = "documents"
     embedding_dimensions: int = 1536
     time_partition_interval: timedelta = timedelta(days=7)
+    chunk_size: int = 900
 
 
 class Settings(BaseModel):
     """Main settings class combining all sub-settings."""
 
-    openai: OpenAISettings = Field(default_factory=OpenAISettings)
+    openrouter: OpenRouterSettings = Field(default_factory=OpenRouterSettings)
     cohere: CohereSettings = Field(default_factory=CohereSettings)
     database: DatabaseSettings = Field(default_factory=DatabaseSettings)
     vector_store: VectorStoreSettings = Field(default_factory=VectorStoreSettings)

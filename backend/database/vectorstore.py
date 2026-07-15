@@ -19,7 +19,7 @@ class VectorStore:
         self.settings = get_settings()
         self.openrouter_client = OpenAI(
             api_key=self.settings.openrouter.api_key,
-            base_url=self.settings.openrouter.base_url
+            base_url=self.settings.openrouter.base_url,
         )
         self.embedding_model = self.settings.openrouter.embedding_model
         self.cohere_client = cohere.ClientV2(api_key=self.settings.cohere.api_key)
@@ -365,24 +365,28 @@ class VectorStore:
         Returns:
             A pandas DataFrame containing the reranked results.
         """
-        rerank_results = self.cohere_client.v2.rerank(
+        documents = combined_results["content"].tolist()
+
+        # Call Cohere rerank API
+        rerank_response = self.cohere_client.v2.rerank(
             model="rerank-english-v3.0",
             query=query,
-            documents=combined_results["content"].tolist(),
+            documents=documents,
             top_n=top_n,
-            return_documents=True,
         )
 
-        reranked_df = pd.DataFrame(
-            [
+        # Build reranked results
+        reranked_results = []
+        for result in rerank_response.results:
+            idx = result.index
+            reranked_results.append(
                 {
-                    "id": combined_results.iloc[result.index]["id"],
-                    "content": result.document,
-                    "search_type": combined_results.iloc[result.index]["search_type"],
+                    "id": combined_results.iloc[idx]["id"],
+                    "content": documents[idx],  # Use the original document content
+                    "search_type": combined_results.iloc[idx]["search_type"],
                     "relevance_score": result.relevance_score,
                 }
-                for result in rerank_results.results
-            ]
-        )
+            )
 
+        reranked_df = pd.DataFrame(reranked_results)
         return reranked_df.sort_values("relevance_score", ascending=False)

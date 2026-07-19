@@ -167,16 +167,18 @@ Example:
 
 ```json
 {
-  "chunk_id": "guide_18a9f2",
+  "chunk_id": "external_95ca6a6a-7fa8-11f1-be7a-2c75764ca3a6",
   "source": "external",
-  "retrieval_summary": "Covers permissible security deposit deductions, documentation requirements, and the landlord's obligation to return any remaining deposit within 21 days.",
+  "preview": "This chunk details statutory amendments to California landlord-tenant law effective in 2025. It covers procedural changes to unlawful detainer actions (extending tenant response time to ten days and masking case records for 60 days) and outlines new restrictions on application screening fees and security deposit deductions. Additionally, it details statutory requirements regarding positive rental payment reporting, mandatory landlord-funded lock changes for victims of abuse or violence, tenant options to unbundle parking fees in qualifying properties, and heightened intent and ownership standards for no-fault owner-move-in evictions. Key legislation cited includes AB 2347, AB 2304, AB 2493, AB 2801, AB 2747, SB 1051, AB 2898, and SB 479.",
   "score": 0.94
 }
 ```
 
+**the preview is a LLM generated summary of the chunk. It includes topics discussed in the chunk and some details. The preview here is for the purpose of helping the agent make descisions on what chunks to fully read while often agent can get enough info from the summaries. The complete chunks are not shown to agent for the context limit and token consumption. And, preview summaries are very structured, clean and shorter.**
+
 ---
 
-# Why Retrieval Summaries Instead of Chunk Previews?
+# Why Preview Summaries Instead of truncated Chunk Previews?
 
 Originally, previews were planned as truncated portions of the original chunk.
 
@@ -221,8 +223,8 @@ Example:
 
 ```
 read([
-    "guide_18a9f2",
-    "notes_0041"
+    "external_18a9f2",
+    "internal_0041"
 ])
 ```
 
@@ -238,9 +240,8 @@ Example:
 
 ```
 read(
-    chunk_ids=["guide_18a9f2"],
-    include_neighbors=True,
-    radius=1
+    chunk_ids=["external_18a9f2"],
+    include_neighbors=True
 )
 ```
 
@@ -358,8 +359,7 @@ This expectation is based on several design decisions:
 
 * dense semantic retrieval
 * PostgreSQL Full Text Search
-* Reciprocal Rank Fusion
-* optional reranking
+* Reranking
 * optional neighboring chunk expansion
 
 Together these components are expected to provide high retrieval recall.
@@ -379,15 +379,11 @@ Example:
 ```json
 {
   "sufficient": true,
-  "selected_chunks": {
-    "external": [
-      "guide_18a9f2",
-      "guide_6d72ce"
-    ],
-    "internal": [
-      "notes_0041"
-    ]
-  }
+  "selected_chunks": [
+      "external_18a9f2",
+      "external_6d72ce",
+      "internal_0041",
+  ]
 }
 ```
 

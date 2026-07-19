@@ -191,7 +191,7 @@ class VectorStore:
             results, columns=["id", "metadata", "content", "embedding", "distance"]
         )
 
-        # Expand metadata column
+        # Expand metadata column - preview will automatically become a column
         df = pd.concat(
             [df.drop(["metadata"], axis=1), df["metadata"].apply(pd.Series)], axis=1
         )
@@ -273,8 +273,9 @@ class VectorStore:
         Example:
             results = vector_store.keyword_search("shipping options")
         """
+
         search_sql = f"""
-        SELECT id, contents, ts_rank_cd(to_tsvector('english', contents), query) as rank
+        SELECT id, contents, metadata, ts_rank_cd(to_tsvector('english', contents), query) as rank
         FROM {self.vector_settings.table_name}, websearch_to_tsquery('english', %s) query
         WHERE to_tsvector('english', contents) @@ query
         ORDER BY rank DESC
@@ -293,8 +294,14 @@ class VectorStore:
         self._log_search_time("Keyword", elapsed_time)
 
         if return_dataframe:
-            df = pd.DataFrame(results, columns=["id", "content", "rank"])
+            df = pd.DataFrame(results, columns=["id", "content", "metadata", "rank"])
             df["id"] = df["id"].astype(str)
+            
+            # preview will automatically become a column
+            df = pd.concat(
+                [df.drop(["metadata"], axis=1), df["metadata"].apply(pd.Series)], axis=1
+            )
+            
             return df
         else:
             return results
@@ -329,14 +336,14 @@ class VectorStore:
             query, limit=keyword_k, return_dataframe=True
         )
         keyword_results["search_type"] = "keyword"
-        keyword_results = keyword_results[["id", "content", "search_type"]]
+        keyword_results = keyword_results[["id", "content", "preview", "search_type"]]
 
         # Perform semantic search
         semantic_results = self.semantic_search(
             query, limit=semantic_k, return_dataframe=True
         )
         semantic_results["search_type"] = "semantic"
-        semantic_results = semantic_results[["id", "content", "search_type"]]
+        semantic_results = semantic_results[["id", "content", "preview", "search_type"]]
 
         # Combine results
         combined_results = pd.concat(
@@ -382,7 +389,8 @@ class VectorStore:
             reranked_results.append(
                 {
                     "id": combined_results.iloc[idx]["id"],
-                    "content": documents[idx],  # Use the original document content
+                    "content": documents[idx],
+                    "preview": combined_results.iloc[idx]["preview"],  
                     "search_type": combined_results.iloc[idx]["search_type"],
                     "relevance_score": result.relevance_score,
                 }

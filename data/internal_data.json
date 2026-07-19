@@ -1,0 +1,932 @@
+[
+{
+  "uuid": "4c9e8d1a-3f6b-4c2d-9e8f-7a1b2c3d4e5f",
+  "metadata": {
+    "case_id": "GSA-2025-101",
+    "date": "2025-02-18",
+    "attorneys": ["Sarah Jenkins, Esq."],
+    "preview": "TARGETS: [Unlawful Detainer Response Timeline], [AB 2347], [Eviction Defense]. STATUTES: [Cal. Code Civ. Proc. § 1167], [AB 2347]. FACTS: Landlord served Unlawful Detainer complaint on Feb 2, 2025, and filed for default judgment on Feb 9, 2025; successfully vacated default because 2025 amendment expanded tenant response window from 5 days to 10 days."
+  },
+  "case_summary": "MATTER GSA-2025-101 (Eviction Procedure / Extension of Time): Client Maria Gomez was served with an Unlawful Detainer complaint by Vanguard Properties on February 2, 2025 (intake notes). The landlord prematurely applied for a clerk's default judgment on February 9, 2025, operating under the outdated 5-day response rule (memo tracking). We filed a motion to strike the default application, citing AB 2347 (effective Jan 1, 2025), which legally extended a tenant's time to file a written answer to 10 calendar days. Outcome: Default application denied; landlord's counsel penalized, and client granted full statutory time to file her formal Answer on the merits (case summary)."
+},
+{
+  "uuid": "7b2d9f8c-1a5e-4b3d-8c2f-6e9a8b7c6d5e",
+  "metadata": {
+    "case_id": "GSA-2025-104",
+    "date": "2025-04-11",
+    "attorneys": ["Marcus Vance, Esq."],
+    "preview": "TARGETS: [Application Screening Fees], [AB 2493], [No Unit Available]. STATUTES: [Cal. Civ. Code § 1950.6], [AB 2493]. FACTS: Property management group collected $50 screening fees from 15 applicants despite knowing the unit was already promised to another tenant; recovered full statutory refunds and civil penalties."
+  },
+  "case_summary": "MATTER GSA-2025-104 (Illegal Screening Fees): Client Liam Foster discovered that Sierra Crest Rentals collected a $50 application screening fee from him while the unit was actively under an executed lease with another party (intake notes). Internal discovery revealed the property manager intentionally pooled fees from multiple applicants despite knowing the unit was unavailable, direct violation of AB 2493 (memo tracking). We filed a small claims demand citing Cal. Civ. Code § 1950.6, establishing the landlord 'should have known' no unit was available within a reasonable period. Outcome: Demand met; Sierra Crest refunded client's $50 and paid $250 statutory penalty to avoid formal civil litigation (case summary)."
+},
+{
+  "uuid": "1e8a2b3c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+  "metadata": {
+    "case_id": "GSA-2025-112",
+    "date": "2025-07-09",
+    "attorneys": ["Marcus Vance, Esq.", "Sarah Jenkins, Esq."],
+    "preview": "TARGETS: [Hotel vs Tenant Status], [Self-Help Eviction], [Lockout Protection]. STATUTES: [Cal. Civ. Code § 1940.1], [Cal. Civ. Code § 789.3]. FACTS: Motel manager locked out client who stayed for 45 consecutive days because she missed a weekly payment; established tenant status despite short-term lodging designation."
+  },
+  "case_summary": "MATTER GSA-2025-112 (Hotel Guest vs Tenant Status): Client Angela Torres was locked out of her room at the Sunset Vista Motel via electronic key deactivation after residing there for 45 consecutive days (intake notes). The manager argued that because she missed a weekly payment on Day 42, her tenant protections were voided under transient occupancy exceptions (memo tracking). We initiated an ex parte application for a temporary restraining order, proving client occupied the unit for more than 30 days, establishing standard tenant status under Cal. Civ. Code § 1940.1, making the self-help lockout strictly illegal. Outcome: Court ordered immediate re-entry; motel settled for $6,000 in statutory damages for unlawful lockout under Section 789.3 (case summary)."
+},
+{
+  "uuid": "9f8e7d6c-5b4a-3f2e-1d0c-9b8a7f6e5d4c",
+  "metadata": {
+    "case_id": "GSA-2025-119",
+    "date": "2025-09-22",
+    "attorneys": ["Sarah Jenkins, Esq."],
+    "preview": "TARGETS: [Single Lodger Eviction], [Trespass vs Unlawful Detainer], [Notice Period]. STATUTES: [Cal. Civ. Code § 1946.5], [Cal. Penal Code § 602.3]. FACTS: Homeowner attempted to immediately eject a single lodger via police intervention without giving a 30-day notice matching the periodic monthly tenancy."
+  },
+  "case_summary": "MATTER GSA-2025-119 (Single Lodger Status Dispute): Client Raymond Vance was threatened with immediate removal as a trespasser by the live-in homeowner after a personal disagreement (intake notes). The homeowner called law enforcement, claiming a single lodger can be removed summarily without court intervention under Cal. Civ. Code § 1946.5 (memo tracking). We intervened by presenting proof that Raymond paid rent monthly, legally requiring a written notice period equal to the 30-day tenancy term before any trespass enforcement could occur under Cal. Penal Code § 602.3. Outcome: Police refused to eject the client; homeowner agreed to execute a formal 30-day notice and allowed Raymond to move out voluntarily without a trespass record (case summary)."
+},
+{
+  "uuid": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
+  "metadata": {
+    "case_id": "GSA-2025-133",
+    "date": "2025-12-05",
+    "attorneys": ["Marcus Vance, Esq."],
+    "preview": "TARGETS: [Domestic Violence Lock Changes], [Landlord Adverse Action], [Retaliatory Notice]. STATUTES: [Cal. Civ. Code § 1941.6], [SB 1051]. FACTS: Landlord refused to change locks for a domestic violence survivor at landlord's expense, then issued a non-renewal notice when she called emergency services."
+  },
+  "case_summary": "MATTER GSA-2025-133 (Survivor Lock Change Protections): Client Chloe Dupont requested an emergency lock change in writing following a documented domestic violence incident, providing a copy of the protective order (intake notes). The landlord refused unless she paid a $200 maintenance fee, and subsequently issued a 30-day notice to terminate tenancy after she called emergency services (memo tracking). We filed a civil action under SB 1051, which mandates certain landlords change locks at their own expense for safety victims and strictly bars adverse actions or lease terminations following emergency police summons. Outcome: Landlord immediately rescinded the eviction notice, updated the locks at no charge, and paid a $3,500 statutory settlement for non-compliance (case summary)."
+},
+{
+    "uuid": "a7b3c2d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+    "metadata": {
+      "case_id": "GSA-2026-012",
+      "date": "2026-02-14",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Blanket Criminal History Ban], [Fair Housing Discrimination], [Directly-Related Conviction]. STATUTES: [Cal. Code Regs. tit. 2, § 12265]. FACTS: Landlord automatically rejected applicant based on a 7-year-old sealed juvenile record; failed to perform individualized assessment or consider mitigating evidence."
+    },
+    "case_summary": "MATTER GSA-2026-012 (Application Denial / Criminal History Discrimination): Client Marcus Vance applied for a residential unit at Bayside Towers and was immediately denied under management's strict policy rejecting anyone with a criminal history (intake notes). Discovery revealed the denial was triggered by a sealed juvenile record that did not lead to an adult conviction, constituting an illegal blanket ban (memo tracking). We filed a fair housing complaint arguing the landlord failed to demonstrate a legitimate interest or conduct an individualized assessment of the applicant's mitigating evidence. Outcome: Pre-litigation settlement reached; landlord updated its screening policy to comply with DFEH guidelines, approved the client's application, and waived the first month's rent (case summary)."
+  },
+  {
+    "uuid": "b8c4d3e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e",
+    "metadata": {
+      "case_id": "GSA-2026-018",
+      "date": "2026-03-22",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Prepaid Rental Listing Service], [Fee Refund Dispute], [Contract Non-Compliance]. STATUTES: [Cal. Bus. & Prof. Code § 10167.10]. FACTS: Unlicensed agency charged $200 for a rental list but failed to supply three available units within 5 days; agency refused a written refund demand."
+    },
+    "case_summary": "MATTER GSA-2026-018 (Prepaid Rental Listing Service Fraud): Client Jessica Taylor paid $200 to Metro Rentals for a list of available 2-bedroom apartments, but the list contained obsolete entries and zero active units matching her criteria within the statutory 5-day window (intake notes). The company ignored her timely, personally delivered written demand for a refund within 15 days (memo tracking). We filed an action under the Business and Professions Code, demonstrating the service failed to verify availability and kept more than the lawful $50 non-location fee. Outcome: Defendant settled by returning the full $200 fee plus an additional $500 in statutory damages to avoid a formal Department of Real Estate license investigation (case summary)."
+  },
+  {
+    "uuid": "c9e5d4f6-a7b8-9c0d-1e2f-3a4b5c6d7e8f",
+    "metadata": {
+      "case_id": "GSA-2026-027",
+      "date": "2026-04-05",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Domestic Violence Survivor Application Protection], [Application Rejection], [SB 1051 Statutory Penalties]. STATUTES: [Cal. Civ. Code § 1941.6.5], [SB 1051]. FACTS: Landlord rejected a high-credit applicant solely because her prior landlord reference noted an emergency lock change and lease break due to domestic abuse."
+    },
+    "case_summary": "MATTER GSA-2026-027 (Survivor Application Discrimination): Client Elena Rostova was denied a townhome lease by Pacific Horizon Management despite meeting all financial and credit metrics (intake notes). Screening logs revealed the rejection was explicitly based on her history of breaking a previous lease early due to documented domestic violence (memo tracking). We initiated a civil action under SB 1051, proving the landlord enacted an adverse action against a protected survivor who had supplied proper documentation of the abuse. Outcome: Landlord immediately settled out of court, paying the maximum $5,000 statutory monetary penalty and executing a priority lease agreement for the client (case summary)."
+  },
+  {
+    "uuid": "d0f6e5a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a",
+    "metadata": {
+      "case_id": "GSA-2026-035",
+      "date": "2026-05-19",
+      "attorneys": ["Marcus Vance, Esq.", "Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Adverse Action Notice], [Credit Report Rejection], [Tenant Screening Disclosure]. STATUTES: [Cal. Civ. Code § 1785.20], [Cal. Civ. Code § 1950.6]. FACTS: Landlord rejected a tenant based on an consumer screening report but refused to provide the required written agency disclosure or a copy of the report."
+    },
+    "case_summary": "MATTER GSA-2026-035 (Credit Check / Adverse Action Violation): Client David Chen paid a screening fee, but his application was verbally rejected by Oakridge Management due to 'poor tenant history' without any further elaboration or documentation (intake notes). The landlord failed to supply the mandatory written adverse action notice detailing the consumer reporting agency's contact information, nor did they provide a copy of the report within 7 days (memo tracking). We sent a statutory non-compliance demand letter outlining structural violations of consumer disclosure laws. Outcome: Management group provided the report copy, waived the screening fees for the client's subsequent application, and paid $1,000 in actual damages to resolve the dispute (case summary)."
+  },
+  {
+    "uuid": "e1a7f6b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b",
+    "metadata": {
+      "case_id": "GSA-2026-042",
+      "date": "2026-06-11",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Source of Income Discrimination], [Section 8 Voucher Rejection], [Housing Subsidy Alternative Credit]. STATUTES: [Cal. Gov. Code § 12955(p)]. FACTS: Landlord refused to evaluate alternative financial records for a government-subsidized housing applicant, enforcing an outright ban on Section 8."
+    },
+    "case_summary": "MATTER GSA-2026-042 (Section 8 / Source of Income Discrimination): Client Angela Torres applied for an apartment at GreenTree Rentals using a Section 8 voucher but was immediately rejected because she did not meet their minimum independent credit score threshold (intake notes). The landlord refused her request to verify financial eligibility through alternative means such as bank statements and government benefit history, violating state source-of-income protections (memo tracking). We filed a fair housing lawsuit citing Government Code Section 12955. Outcome: The court issued a preliminary injunction halting the rental of the unit; the landlord settled by accepting the voucher, adjusting their criteria for alternative credit verification, and paying $4,500 in damages (case summary)."
+  },
+  {
+    "uuid": "f2b8a3c4-d5e6-7a8b-9c0d-1e2f3a4b5c6e",
+    "metadata": {
+      "case_id": "GSA-2026-051",
+      "date": "2026-01-20",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Application Fee Refund], [AB 2347 Queue Violation], [First Qualified Applicant]. STATUTES: [Cal. Civ. Code § 1950.6], [AB 2801]. FACTS: Landlord collected screening fees from multiple applicants concurrently, approved a later applicant who offered higher rent, and refused to refund the client's unconsidered fee within 7 days."
+    },
+    "case_summary": "MATTER GSA-2026-051 (Screening Fee / Queue Non-Compliance): Client Chloe Dupont submitted a rental application along with a $60 screening fee for an apartment managed by Pinnacle Heights Realty (intake notes). Under 2025 amendments, landlords must process applications sequentially and approve the first applicant meeting established criteria without charging fees unless the application is actively reviewed (memo tracking). Discovery revealed Pinnacle evaluated applications out of order to secure a tenant willing to sign a longer lease, failing to return client's fee within 7 days of selecting the other applicant. Outcome: Demand letter forced a full $60 refund plus a $500 settlement to avoid statutory penalties for bad-faith screening practices (case summary)."
+  },
+  {
+    "uuid": "0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d",
+    "metadata": {
+      "case_id": "GSA-2026-058",
+      "date": "2026-02-11",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Holding Deposit Retention], [Mitigation of Damages], [Written Agreement Absence]. STATUTES: [Cal. Civ. Code § 1950.5]. FACTS: Landlord retained a full $1,500 holding deposit when an applicant backed out, despite re-renting the unit to another tenant 48 hours later."
+    },
+    "case_summary": "MATTER GSA-2026-058 (Holding Deposit Dispute): Client Justin Park provided a $1,500 holding deposit to secure a townhouse, signing a minimal receipt but no formal holding deposit agreement (intake notes). When Justin's financial situation shifted and he withdrew his application, the landlord claimed the entire deposit was non-refundable as liquidated damages (memo tracking). We initiated a small claims action, proving the landlord suffered no actual out-of-pocket losses or lost rent because they signed a lease with an alternate tenant within 48 hours. Outcome: Judgment for client; landlord ordered to return $1,350 of the deposit, retaining only $150 for documented administrative re-listing costs (case summary)."
+  },
+  {
+    "uuid": "1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+    "metadata": {
+      "case_id": "GSA-2026-064",
+      "date": "2026-03-18",
+      "attorneys": ["Sarah Jenkins, Esq.", "Marcus Vance, Esq."],
+      "preview": "TARGETS: [Immigration Status Threats], [Unlawful Discrimination], [Retaliatory Eviction]. STATUTES: [Cal. Civ. Code § 1940.35], [Cal. Civ. Code § 1942.5]. FACTS: Landlord threatened to report tenant to federal immigration authorities after the tenant requested mandatory repairs for a broken water heater."
+    },
+    "case_summary": "MATTER GSA-2026-064 (Immigration Extortion / Habitability): Client Mateo Silva faced verbal and written threats from his landlord, who stated he would contact immigration enforcement if Mateo pursued a code enforcement complaint regarding an unaddressed water heater failure (intake notes). California law strictly prohibits landlords from inquiring into or threatening to disclose immigration status to influence a tenant to vacate or retaliate against protected tenant assertions (memo tracking). We filed an emergency civil action seeking statutory injunctions and damages for housing harassment. Outcome: Landlord agreed to a binding settlement waiving three months' rent, executing immediate professional repairs, and paying $8,500 in statutory damages under Civil Code Section 1940.35 (case summary)."
+  },
+  {
+    "uuid": "2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
+    "metadata": {
+      "case_id": "GSA-2026-072",
+      "date": "2026-04-29",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Family Childcare Home Exclusion], [Void Lease Provisions], [Source of Income Discrimination]. STATUTES: [Cal. Health & Safety Code § 1596.78], [Cal. Gov. Code § 12955]. FACTS: Landlord issued a 3-Day Notice to Cure or Quit based on the tenant operating a licensed family childcare home, claiming it violated a 'residential use only' clause."
+    },
+    "case_summary": "MATTER GSA-2026-072 (Childcare Home Eviction Defense): Client Rebecca Rollins received a formal lease violation notice from Westlake Apartments for operating a licensed family childcare home in her 2-bedroom unit (intake notes). The landlord relied on a boilerplate lease term banning commercial business operations on the premises (memo tracking). We filed an Answer to the subsequent Unlawful Detainer, asserting that California law defines family childcare homes strictly as a residential use of property and renders any lease restrictions void as a matter of public policy. Outcome: Landlord dismissed the eviction complaint with prejudice and paid $2,500 for client's moving costs after she opted to relocate voluntarily (case summary)."
+  },
+  {
+    "uuid": "3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a",
+    "metadata": {
+      "case_id": "GSA-2026-081",
+      "date": "2026-05-14",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Owner-Occupied Exemption], [Arbitrary Discrimination Advertisement], [CRD Statutory Deadline]. STATUTES: [Cal. Gov. Code § 12927], [Cal. Civ. Code § 51]. FACTS: Homeowner renting a single room in an owner-occupied house published an online listing explicitly banning applicants with children under 18."
+    },
+    "case_summary": "MATTER GSA-2026-081 (Roommate Advertisement Discrimination): Client Angela Rossi, a pregnant applicant, was rejected for a room rental via a text message stating, 'Listing clearly says no kids or families' (intake notes). Although owner-occupied single-room rentals enjoy narrow exemptions from broader fair housing acts, they remain strictly prohibited from making or publishing written notices indicating arbitrary discrimination or familial status exclusions (memo tracking). We filed an administrative complaint with the California Civil Rights Department (CRD) within the one-year limitation window. Outcome: CRD mediation resulted in the homeowner pulling the discriminatory advertisement, issuing a formal apology, and paying a $1,200 civil penalty to settle the claim (case summary)."
+  },
+  {
+    "uuid": "4f8a9b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c",
+    "metadata": {
+      "case_id": "GSA-2026-092",
+      "date": "2026-01-15",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Oral Agreement Enforceability], [Tenancy Exceeding One Year], [Unenforceable Lease]. STATUTES: [Cal. Civ. Code § 1624(a)(3)], [Cal. Civ. Code § 1946.5]. FACTS: Landlord attempted to enforce a 24-month oral lease agreement against a tenant who vacated after 8 months; established that oral leases over one year violate the statute of frauds."
+    },
+    "case_summary": "MATTER GSA-2026-092 (Oral Lease Enforceability Dispute): Client David Lopez vacated an apartment after 8 months of occupancy due to a job relocation, having originally made a verbal agreement with the owner to stay for 2 years (intake notes). The landlord filed a civil action seeking the remaining 16 months of rent, arguing the oral commitment was a binding fixed-term contract (memo tracking). We filed a motion for summary judgment, demonstrating that under California Civil Code Section 1624(a)(3), any rental agreement extending beyond one year is legally unenforceable unless reduced to writing, converting the arrangement into a standard month-to-month tenancy. Outcome: Case dismissed with prejudice; landlord recovered nothing and was ordered to return the client's baseline security deposit (case summary)."
+  },
+  {
+    "uuid": "5a9b8c7d-6e5f-4a3b-2c1d-0e9f8a7b6c5d",
+    "metadata": {
+      "case_id": "GSA-2026-099",
+      "date": "2026-03-04",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Shared Utility Meter Disclosure], [Undisclosed Apportionment], [Utility Overcharge Compensation]. STATUTES: [Cal. Civ. Code § 1940.9]. FACTS: Landlord failed to disclose that the client's electrical meter also powered the building's common laundry room; recovered all historic utility overcharges."
+    },
+    "case_summary": "MATTER GSA-2026-099 (Shared Utility Meter Fraud): Client Chelsea Morningside discovered that her monthly electrical bills were abnormally high and hired an electrician who revealed her unit's meter was wired to power the entire complex's common area laundry machines (intake notes). The landlord had failed to provide any written shared-meter disclosure prior to lease execution or offer an equitable distribution agreement (memo tracking). We initiated a civil suit under Civil Code Section 1940.9, demanding the landlord transition the utility bills into their own name and reimburse the tenant. Outcome: Pre-trial settlement achieved; landlord shifted the main account to the property's name, paid $3,200 in retroactive utility compensation, and issued a $500 statutory penalty to the client (case summary)."
+  },
+  {
+    "uuid": "6b0c9d8e-7f6a-5b4c-3d2e-1f0a9b8c7d6e",
+    "metadata": {
+      "case_id": "GSA-2026-107",
+      "date": "2026-04-22",
+      "attorneys": ["Marcus Vance, Esq.", "Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Foreign Language Translation Mandate], [Lease Rescission], [Unfair Business Practice]. STATUTES: [Cal. Civ. Code § 1632]. FACTS: Landlord conducted exhaustive lease negotiations in Spanish but forced the tenant to sign an English-only document without providing a written translation beforehand."
+    },
+    "case_summary": "MATTER GSA-2026-107 (Lease Translation Non-Compliance): Client Rigoberto Valenzuela negotiated a fixed-term residential lease entirely in Spanish with the property manager, but was handed a complex, English-only contract to execute without a matching translated copy (intake notes). When the landlord attempted to enforce high hidden maintenance fees buried in the text, the client sought to cancel the agreement (memo tracking). We filed a notice of statutory rescission under Civil Code Section 1632, which mandates a complete written translation in Spanish, Chinese, Tagalog, Vietnamese, or Korean if negotiations occur in those languages. Outcome: The court validated the rescission, declared the lease completely void, and ordered the landlord to return the full security deposit and all pre-paid rent (case summary)."
+  },
+  {
+    "uuid": "7c1d0e9f-8a7b-6c5d-4e3f-2a1b0c9d8e7f",
+    "metadata": {
+      "case_id": "GSA-2026-115",
+      "date": "2026-05-19",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Cash Rent Payment Mandate], [Unlawful Lease Terms], [Receipt Refusal]. STATUTES: [Cal. Civ. Code § 1947.3]. FACTS: Landlord issued a lease addendum forcing all tenants to pay rent exclusively in cash, subsequently attempting to evict client who tendered a personal check."
+    },
+    "case_summary": "MATTER GSA-2026-115 (Illegal Rent Payment Method): Client Arthur Pendelton received a notice from his landlord stating that personal checks would no longer be accepted and that all future rent must be paid in physical cash at the management office (intake notes). Arthur tendered a standard check, which was refused, resulting in the landlord serving a 3-Day Notice to Pay Rent or Quit (memo tracking). We filed an Answer to the Unlawful Detainer, asserting that under Civil Code Section 1947.3, a landlord cannot mandate cash as the exclusive form of payment unless a prior check has bounced, and must maintain alternative payment options. Outcome: Eviction action dismissed with prejudice; landlord ordered to accept standard checks and pay the firm's statutory attorney fees (case summary)."
+  },
+  {
+    "uuid": "8d2e1f0a-9b8c-7d6e-5f4a-3b2c1d0e9f8a",
+    "metadata": {
+      "case_id": "GSA-2026-122",
+      "date": "2026-06-08",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Political Sign Restriction], [Tenant Free Speech Right], [Lease Addendum Violation]. STATUTES: [Cal. Civ. Code § 1940.4]. FACTS: Landlord fined a tenant and threatened eviction for displaying a 4-square-foot political window sign 30 days before a local municipal election."
+    },
+    "case_summary": "MATTER GSA-2026-122 (Tenant Political Sign Protection): Client Evelyn Reed posted a 4-square-foot noncommercial election sign inside her front window, prompting the homeowner association and landlord to issue a $250 fine and a lease violation warning (intake notes). The landlord claimed the sign violated an explicit 'no exterior modifications or displays' policy clause (memo tracking). We issued a formal cease-and-desist letter citing Civil Code Section 1940.4, which strictly prohibits landlords from preventing tenants from posting political signs that conform to size limits within the statutory window of 90 days before and 15 days after an election. Outcome: Landlord rescinded the fine, cleared the client's file, and modified the property guidelines to comply with California tenant speech protections (case summary)."
+  },
+  {
+    "uuid": "7a8b9c0d-e1f2-3a4b-5c6d-7e8f9a0b1c2d",
+    "metadata": {
+      "case_id": "GSA-2026-131",
+      "date": "2026-01-08",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Lease Copy Non-Delivery], [Handwritten Terms Dispute], [Statutory Document Request]. STATUTES: [Cal. Civ. Code § 1962]. FACTS: Landlord failed to deliver a signed copy of the lease within 15 days of execution and later denied validity of initialed handwritten alterations regarding pet deposit waivers."
+    },
+    "case_summary": "MATTER GSA-2026-131 (Lease Delivery and Modification Breach): Client Elena Vance signed a residential lease that included handwritten and mutually initialed modifications waiving a secondary pet deposit (intake notes). The property manager failed to return a fully executed copy within the statutory 15-day window and subsequently demanded full payment under the template text, claiming the handwritten changes were invalid (memo tracking). We issued a formal demand asserting statutory non-compliance with lease copy delivery mandates and verifying the binding nature of the initialed adjustments. Outcome: Management provided the executed contract, formally recognized the handwritten terms, and credited $200 to the client's ledger for administrative delays (case summary)."
+  },
+  {
+    "uuid": "8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e",
+    "metadata": {
+      "case_id": "GSA-2026-138",
+      "date": "2026-02-24",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Reasonable Modification Denied], [Physical Disability Access], [Escrow Financial Guarantee]. STATUTES: [Cal. Gov. Code § 12927], [42 U.S.C. § 3604]. FACTS: Landlord blocked a wheelchair-bound tenant from installing an access ramp at his own expense, improperly demanding a double security deposit as a restoration condition."
+    },
+    "case_summary": "MATTER GSA-2026-138 (Disability Structural Modification Dispute): Client Julian Vance requested permission to install a modular exterior entryway ramp at his own expense to accommodate his mobility impairment (intake notes). The landlord refused unless Julian paid a double security deposit upfront to cover potential interior floor scuffs and future removal costs, which is strictly prohibited under fair housing access laws (memo tracking). We threatened federal and state fair housing lawsuits, noting the tenant offered to establish a compliant, interest-bearing escrow account for necessary restorations rather than an illegal deposit increase. Outcome: Landlord retracted the deposit demand, approved the ramp modification immediately, and settled by contributing $1,500 toward the tenant's construction costs (case summary)."
+  },
+  {
+    "uuid": "9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f",
+    "metadata": {
+      "case_id": "GSA-2026-145",
+      "date": "2026-03-12",
+      "attorneys": ["Sarah Jenkins, Esq.", "Marcus Vance, Esq."],
+      "preview": "TARGETS: [TPA Rent Cap Violation], [Local Rent Stabilization Override], [Illegal Rent Increase]. STATUTES: [Cal. Civ. Code § 1947.12], [Tenant Protection Act of 2019]. FACTS: Multi-unit landlord issued a 14% rent increase within a single 12-month period, violating the statewide 5% plus inflation statutory ceiling."
+    },
+    "case_summary": "MATTER GSA-2026-145 (Tenant Protection Act Rent Cap Breach): Client Mateo Guerrero received a rent adjustment notice hiking his monthly rate by 14%, far exceeding the legally protected Tenant Protection Act cap of 5% plus local CPI (inflation) parameters (intake notes). The property group claimed the building's age exempted it, but historical county permits verified it did not fit any limited exclusion criteria (memo tracking). We filed an emergency action seeking to void the notice and protect the client from retaliatory termination. Outcome: Landlord rescinded the illegal increase, adjusted the billing ledger to conform strictly to the statutory maximum cap, and paid $2,000 to cover legal fees (case summary)."
+  },
+  {
+    "uuid": "0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f5a",
+    "metadata": {
+      "case_id": "GSA-2026-152",
+      "date": "2026-04-19",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Bed Bug Infestation Disclosure], [Warranty of Habitability], [Eradication Failure]. STATUTES: [Cal. Civ. Code § 1942.5], [Cal. Civ. Code § 1954.600]. FACTS: Landlord leased an apartment without providing the mandatory bed bug information booklet, despite knowing the adjacent unit had an active infestation."
+    },
+    "case_summary": "MATTER GSA-2026-152 (Undisclosed Bed Bug Infestation): Client Clara Oswald discovered an active bed bug infestation within three days of moving into her new studio apartment (intake notes). Investigation revealed the landlord completely omitted the required statutory written bed bug identification notice and had actively masked extermination records from the prior week (memo tracking). Under California law, landlords are legally barred from showing or leasing infested units. Outcome: We successfully voided the lease agreement, forcing the landlord to return the entire first month's rent and security deposit, alongside $4,200 to cover property replacement and emergency moving fees (case summary)."
+  },
+  {
+    "uuid": "1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
+    "metadata": {
+      "case_id": "GSA-2026-160",
+      "date": "2026-05-22",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Undisclosed Death Disclosure], [Intentional Misrepresentation], [Lease Rescission]. STATUTES: [Cal. Civ. Code § 1710.2]. FACTS: Landlord explicitly denied any recent deaths occurred in the unit during a tour, but public coroner records confirmed a homicide occurred inside the property 14 months prior."
+    },
+    "case_summary": "MATTER GSA-2026-160 (Death Disclosure Fraud): Client Thomas Sterling specifically questioned the leasing agent regarding the history of the apartment, and the agent explicitly affirmed no deaths had occurred on-site (intake notes). Neighbors later informed the tenant of a major police investigation, and public coroner databases confirmed a fatal shooting occurred inside the living room within the preceding three years (memo tracking). While natural or older deaths have varied guidelines, making an intentional misrepresentation in response to direct inquiry triggers full liability. Outcome: Filed an action for fraud and rescission; the landlord agreed to immediately terminate the lease, clear the tenant's record, and pay a $5,500 settlement (case summary)."
+  },
+  {
+    "uuid": "9e0f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b",
+    "metadata": {
+      "case_id": "GSA-2026-171",
+      "date": "2026-01-12",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Condominium Conversion Project Notice], [Failure to Disclose Conversion], [Statutory Moving Expense Recovery]. STATUTES: [Cal. Gov. Code § 66427.1], [Cal. Civ. Code § 1940.6]. FACTS: Owner failed to provide written notice regarding public sale approval and the 90-day notification window for a 12-unit conversion project before signing the lease."
+    },
+    "case_summary": "MATTER GSA-2026-171 (Condominium Conversion Non-Disclosure): Client Chloe Mercer signed a lease for an upscale apartment unaware the complex was an approved condominium conversion project with final plat approval for its 12 units (intake notes). When the landlord issued a 60-day notice to vacate due to an impending unit sale without having provided the initial mandated disclosures or the right of first refusal, the tenant faced sudden relocation (memo tracking). We brought a civil action to enforce statutory conversion penalties. Outcome: Landlord settled by paying $1,100 for actual moving expenses, $1,100 matching the new unit's first month's rent, and allowed the client to remain penalty-free for an additional 45 days (case summary)."
+  },
+  {
+    "uuid": "0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d",
+    "metadata": {
+      "case_id": "GSA-2026-182",
+      "date": "2026-03-09",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Security Deposit Cap Overcharge], [Pet Deposit Allowance Protection], [Bad Faith Deposit Retention]. STATUTES: [Cal. Civ. Code § 1950.5(c)], [AB 12]. FACTS: Landlord demanded a $2,200 baseline security deposit plus an additional $500 pet fee and a $50 key fee for an unfurnished apartment renting for $2,200 per month."
+    },
+    "case_summary": "MATTER GSA-2026-182 (Security Deposit Statutory Cap Breach): Client Derrick Brooks applied for an unfurnished apartment with a monthly rent of $2,200 (intake notes). The property management company forced him to pay an aggregate deposit total of $2,750 by line-iteming extra fees for keys and his dog, completely disregarding the statutory one-month rent limit implemented for standard landlords (memo tracking). We issued a formal letter demanding an immediate balance reduction and restitution of the overage. Outcome: Management acknowledged the statutory boundary, refunded the $550 excess balance immediately to the client, and adjusted their template lease agreements to comply with California's strict one-month deposit ceiling (case summary)."
+  },
+  {
+    "uuid": "1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+    "metadata": {
+      "case_id": "GSA-2026-195",
+      "date": "2026-04-14",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Domestic Violence Lease Termination], [Abuser Property Damage Mitigation], [Fourteen Day Rent Obligation]. STATUTES: [Cal. Civ. Code § 1946.7], [Cal. Civ. Code § 1950.5]. FACTS: Landlord refused to release a domestic violence survivor from her lease without a $3,000 early termination penalty and withheld her deposit to repair a front door broken by the abuser."
+    },
+    "case_summary": "MATTER GSA-2026-195 (Domestic Violence Early Termination & Protection): Client Natalie Vance served a valid 14-day early lease termination notice accompanied by a qualified therapist's statement regarding ongoing stalker harassment (intake notes). The landlord rejected the termination, demanding ongoing monthly rent and attempting to deduct structural wall and doorway damage caused by the non-tenant harasser from her security deposit (memo tracking). We intervened, establishing that state law explicitly bars early termination penalties and deposit deductions for damage inflicted by an abuser under these parameters. Outcome: The landlord dropped all claims, fully returned the $1,800 security deposit, and formally closed the lease file without penalty (case summary)."
+  },
+  {
+    "uuid": "2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
+    "metadata": {
+      "case_id": "GSA-2026-208",
+      "date": "2026-05-27",
+      "attorneys": ["Sarah Jenkins, Esq.", "Marcus Vance, Esq."],
+      "preview": "TARGETS: [Mandatory Move-In Photography], [Inventory Checklist Dispute], [Bad Faith Small Claims Action]. STATUTES: [Cal. Civ. Code § 1950.5(o)], [AB 2801]. FACTS: Landlord failed to take required pre-tenancy photographs of the unit and later deducted $1,200 from the security deposit for pre-existing hardwood floor scratches."
+    },
+    "case_summary": "MATTER GSA-2026-208 (Move-In Photography & Condition Dispute): Client Julianne Smith vacated an apartment where the landlord deducted $1,200 from her security deposit, alleging she caused deep scratches across the living room flooring (intake notes). Under recent updates for newer tenancies, landlords are strictly mandated to take comprehensive photographs at the inception of the lease to verify baseline wear (memo tracking). Discovery confirmed the landlord completely skipped taking photos, whereas Julianne had independently preserved time-stamped images showing the scratches were present on day one. Outcome: We filed a small claims action for bad-faith retention; the court awarded the client the full $1,200 refund plus a $2,400 statutory bad-faith penalty (case summary)."
+  },
+  {
+    "uuid": "3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a",
+    "metadata": {
+      "case_id": "GSA-2026-219",
+      "date": "2026-06-18",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Emergency Anti-Price Gouging], [State of Emergency Rent Cap], [Exorbitant Rental Increases]. STATUTES: [Cal. Pen. Code § 396], [Cal. Civ. Code § 1947.12]. FACTS: Property owner raised the rent on an existing tenant by 15% immediately following a locally declared wildfire state of emergency, failing to substantiate any direct mitigation costs."
+    },
+    "case_summary": "MATTER GSA-2026-219 (Post-Disaster Price Gouging): Client Raymond Martinez received an abrupt 15% rent hike notice directly following a county-declared wildfire emergency declaration (intake notes). Under California Penal Code Section 396, landlords are strictly prohibited from raising rental rates by more than 10% during the 30 days following an authorized emergency declaration unless specific, amortized structural improvements are legally proven (memo tracking). We filed an administrative complaint with the district attorney's consumer protection division and issued a cease-and-desist letter. Outcome: The landlord immediately rescinded the notice, issued a corrected 4% cost-of-living adjustment conforming to baseline laws, and paid a $1,000 settlement to resolve the claim (case summary)."
+  },
+  {
+    "uuid": "4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b",
+    "metadata": {
+      "case_id": "GSA-2026-224",
+      "date": "2026-01-20",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Unlawful Cash Rent Mandate], [Dishonored Check Notice Defect], [Three Month Cash Restriction]. STATUTES: [Cal. Civ. Code § 1947.3]. FACTS: Landlord demanded rent in cash for six consecutive months following a single bounced check and failed to attach a copy of the dishonored instrument to the notice."
+    },
+    "case_summary": "MATTER GSA-2026-224 (Unlawful Cash Payment Demand): Client Brenda Sterling inadvertently bounced her February rent check due to a bank processing delay (intake notes). The landlord issued a notice requiring all future rent payments to be made exclusively in physical cash for the remainder of the year and failed to attach a physical copy of the returned check as explicitly mandated by law (memo tracking). Under Civil Code Section 1947.3, a cash-only payment mandate is strictly limited to a maximum duration of three months and must include the underlying dishonored document. Outcome: We successfully compelled the landlord to rescind the notice, restore the client's right to pay via standard personal check, and waive an improper $50 administrative processing fee (case summary)."
+  },
+  {
+    "uuid": "5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c",
+    "metadata": {
+      "case_id": "GSA-2026-231",
+      "date": "2026-03-03",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Exorbitant Late Fee Penalty], [Grace Period Violation], [Bad Check Service Charge Limit]. STATUTES: [Cal. Civ. Code § 1671], [Cal. Civ. Code § 1719]. FACTS: Landlord assessed a predatory $250 late fee on a $2,000 rent payment and charged an illegal $75 service fee for a returned check."
+    },
+    "case_summary": "MATTER GSA-2026-231 (Predatory Late Fee Enforcement): Client Timothy Blake faced an eviction threat after refusing to pay a $250 flat late fee assessed on the 3rd of the month, despite a lease provision establishing a grace period through the 5th (intake notes). Additionally, the landlord attempted to levy a $75 administrative fee for a single NSF check, directly violating the statutory cap of $25 for a first-time returned check (memo tracking). We filed a motion asserting that the late fee constituted an unenforceable punitive penalty rather than a reasonable estimate of actual administrative costs. Outcome: The landlord agreed to waive the late fee entirely, reduce the bounced check fee to the statutory $25 maximum, and update their standard corporate lease templates to align with California statutory limits (case summary)."
+  },
+  {
+    "uuid": "6a7b8c9d-0e1f-2a3b-4c5d-6e7f8a9b0c1d",
+    "metadata": {
+      "case_id": "GSA-2026-242",
+      "date": "2026-04-12",
+      "attorneys": ["Marcus Vance, Esq.", "Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Mailed Rent Increase Notice], [Insufficient Service Period], [Retroactive Rent Overcharge]. STATUTES: [Cal. Civ. Code § 827], [Cal. Code Civ. Proc. § 1013]. FACTS: Landlord mailed a 9% rent increase notice from within California but only provided 30 days of total advance notice instead of adding the required 5 statutory mailing days."
+    },
+    "case_summary": "MATTER GSA-2026-242 (Defective Mailed Rent Increase): Client Sandra Martinez received a billing notice demanding an extra $180 per month based on a 9% rent increase notice postmarked exactly 30 days prior (intake notes). Because the landlord opted to serve the notice via first-class mail rather than personal delivery, California law strictly requires an additional 5 days of advance notice, making a total of 35 days mandatory before the collection can take effect (memo tracking). We filed an administrative claim challenging the validity of the increase due to insufficient statutory notice. Outcome: The court declared the rent increase notice legally defective and void; the landlord was ordered to restore the baseline rental rate and refund $540 in collected overcharges (case summary)."
+  },
+  {
+    "uuid": "7b8c9d0e-1f2a-3b4c-5d6e-7f8a9b0c1d2e",
+    "metadata": {
+      "case_id": "GSA-2026-253",
+      "date": "2026-05-18",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Partial Rent Payment Agreement], [Breach of Written Waiver], [Unlawful Detainer Defense]. STATUTES: [Cal. Civ. Code § 1473], [Cal. Code Civ. Proc. § 1161]. FACTS: Landlord signed a binding partial payment plan for delayed rent but filed an eviction action three days later despite receiving the agreed amount."
+    },
+    "case_summary": "MATTER GSA-2026-253 (Breach of Partial Rent Accord): Client Gregory House fell behind on rent due to a medical emergency and entered into a signed, written agreement with his landlord to pay 50% immediately and the remainder by the 20th of the month (intake notes). Despite receiving the partial payment on time, the landlord served a 3-Day Notice to Pay Rent or Quit and initiated eviction proceedings on the 10th (memo tracking). We asserted the written agreement as an absolute affirmative defense, arguing it was a legally binding contract that explicitly waived eviction actions while active. Outcome: The unlawful detainer action was dismissed with prejudice, the landlord was ordered to adhere to the payment schedule, and the firm recovered full statutory legal fees (case summary)."
+  },
+  {
+    "uuid": "8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
+    "metadata": {
+      "case_id": "GSA-2026-266",
+      "date": "2026-06-22",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Credit Rent Reporting Denial], [Positive Payment Information], [Statutory Opt-In Rights]. STATUTES: [Cal. Civ. Code § 1954.06]. FACTS: Owner of a 40-unit complex refused to offer positive rental history reporting to a credit agency and threatened a fee overcharge."
+    },
+    "case_summary": "MATTER GSA-2026-266 (Positive Rent Reporting Non-Compliance): Client Alyssa Chang requested her property management group to report her perfect 3-year record of on-time rent payments to a major national credit bureau pursuant to recent statutory mandates for large buildings (intake notes). The management firm flatly denied the request, claiming they lacked the administrative framework, and subsequently attempted to charge an illegal $25 monthly fee to review the request (memo tracking). Under state law effective in 2025, residential properties with more than 15 units must provide an annual opt-in offer for positive rent reporting, with service fees strictly capped at $10. Outcome: We compelled compliance via a formal statutory warning; the landlord implemented the credit reporting service at a lawful $5 rate and issued a formal apology letter to the client (case summary)."
+  },
+  {
+    "uuid": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+    "metadata": {
+      "case_id": "GSA-2026-271",
+      "date": "2026-01-15",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Unlawful Landlord Entry], [Intentional Harassment Penalty], [Quiet Enjoyment Breach]. STATUTES: [Cal. Civ. Code § 1954], [Cal. Civ. Code § 1940.2]. FACTS: Landlord repeatedly entered the tenant's apartment without 24-hour written notice for non-emergency 'inspections' while the tenant was at work to coerce a vacancy."
+    },
+    "case_summary": "MATTER GSA-2026-271 (Unlawful Entry and Tenant Harassment): Client Beatrice Vance alleged that her landlord entered her apartment on at least four separate occasions without providing the required 24-hour written notice or obtaining consent (intake notes). The landlord claimed he was conducting general property inspections, which is explicitly prohibited under California Civil Code Section 1954 unless tied to specific statutory grounds like necessary repairs or emergencies (memo tracking). Evidence showed these entries were timed during the client's work hours to intentionally disrupt her peace and pressure her to relocate. Outcome: Filed an action in small claims court; the judge found the landlord's entries to be willful violations intended to influence a move and awarded the client a $4,000 civil penalty ($2,000 per proven intentional violation) plus court costs (case summary)."
+  },
+  {
+    "uuid": "b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e",
+    "metadata": {
+      "case_id": "GSA-2026-285",
+      "date": "2026-03-10",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Sublease Consent Dispute], [Unreasonably Withheld Consent], [Subtenant Rent Action]. STATUTES: [Cal. Civ. Code § 1995.260]. FACTS: Landlord flatly refused a college student's written request to sublet her room for the summer months despite a lease template requiring consent without establishing rejection criteria."
+    },
+    "case_summary": "MATTER GSA-2026-285 (Unreasonable Withholding of Sublease Consent): Client Clara Oswald sought to sublease her apartment during a three-month summer study abroad program (intake notes). Her lease stated that subleasing required the landlord's prior consent but outlined no specific evaluation standards; the landlord flatly denied the request, stating they 'do not deal with subtenants' as a blanket policy (memo tracking). Under California legal precedents, when a lease requires consent but lists no criteria, an implied standard exists barring the landlord from unreasonably withholding that consent. Outcome: We issued a formal demand letter highlighting the financial exposure; the landlord relented, approved the qualified subtenant in writing, and paid $500 toward the client's administrative legal expenses (case summary)."
+  },
+  {
+    "uuid": "c3d4e5f6-a7b8-9c0d-1e2f-3a4b5c6d7e8f",
+    "metadata": {
+      "case_id": "GSA-2026-292",
+      "date": "2026-04-22",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Lease Assignment Novation], [Absence of Landlord Release], [Secondary Tenant Default]. STATUTES: [Cal. Civ. Code § 1531], [Cal. Civ. Code § 1954.53]. FACTS: Original tenant permanently transferred lease rights to an assignee with landlord approval but was sued for back rent months later because no formal written novation was executed."
+    },
+    "case_summary": "MATTER GSA-2026-292 (Assignment Liability and Novation Defect): Client David Tennant permanently assigned his interest in a one-year lease to a new occupant after obtaining the landlord's verbal approval (intake notes). Six months later, the assignee defaulted on rent and vacated the unit, prompting the landlord to sue David for the uncollected balance, asserting that an assignment does not erase original contractual liability (memo tracking). Under state law, an original tenant remains secondary liable on an assignment unless a formal three-party written agreement—a novation—explicitly releases them. Outcome: Because the landlord had signed an email chain stating the new tenant was 'solely responsible,' we successfully argued that an equitable novation had occurred, resulting in a dismissal of all claims against our client (case summary)."
+  },
+  {
+    "uuid": "d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a",
+    "metadata": {
+      "case_id": "GSA-2026-304",
+      "date": "2026-05-19",
+      "attorneys": ["Sarah Jenkins, Esq.", "Marcus Vance, Esq."],
+      "preview": "TARGETS: [Implied Warranty of Habitability], [Substantial Structural Defects], [Rent Withholding Protection]. STATUTES: [Cal. Civ. Code § 1941.1], [Green v. Superior Court]. FACTS: Multi-unit landlord failed to repair a broken building furnace and leaking roof during winter storms, leaving a family without operational heating for 22 consecutive days."
+    },
+    "case_summary": "MATTER GSA-2026-304 (Habitability and Heating System Failure): Client Elena Fisher reached out after her apartment's primary heating facility ceased functioning during severe winter weather (intake notes). Despite repeated written alerts and photographic proof of secondary ceiling water leaks from damaged exterior roofing, the landlord delayed repairs for over three weeks, directly breaching the statutory implied warranty of habitability (memo tracking). We advised the client on lawful rent withholding frameworks and filed an emergency injunction. Outcome: The landlord immediately dispatched licensed contractors to replace the furnace and fix the roof, adjusted the client's account balance to reflect a 75% rent abatement for the unlivable days, and covered $1,800 in legal fees (case summary)."
+  },
+  {
+    "uuid": "e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b",
+    "metadata": {
+      "case_id": "GSA-2026-318",
+      "date": "2026-06-11",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Substandard Security Devices], [Uninhabitable Dwellings], [Statutory Habitability Violations]. STATUTES: [Cal. Civ. Code § 1941.3], [Cal. Health & Safety Code § 17920.3]. FACTS: Property owner ignored written demands to replace broken window locks and missing bedroom smoke detectors, breaching strict health and safety building codes."
+    },
+    "case_summary": "MATTER GSA-2026-318 (Security Device and Smoke Detector Non-Compliance): Client Frank Miller discovered upon move-in that the main entry door lacked a working deadbolt and two bedroom windows had completely broken security latches (intake notes). Furthermore, the property lacked required carbon monoxide alarms near the gas stove and had missing smoke detectors in the sleeping quarters (memo tracking). Under Civil Code Section 1941.3, these specific safety items are strict, absolute baselines for a unit to be legally considered habitable for human occupancy. Outcome: We issued an ultimatum threatening immediate administrative code enforcement reporting. The property group completely upgraded all locks, installed compliant smoke/CO detectors within 48 hours, and issued a $600 rent credit to settle the dispute (case summary)."
+  },
+  {
+    "uuid": "f6a7b8c9-d0e1-2f3a-4b5c-6d7e8f9a0b1c",
+    "metadata": {
+      "case_id": "GSA-2026-322",
+      "date": "2026-01-19",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Toxic Mold Contamination], [Substandard Living Conditions], [Health Officer Enforcement]. STATUTES: [Cal. Civ. Code § 1941.7], [Cal. Health & Safety Code § 17920.3]. FACTS: Landlord ignored written notices regarding severe water intrusion and subsequent toxic mold growth, verified by a local health officer as a substandard condition."
+    },
+    "case_summary": "MATTER GSA-2026-322 (Toxic Mold Habitability Breach): Client Diana Prince discovered structural water intrusion behind her bathroom wall, which rapidly developed into extensive, non-superficial mold growth affecting her respiratory health (intake notes). Despite providing formal written alerts, the landlord refused remediation, prompting an inspection by a county code enforcement officer who officially designated the unit as substandard (memo tracking). We brought a civil action asserting a substantial breach of the implied warranty of habitability. Outcome: The landlord settled the matter by paying $4,500 in medical and property damages, completely abating the mold via certified contractors, and providing a 100% rent waiver for the two months the unit remained unlivable (case summary)."
+  },
+  {
+    "uuid": "0f1a2b3c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+    "metadata": {
+      "case_id": "GSA-2026-335",
+      "date": "2026-03-12",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Repair and Deduct Remedy], [Retaliatory Eviction Defense], [Statutory Notice Compliance]. STATUTES: [Cal. Civ. Code § 1942], [Cal. Civ. Code § 1942.5]. FACTS: Tenant deducted the cost of an emergency winter roof repair from their rent after the landlord failed to act within a reasonable time frame following written notice."
+    },
+    "case_summary": "MATTER GSA-2026-335 (Repair-and-Deduct Retaliation Protection): Client Arthur Pendragon experienced a severe roof leak during winter storms that threatened his electrical fixtures (intake notes). After providing written notice and waiting a reasonable period with no response, he hired a licensed contractor to patch the roof for $950 and deducted the expense from his next rent check, enclosing all receipts (memo tracking). The landlord immediately served a 3-Day Notice to Pay Rent or Quit and filed an eviction action. Outcome: We asserted the statutory repair-and-deduct framework as an absolute defense; the court dismissed the eviction with prejudice, validated the $950 deduction, and sanctioned the landlord for an unlawful retaliatory act (case summary)."
+  },
+  {
+    "uuid": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "metadata": {
+      "case_id": "GSA-2026-341",
+      "date": "2026-04-16",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Abandonment Remedy], [Constructive Eviction Claim], [Mitigation of Future Rent]. STATUTES: [Cal. Civ. Code § 1942], [Green v. Superior Court]. FACTS: Tenant lawfully abandoned a high-rise apartment after a complete failure of the building's main sewer line rendered all plumbing fixtures inoperable for a week."
+    },
+    "case_summary": "MATTER GSA-2026-341 (Lawful Abandonment due to Sewage Failure): Client Bruce Wayne vacated his apartment after a main line backup caused all toilets and drains to stop functioning (intake notes). He provided urgent written notice, but the landlord failed to execute repairs within a reasonable two-day window given the extreme sanitation hazard, prompting Bruce to return the keys, document the filth via video, and move out (memo tracking). The landlord subsequently sued for the remaining six months of the lease term. Outcome: We successfully defended the client by demonstrating a total breach of health codes that justified immediate abandonment; the court ruled the lease terminated on the day of departure and ordered the landlord to return the security deposit in full (case summary)."
+  },
+  {
+    "uuid": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
+    "metadata": {
+      "case_id": "GSA-2026-358",
+      "date": "2026-05-22",
+      "attorneys": ["Sarah Jenkins, Esq.", "Marcus Vance, Esq."],
+      "preview": "TARGETS: [Rent Withholding Remedy], [Percentage Rent Reduction], [Habitability Code Violations]. STATUTES: [Green v. Superior Court], [Cal. Civ. Code § 1941.1]. FACTS: Tenant withheld 25% of monthly rent after the landlord left an attached garage and secondary bedroom completely without electrical power due to faulty wiring."
+    },
+    "case_summary": "MATTER GSA-2026-358 (Rent Withholding Valuation Dispute): Client Clark Kent withheld a portion of his rent after severe electrical faults left a quarter of his apartment entirely without light or power for 45 days (intake notes). The landlord filed an unlawful detainer action, claiming rent must be paid in full regardless of minor maintenance delays (memo tracking). At trial, we presented comprehensive photographic logs, text threads, and a municipal building inspector's report confirming the hazardous exposed wiring. Outcome: Utilizing the percentage reduction method, the court affirmed that 25% of the unit was uninhabitable, reduced the back rent owed accordingly, ordered the landlord to immediately repair the electrical system, and awarded our firm statutory attorney fees (case summary)."
+  },
+  {
+    "uuid": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
+    "metadata": {
+      "case_id": "GSA-2026-369",
+      "date": "2026-06-25",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Tenant Repair Affirmative Defense], [Tenant Neglect Limitation], [Causation of Substandard Conditions]. STATUTES: [Cal. Civ. Code § 1941.2], [Cal. Civ. Code § 1942]. FACTS: Landlord sought eviction for nonpayment after a tenant attempted to withhold rent for a plumbing backup that the tenant had directly caused by flushing foreign debris."
+    },
+    "case_summary": "MATTER GSA-2026-369 (Tenant-Caused Defect Eviction): Client Selina Kyle sought defense against an eviction after she withheld rent due to a blocked main bathroom toilet (intake notes). Discovery and plumbing contractor logs revealed that the blockage was entirely caused by large, foreign objects flushed down the fixture by the client's house guests, directly violating the tenant's statutory duty to properly operate plumbing fixtures (memo tracking). Because the tenant's own actions caused the substandard condition, she lacked the legal right to withhold rent or demand landlord-funded repairs under Civil Code Section 1941.2. Outcome: We negotiated a conditional settlement where the client paid the outstanding back rent and covered the landlord's plumbing repair invoice in exchange for the immediate dismissal of the eviction lawsuit (case summary)."
+  },
+  {
+    "uuid": "4f5e6d7c-8b9a-0f1e-2d3c-4b5a6f7e8d9c",
+    "metadata": {
+      "case_id": "GSA-2026-382",
+      "date": "2026-02-11",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Rent Withholding Account], [Escrow Notification Defect], [Unlawful Detainer Defense]. STATUTES: [Cal. Civ. Code § 1942], [Green v. Superior Court]. FACTS: Tenant withheld 100% of rent due to severe roofing leaks but failed to establish an escrow account or provide formal written notice of the deposit to the landlord."
+    },
+    "case_summary": "MATTER GSA-2026-382 (Escrow Management and Rent Withholding): Client Fiona Gallagher withheld three months of rent ($6,000 total) following a severe ceiling collapse in her living room (intake notes). While the habitability defect was well-documented, she kept the withheld funds in her primary checking account rather than an isolated escrow account, and sent only informal text alerts regarding the non-payment (memo tracking). The landlord initiated an eviction action via a 3-Day Notice to Pay Rent or Quit. Outcome: Although an escrow account is not strictly required by California law, we advised the client to immediately transfer the full balance to a dedicated escrow account and served formal written notice to the landlord. At the summary hearing, this demonstrated good faith to the judge, who applied a 40% percentage reduction to the back rent; the client paid the remaining 60% within the 5-day post-judgment window, successfully blocking the eviction (case summary)."
+  },
+  {
+    "uuid": "5e6d7c8b-9a0f-1e2d-3c4b-5a6f7e8d9c0b",
+    "metadata": {
+      "case_id": "GSA-2026-395",
+      "date": "2026-03-24",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Affirmative Habitability Suit], [Statutory Special Damages], [Code Enforcement Abatement]. STATUTES: [Cal. Civ. Code § 1942.4], [Cal. Civ. Code § 3479]. FACTS: Landlord continued to demand rent and issued a rent increase notice 45 days after a municipal housing inspector ordered the abatement of an active rodent infestation."
+    },
+    "case_summary": "MATTER GSA-2026-395 (Affirmative Suit for Substandard Conditions): Client Jefferson Pierce endured a severe vermin and cockroach infestation in his multi-unit complex (intake notes). A county health inspector issued an official 'Notice of Violation and Order to Abate' to the landlord, but no remediation occurred within the statutory 35-day grace period; despite this, the landlord issued a 5% rent increase notice (memo tracking). We bypassed the standard repair-and-deduct track and filed an affirmative lawsuit under Civil Code Section 1942.4 in small claims court. Outcome: The court awarded our client $3,200 in actual damages, $2,500 in statutory special damages for the prolonged health hazard, and issued a mandatory injunction compelling the landlord to complete professional pest eradication immediately (case summary)."
+  },
+  {
+    "uuid": "6d7c8b9a-0f1e-2d3c-4b5a-6f7e8d9c0b1a",
+    "metadata": {
+      "case_id": "GSA-2026-412",
+      "date": "2026-05-04",
+      "attorneys": ["Marcus Vance, Esq.", "Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Emergency Lock Change Request], [Workmanlike Lock Installation], [Statutory Reimbursement Delay]. STATUTES: [Cal. Civ. Code § 1941.5]. FACTS: Landlord ignored a domestic violence survivor's written request and protective order to replace unit entry locks within 24 hours, forcing the tenant to hire a private locksmith."
+    },
+    "case_summary": "MATTER GSA-2026-412 (Emergency Lock Replacement Non-Compliance): Client Carol Danvers, a survivor of domestic assault, provided her property manager with a certified copy of a temporary restraining order excluding a non-tenant aggressor, accompanied by a formal written request to swap her unit's entry locks (intake notes). The landlord failed to take action within the mandatory 24-hour statutory window, leading Carol to hire an independent locksmith to install high-security deadbolts (memo tracking). The landlord subsequently refused to reimburse the $350 invoice, citing a lease clause prohibiting unauthorized alterations. Outcome: We presented photographic proof of the high-quality workmanlike installation alongside the statutory timeline; facing explicit exposure under Section 1941.5, the property management group issued a full $350 direct reimbursement check within the required 21-day window (case summary)."
+  },
+  {
+    "uuid": "7c8b9a0f-1e2d-3c4b-5a6f-7e8d9c0b1a2f",
+    "metadata": {
+      "case_id": "GSA-2026-428",
+      "date": "2026-06-18",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Co-Tenant Lock Exclusion], [Novation Lease Liability], [Constructive Eviction Defense]. STATUTES: [Cal. Civ. Code § 1941.5(c)]. FACTS: Landlord properly changed unit locks at the request of a tenant holding a protective order but unlawfully attempted to release the violent co-tenant from their ongoing financial lease obligations."
+    },
+    "case_summary": "MATTER GSA-2026-428 (Co-Tenant Exclusion Lease Enforcement): Client Dinah Lance obtained a protective court order explicitly excluding her live-in co-tenant from their shared apartment and submitted a written lock-change demand to the landlord (intake notes). The landlord changed the locks within 24 hours at the landlord's expense, but subsequently informed Dinah that because the co-tenant could no longer access the property, Dinah would be solely responsible for the entire $3,000 monthly rent amount going forward (memo tracking). Under Civil Code Section 1941.5(c), an excluded co-tenant remains fully liable for their share of the rent under the lease. Outcome: We intervened with a statutory advisory notice; the landlord backed down, preserving the original joint lease allocations and halting an improper billing modification (case summary)."
+  },
+  {
+    "uuid": "8a9b0c1d-2e3f-4a5b-6c7d-8e9f0a1b2c3d",
+    "metadata": {
+      "case_id": "GSA-2026-441",
+      "date": "2026-02-18",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Foreclosure Eviction Defense], [90-Day Statutory Notice], [Section 8 Voucher Protection]. STATUTES: [Cal. Civ. Code § 1954.53], [42 U.S.C. § 1437f]. FACTS: Institutional purchaser at a foreclosure sale attempted to evict a Section 8 tenant using a standard 30-day notice without asserting primary residence intent."
+    },
+    "case_summary": "MATTER GSA-2026-441 (Foreclosure and Rental Assistance Protection): Client Luke Cage occupied a suburban townhome under a valid Section 8 Housing Choice Voucher agreement when the property was sold via foreclosure to a corporate investment entity (intake notes). The new owner immediately served a 30-day notice to quit, seeking vacant possession to renovate and flip the property (memo tracking). Under California and federal law, a tenant under a periodic or fixed-term tenancy following a foreclosure must be given a minimum of 90 days' written notice, and Section 8 voucher agreements must be honored by the purchaser unless they intend to occupy the unit as their primary residence. Outcome: We filed a demurrer to the unlawful detainer action highlighting the defective notice; the lender's real estate firm dismissed the suit voluntarily and executed a formal lease acknowledgement extending the tenancy (case summary)."
+  },
+  {
+    "uuid": "9b0c1d2e-3f4a-5b6c-7d8e-9f0a1b2c3d4e",
+    "metadata": {
+      "case_id": "GSA-2026-455",
+      "date": "2026-03-29",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Condominium Conversion Notice], [180-Day Termination Right], [First Option to Purchase]. STATUTES: [Cal. Gov. Code § 66427.1]. FACTS: Apartment complex owner gave tenants a standard 60-day notice to vacate for architectural conversions without issuing the required 180-day statutory notice or purchase options."
+    },
+    "case_summary": "MATTER GSA-2026-455 (Condominium Conversion Non-Compliance): Client Matt Murdock received a 60-day notice to terminate his month-to-month tenancy because the building owner obtained local approval to convert the complex into luxury condominiums (intake notes). The landlord failed to provide the mandatory 180-day advance written notice of termination required for condominium conversions and did not extend the statutory 90-day pre-emptive right to purchase the unit (memo tracking). Outcome: We filed a formal administrative complaint with the California Department of Real Estate and the municipal planning agency; the landlord withdrew the unlawful notice, issued a corrected 180-day notice, and formally extended the written purchase offer matching public terms to the client (case summary)."
+  },
+  {
+    "uuid": "0c1d2e3f-4a5b-6c7d-8e9f-0a1b2c3d4e5f",
+    "metadata": {
+      "case_id": "GSA-2026-468",
+      "date": "2026-04-14",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Tenant Harassment Injunction], [Quiet Enjoyment Breach], [Menacing Extortion Penalty]. STATUTES: [Cal. Civ. Code § 1940.2], [Cal. Civ. Code § 1927]. FACTS: Landlord repeatedly threatened a tenant with physical locks-outs and cut off utilities in a malicious attempt to force the tenant to move prior to lease expiration."
+    },
+    "case_summary": "MATTER GSA-2026-468 (Unlawful Influence and Menacing Conduct): Client Jessica Jones alleged that her landlord engaged in a targeted harassment campaign, including threatening text messages, turning off the water main twice, and blocking her parking space to coerce her into breaking her lease early (intake notes). This behavior explicitly violated the statutory prohibition against using threats, force, or menacing conduct to influence a tenant to vacate, and breached the covenant of quiet enjoyment (memo tracking). Outcome: We initiated an expedited civil action in Superior Court; the judge found the landlord's behavior to be willful and malicious, entering a permanent restraining order and awarding Jessica $4,000 in statutory civil penalties ($2,000 per distinct utility shutoff violation) plus attorney fees (case summary)."
+  },
+  {
+    "uuid": "1d2e3f4a-5b6c-7d8e-9f0a-1b2c3d4e5f6a",
+    "metadata": {
+      "case_id": "GSA-2026-479",
+      "date": "2026-05-20",
+      "attorneys": ["Sarah Jenkins, Esq.", "Marcus Vance, Esq."],
+      "preview": "TARGETS: [Early Lease Termination], [Domestic Violence Protection], [Security Deposit Abatement]. STATUTES: [Cal. Civ. Code § 1946.7]. FACTS: Domestic violence survivor terminated her fixed-term lease with 14 days' notice accompanied by a police report, but the landlord withheld her deposit as an early termination penalty."
+    },
+    "case_summary": "MATTER GSA-2026-479 (Domestic Violence Lease Termination Enforcement): Client Danny Rand represented a family member, a survivor of domestic abuse, who exercised her statutory right to terminate her lease early by providing 14 days' written notice attached to a qualifying protective order issued within the past 180 days (intake notes). The landlord accepted the keys but explicitly refused to return her $2,500 security deposit, characterizing it as a liquidated damage penalty for breaking the lease early (memo tracking). Under Section 1946.7, landlords must return security deposits without early termination penalties to qualified abuse survivors. Outcome: We sent a formal demand letter outlining the statutory $5,000 civil penalty exposure; the landlord immediately refunded the full $2,500 deposit and paid $400 in legal expenses to settle the claim (case summary)."
+  },
+  {
+    "uuid": "2d2e3f4a-5b6c-7d8e-9f0a-1b2c3d4e5f6b",
+    "metadata": {
+      "case_id": "GSA-2026-492",
+      "date": "2026-06-23",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Periodic Tenancy Just Cause], [Tenant Protection Act Eviction], [Service Fee Ban Violation]. STATUTES: [Cal. Civ. Code § 1946.1], [Cal. Civ. Code § 1946.2]. FACTS: Landlord served a 60-day notice to end a month-to-month tenancy without stating a valid just cause reason and improperly billed the tenant a $50 'posting fee'."
+    },
+    "case_summary": "MATTER GSA-2026-492 (Defective Periodic Tenancy Termination): Client Frank Castle lived in his apartment for fourteen months under a month-to-month agreement when the landlord served a 60-day notice to terminate the tenancy, leaving the reason blank (intake notes). Additionally, the landlord added a $50 'notice delivery charge' to Frank's monthly statement (memo tracking). Under the Tenant Protection Act of 2019, tenancies exceeding one year require a statutory 'just cause' reason to be explicitly detailed in the termination notice, and as of 2025, delivery fees for notices are strictly illegal. Outcome: We filed an administrative challenge detailing the structural notice defects and illegal fees; the landlord rescinded the termination notice and credited the illegal $50 back to the client's ledger (case summary)."
+  },
+  {
+    "uuid": "3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d",
+    "metadata": {
+      "case_id": "GSA-2026-510",
+      "date": "2026-02-03",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Section 8 Notice Defect], [PHA Concurrent Notification], [Tenant Protection Act Exemptions]. STATUTES: [Cal. Civ. Code § 1946.2], [HUD Reg. 24 CFR § 982.310]. FACTS: Landlord served a Section 8 tenant an unstated-cause 90-day non-renewal notice without sending a concurrent copy to the public housing authority."
+    },
+    "case_summary": "MATTER GSA-2026-510 (Section 8 Non-Renewal Procedural Defect): Client Peter Parker resided in an apartment complex under a Section 8 Housing Choice Voucher (intake notes). The landlord issued a 90-day written notice of intent to terminate the periodic tenancy at the expiration of the lease term, but neglected to state a valid 'just cause' reason under the Tenant Protection Act and completely failed to deliver a concurrent copy of the notice to the local Public Housing Agency (PHA) (memo tracking). Under California law, a concurrent copy to the PHA is an absolute jurisdictional prerequisite for eviction proceedings involving subsidized tenancies. Outcome: We filed an administrative objection with the PHA and cross-complained in the ensuing unlawful detainer; the court dismissed the eviction with prejudice due to strict compliance failure (case summary)."
+  },
+  {
+    "uuid": "4b5c6d7e-8f9a-0b1c-2d3e-4f5a6b7c8d9e",
+    "metadata": {
+      "case_id": "GSA-2026-522",
+      "date": "2026-03-15",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [No-Fault Just Cause Eviction], [Mandatory Relocation Assistance], [Substantial Remodel Pretext]. STATUTES: [Cal. Civ. Code § 1946.2(b)(2)]. FACTS: Landlord terminated a multi-year tenancy for 'substantial remodeling' but refused to issue the mandatory one-month relocation payment or waive the final month's rent."
+    },
+    "case_summary": "MATTER GSA-2026-522 (No-Fault Relocation Assistance Enforcement): Client Miles Morales received a 60-day 'no-fault' termination notice stating that the landlord intended to substantially remodel the plumbing throughout the building (intake notes). Although the landlord had a valid permit for the work, the property manager informed Miles that he would not receive any relocation assistance because the move-out was due to building maintenance rather than owner occupancy (memo tracking). Under the Tenant Protection Act of 2019, any valid no-fault tenancy termination requires the landlord to either pay one month's rent as relocation assistance or forgive the final month's rent in writing. Outcome: We sent a statutory demand letter outlining the landlord's exposure; the landlord chose to formally forgive the final month's rent ($2,200 value) in an amended written agreement to resolve the dispute (case summary)."
+  },
+  {
+    "uuid": "5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f",
+    "metadata": {
+      "case_id": "GSA-2026-540",
+      "date": "2026-05-11",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Security Deposit 21-Day Rule], [Post-Move Photographic Proof], [Bad Faith Statutory Damages]. STATUTES: [Cal. Civ. Code § 1950.5]. FACTS: Landlord withheld $1,800 from a security deposit for cleaning and painting without taking the legally mandated post-occupancy/pre-repair photographs."
+    },
+    "case_summary": "MATTER GSA-2026-540 (Security Deposit Photo Mandate Non-Compliance): Client Gwen Stacy vacated her apartment after a three-year tenancy, leaving the unit completely clean (intake notes). On the 20th day post-move, the landlord mailed an itemized statement deducting $1,800 for full repainting and deep carpet cleaning but failed to provide the mandatory pre-repair and post-repair photographs now required under the 2025 California statutory updates (memo tracking). We initiated a small claims action asserting bad faith retention. Outcome: Because the landlord could not produce verified photographs taken before the cleanings occurred to substantiate the deviations from ordinary wear and tear, the court ruled the entire deduction was invalid and ordered the landlord to return the full $1,800 plus $1,500 in statutory bad faith damages (case summary)."
+  },
+  {
+    "uuid": "6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a",
+    "metadata": {
+      "case_id": "GSA-2026-555",
+      "date": "2026-06-08",
+      "attorneys": ["Marcus Vance, Esq.", "Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Initial Inspection Right], [Pre-Existing Defect Deduction], [Itemized Statement Omission]. STATUTES: [Cal. Civ. Code § 1950.5(f)]. FACTS: Landlord conducted an requested initial inspection but later deducted funds for wall dents that were completely absent from the pre-move itemized inspection list."
+    },
+    "case_summary": "MATTER GSA-2026-555 (Initial Move-Out Inspection Enforcement): Client Wade Wilson requested an initial inspection before vacating his rental condo (intake notes). The property manager performed the walk-through with Wade present and handed him an itemized statement listing only 'kitchen counter cleaning' required to avoid deductions (memo tracking). Wade performed the cleaning, but the landlord subsequently withheld $750 from the security deposit for 'living room drywall repairs.' Under California law, a landlord cannot deduct for any defects that were identifiable during the initial inspection but omitted from the written statement provided to the tenant. Outcome: We presented the original inspection statement at trial; the judge ordered an immediate refund of the $750 since the unit was empty during the inspection and the damage could not be retroactively claimed (case summary)."
+  },
+  {
+    "uuid": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d",
+    "metadata": {
+      "case_id": "GSA-2026-602",
+      "date": "2026-02-12",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Post-Occupancy Photographic Proof], [Omitted Final Inspection Defect], [Move-Out Damage Claim]. STATUTES: [Cal. Civ. Code § 1950.5(f)], [Cal. Civ. Code § 1950.5(g)]. FACTS: Landlord attempted to deduct $1,200 for deep wall gouges uncovered only after the tenant's bulky furniture was fully moved out during final walkthrough."
+    },
+    "case_summary": "MATTER GSA-2026-602 (Post-Move Defect Discovery and Documentation): Client Luke Skywalker requested an initial walkthrough before vacating his apartment (intake notes). During that initial inspection, a large entertainment center completely obstructed the back living room wall, preventing inspection of that area (memo tracking). After Luke completely moved out, the landlord discovered severe structural drywall gouges directly behind where the entertainment center had stood. Utilizing the mandatory 2025 photographic protocol, the landlord meticulously captured time-stamped photos of the newly uncovered damage prior to executing repairs and deducted $1,200 from the security deposit, providing the invoices within 21 days. Outcome: We reviewed the documentation and advised the client that the landlord acted strictly within his legal rights under California law because the presence of the tenant's possessions had explicitly blocked the initial discovery of the damage; no further legal challenge was pursued (case summary)."
+  },
+  {
+    "uuid": "8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e",
+    "metadata": {
+      "case_id": "GSA-2026-619",
+      "date": "2026-03-18",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Useful Life Rule Proration], [Normal Wear and Tear Deduction], [Bad Faith Retaliatory Claim]. STATUTES: [Cal. Civ. Code § 1950.5(e)]. FACTS: Landlord deducted the full $2,500 replacement cost for an 8-year-old living room carpet that had moderate spotting from a multi-year tenancy."
+    },
+    "case_summary": "MATTER GSA-2026-619 (Carpet Replacement Useful Life Proration): Client Leia Organa occupied a rental unit for five years under a continuous tenancy (intake notes). Upon move-out, the landlord noted several moderate dark spots on the high-traffic areas of the living room carpet and deducted $2,500 from Leia's deposit to replace the entire carpeted area with new material (memo tracking). Administrative discovery revealed that the damaged carpet was already eight years old at the time of move-out and had a standard statutory life expectancy of ten years. Outcome: We filed a small claims action applying the proration rule, arguing the landlord was only entitled to the remaining two years of useful life (20% of the cost); the judge ordered the landlord to return $2,000 of the improper deduction and fined the landlord an additional $1,000 for bad-faith retention (case summary)."
+  },
+  {
+    "uuid": "9b0c1d2e-3f4a-5b6c-7d8e-9f0a1b2c3d4f",
+    "metadata": {
+      "case_id": "GSA-2026-634",
+      "date": "2026-04-22",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Length of Stay Paint Rule], [Environmental Window Dirt], [Statutory Itemization Challenge]. STATUTES: [Cal. Civ. Code § 1950.5(b)]. FACTS: Landlord clawed back $900 for interior repainting and exterior window washing from a tenant who had resided in the property for over three continuous years."
+    },
+    "case_summary": "MATTER GSA-2026-634 (Paint Depreciation and Window Cleanliness Dispute): Client Han Solo vacated a townhouse after renting it for three and a half consecutive years (intake notes). The property manager's 21-day statement deducted $650 for painting scuffed bedroom walls and $250 for washing heavy layers of environmental dust off the exterior window panes (memo tracking). Under established California guidelines, interior paint has an assumed maximum useful life of two to three years, completely precluding deductions for tenants staying over two years unless severe malicious destruction is proven; furthermore, exterior window soot is an environmental factor rather than tenant-caused filth. Outcome: We sent a formal demand letter highlighting these specific regulatory protections; the property management firm issued a full $900 restorative check to avoid small claims exposure (case summary)."
+  },
+  {
+    "uuid": "0c1d2e3f-4a5b-6c7d-8e9f-0a1b2c3d4e5g",
+    "metadata": {
+      "case_id": "GSA-2026-651",
+      "date": "2026-05-14",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [21-Day Rule Forfeiture], [Statutory Bad Faith Damages], [Affirmative Landlord Counterclaim]. STATUTES: [Cal. Civ. Code § 1950.5(g)(1)], [Granberry v. Islay Investments]. FACTS: Landlord completely ignored the 21-day post-vacancy deadline and attempted to present cleanup invoices only after the tenant filed suit."
+    },
+    "case_summary": "MATTER GSA-2026-651 (Total Forfeiture of Security Deposit Rights): Client Lando Calrissian moved out of his apartment but did not receive his $3,000 security deposit or any itemized breakdown within the mandatory 21-calendar-day window (intake notes). When Lando requested the funds, the landlord claimed he was still waiting for final painting receipts from his subcontractor (memo tracking). We initiated a lawsuit in Superior Court for return of the entire deposit plus statutory penalties. Outcome: Under prevailing California Supreme Court precedent, a landlord who misses the 21-day window completely forfeits the right to retain any portion of the deposit; the judge ordered a full return of the $3,000 deposit and awarded Lando an additional $4,500 in bad-faith statutory damages (case summary)."
+  },
+  {
+    "uuid": "1d2e3f4a-5b6c-7d8e-9f0a-1b2c3d4e5f6c",
+    "metadata": {
+      "case_id": "GSA-2026-670",
+      "date": "2026-06-25",
+      "attorneys": ["Marcus Vance, Esq.", "Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Building Sale Deposit Transfer], [Joint and Several Owner Liability], [New Deposit Collection Limit]. STATUTES: [Cal. Civ. Code § 1950.5(h)]. FACTS: Prior landlord vanished after a building sale without transferring the tenant's $4,000 security deposit to the purchasing entity."
+    },
+    "case_summary": "MATTER GSA-2026-670 (Security Deposit Tracking Post-Building Sale): Client Boba Fett was a tenant in a multi-family complex that was sold to a new commercial landlord (intake notes). The selling landlord failed to transfer Boba's $4,000 deposit to the buyer or return it to Boba, and subsequently became uncontactable (memo tracking). The incoming landlord attempted to demand that Boba pay a 'replacement' $4,000 deposit to establish a new ledger balance. Outcome: We intervened with a statutory notice clarifying that under Section 1950.5(h), if the selling landlord fails to execute a transfer, both the old and new owners remain jointly and severally liable, and the successor owner must absorb the deposit liability without charging current tenants an extra fee; the new landlord dropped the demand and credited Boba's ledger for the original $4,000 (case summary)."
+  },
+  {
+    "uuid": "2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d",
+    "metadata": {
+      "case_id": "GSA-2026-701",
+      "date": "2026-02-09",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Small Claims Jurisdiction], [Bad Faith Penalty Multiplier], [Reciprocal Fee Clause]. STATUTES: [Cal. Civ. Code § 1950.5(n)], [Cal. Civ. Code § 1717]. FACTS: Landlord maliciously withheld a $5,000 security deposit. Tenant sought full recovery and maximum statutory penalties in small claims court."
+    },
+    "case_summary": "MATTER GSA-2026-701 (Bad Faith Security Deposit Recovery): Client Luke Cage sought assistance after his former landlord refused to return his $5,000 security deposit, offering no itemized statement or photographic proof within 21 days (intake notes). Because the total claim including statutory penalties exceeded small claims limits, Luke elected to waive damages above $12,500 to utilize the expedited small claims forum (memo tracking). Under California law, proving 'bad faith' retention allows the court to award up to twice the deposit amount as a penalty, alongside actual damages. Outcome: The small claims judge found clear bad faith and awarded Luke $12,500 ($5,000 main deposit plus $7,500 of the statutory penalty, capping at the jurisdictional limit) (case summary)."
+  },
+  {
+    "uuid": "3b4c5d6e-7f8a-9b0c-1d2e-3f4a5b6c7d8e",
+    "metadata": {
+      "case_id": "GSA-2026-722",
+      "date": "2026-03-22",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Fixed-Term Tenant Death], [Estate Rent Liability], [Mitigation of Damages Duty]. STATUTES: [Cal. Civ. Code § 1934]. FACTS: Tenant passed away four months into a one-year lease. Landlord demanded the estate pay the remaining eight months of rent upfront without attempting to relet the unit."
+    },
+    "case_summary": "MATTER GSA-2026-722 (Estate Tenancy Liability Demarcation): The executor of the estate of late tenant Foggy Nelson contacted us regarding a rent dispute (intake notes). Foggy passed away midway through a fixed-term lease, and the landlord demanded that the estate cover the remaining eight months of rent immediately, refusing to market the unit (memo tracking). While a tenant's estate remains financially responsible for a fixed-term lease after death, the landlord is bound by a strict legal duty to make a good faith, expedited effort to relet the unit to mitigate the estate's liability. Outcome: We issued a formal notice surrendering possession and detailing the landlord's mitigation duties; the landlord subsequently relet the unit within 24 days, limiting the estate's total remaining obligation to a brief prorated period (case summary)."
+  },
+  {
+    "uuid": "4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f",
+    "metadata": {
+      "case_id": "GSA-2026-745",
+      "date": "2026-04-18",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Automatic Holdover Tenancy], [Just Cause Tenure Threshold], [Immediate Eviction Preemption]. STATUTES: [Cal. Civ. Code § 1945], [Cal. Civ. Code § 1946.2]. FACTS: Landlord accepted a full month's rent check after a fixed-term lease expired, but then served an immediate eviction notice without cause three days later."
+    },
+    "case_summary": "MATTER GSA-2026-745 (Holdover Tenancy Creation and Protection): Client Jessica Jones remained in her apartment after her one-year fixed lease expired (intake notes). The building was a newer construction exempt from the Tenant Protection Act's just cause limits. The landlord accepted her standard monthly rent check on the first of the month but subsequently issued a three-day notice to quit, claiming she was an illegal holdover occupant (memo tracking). Under long-standing California law, when a landlord accepts rent after a lease term ends, an automatic periodic holdover tenancy is established under the same terms. Outcome: We filed an opposition showing proof of the cashed check, forcing the landlord to withdraw the defective notice and recognize Jessica's valid month-to-month status, requiring proper advance notice to alter (case summary)."
+  },
+  {
+    "uuid": "5d6e7f8a-9b0c-1d2e-3f4a-5b6c7d8e9f0a",
+    "metadata": {
+      "case_id": "GSA-2026-768",
+      "date": "2026-05-19",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [SCRA Lease Termination], [Prorated Military Rent], [Advance Refund Mandate]. STATUTES: [50 U.S.C. § 3955], [Cal. Mil. & Vet. Code § 409]. FACTS: Active-duty service member broke his lease following 90-day deployment orders, but the landlord refused to return pre-paid rent and his deposit."
+    },
+    "case_summary": "MATTER GSA-2026-768 (Military Lease Termination Enforcement): Client Danny Rand, an active-duty military servicemember, received deployment orders for a duration exceeding 90 days (intake notes). He provided his landlord with written notice of termination and a copy of his official military orders on June 15, with rent having been paid through July 10 (memo tracking). The landlord wrongfully refused to prorate his final month's rent or refund his advance security deposit, claiming a lease break penalty. Under federal and state military protections, termination takes effect 30 days after the next rent due date, and all advance fees must be refunded within 30 days of the effective date. Outcome: We sent a statutory compliance letter; the landlord backed down, verified the August 9 effective termination date, and issued a complete refund of the prorated advance rent and deposit (case summary)."
+  },
+  {
+    "uuid": "6e7f8a9b-0c1d-2e3f-4a5b-6c7d8e9f0a1b",
+    "metadata": {
+      "case_id": "GSA-2026-789",
+      "date": "2026-06-11",
+      "attorneys": ["Marcus Vance, Esq.", "Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Lease Addendum Disclosure], [TPA Exemption Notice], [Just Cause Enforcement]. STATUTES: [Cal. Civ. Code § 1946.2(f)], [Cal. Civ. Code § 1947.12]. FACTS: Landlord attempted a no-cause eviction on a single-family home rental without ever providing the required statutory exemption notice in the lease."
+    },
+    "case_summary": "MATTER GSA-2026-789 (Tenant Protection Act Notice Omission): Client Frank Castle was served with a 30-day notice to terminate his tenancy in a leased single-family residence where he had resided for 18 months (intake notes). The landlord asserted that single-family homes are completely exempt from the Tenant Protection Act's just-cause requirements (memo tracking). However, for a single-family home to legally claim an exemption, the landlord must have explicitly included a specific, contractually mandated disclosure statement in the lease agreement or as a signed addendum. Outcome: We reviewed the original lease, confirmed the total absence of the required statutory disclosure language, and successfully demurred to the eviction on the basis that the landlord was bound by state just-cause rules; the eviction was dismissed (case summary)."
+  },
+  {
+    "uuid": "2f4e6a8b-0c1d-3e5f-7a9b-1c3d5e7f9a2b",
+    "metadata": {
+      "case_id": "GSA-2026-805",
+      "date": "2026-02-17",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [At-Fault Pre-Notice Cure], [Three-Day Notice Without Cure], [Tenant Protection Act Compliance]. STATUTES: [Cal. Civ. Code § 1946.2(c)]. FACTS: Landlord served an immediate 3-day notice to quit for an alleged uncorrected lease violation without first providing a distinct warning notice and a separate opportunity to cure."
+    },
+    "case_summary": "MATTER GSA-2026-805 (At-Fault Eviction Notice Deficiency): Client Kamala Khan faced eviction after her landlord served an immediate three-day notice to quit, citing an unauthorized pet on the premises (intake notes). The property is an older apartment building fully covered by the Tenant Protection Act's just cause provisions (memo tracking). Under Section 1946.2(c), if an at-fault violation is curable, the landlord cannot issue an absolute notice to quit without first providing a preliminary notice of violation and a reasonable opportunity to correct the problem. Outcome: We filed an answer to the unlawful detainer highlighting the lack of a separate, prior opportunity to cure; the court sustained our defense and dismissed the landlord's lawsuit for failure to meet the statutory pre-notice prerequisites (case summary)."
+  },
+  {
+    "uuid": "3f5e7a9b-1c2d-4e6f-8a0b-2c4d6e8f0a3c",
+    "metadata": {
+      "case_id": "GSA-2026-822",
+      "date": "2026-03-11",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [No-Fault Notice Disclosure], [Relocation Option Election], [Damages Clawback Defense]. STATUTES: [Cal. Civ. Code § 1946.2(d)]. FACTS: Landlord issued a no-fault notice to terminate a tenancy for owner move-in but failed to state whether they would pay relocation funds or waive the final month's rent."
+    },
+    "case_summary": "MATTER GSA-2026-822 (No-Fault Relocation Option Disclosure Defect): Client Doreen Green received a 60-day notice terminating her multi-year tenancy so the landlord's son could occupy the unit (intake notes). While the notice stated the reason was an owner-intent move-in, it completely omitted the mandatory statutory text indicating how the landlord would fulfill the relocation assistance obligation (memo tracking). The Tenant Protection Act strictly requires the termination notice itself to outline the landlord's explicit election between a direct one-month rent payment or a written waiver of the final month's rent. Outcome: We notified the landlord's counsel of the fatal facial defect in the notice; the landlord voluntarily dismissed their planned unlawful detainer action to avoid an adverse judgment and re-served a compliant notice (case summary)."
+  },
+  {
+    "uuid": "4a6f8b0c-2d3e-5f7a-9b1c-3d5e7f9a1b4d",
+    "metadata": {
+      "case_id": "GSA-2026-840",
+      "date": "2026-04-14",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Three-Day Notice Day Counting], [Court Holiday Exclusion], [Premature Unlawful Detainer Filing]. STATUTES: [Cal. Civ. Code § 1946.2], [Cal. Code Civ. Proc. § 12]. FACTS: Landlord served a 3-day notice to pay or quit on the Friday before Labor Day and counted Saturday, Sunday, and Monday as part of the compliance period."
+    },
+    "case_summary": "MATTER GSA-2026-840 (Three-Day Notice Holiday Miscalculation): Client Peter Quill was served a three-day notice to pay rent or quit on the Friday directly preceding Labor Day weekend (intake notes). The landlord counted Saturday, Sunday, and the Monday federal holiday as the three days and filed an unlawful detainer lawsuit on Tuesday morning (memo tracking). For curable three-day notices, California law strictly dictates that counting begins on the first day that is not a weekend or court holiday; therefore, day one was Tuesday, day two was Wednesday, and day three was Thursday. Outcome: We filed a motion to quash the summons on the grounds that the eviction lawsuit was filed prematurely before the tenant's statutory compliance period had expired; the court granted the motion and quashed the suit (case summary)."
+  },
+  {
+    "uuid": "5b7f9c1d-3e4f-6a8b-0c1d-4e6f8a0b2c5e",
+    "metadata": {
+      "case_id": "GSA-2026-865",
+      "date": "2026-05-20",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Substituted Service Compliance], [Nail and Mail Mailing Prong], [Notice Period Commencement]. STATUTES: [Cal. Code Civ. Proc. § 1162]. FACTS: Landlord posted a three-day notice on the front door of a tenant's apartment but completely forgot to mail a concurrent copy to the address."
+    },
+    "case_summary": "MATTER GSA-2026-865 (Service of Process Posting and Mailing Defect): Client Carol Danvers discovered a three-day notice to quit tacked to her front door after returning home from work (intake notes). The landlord immediately filed an eviction action exactly three days later without ever mailing a secondary copy of the notice to her residence (memo tracking). Under the statutory 'posting and mailing' procedure, service is legally incomplete until both prongs are satisfied, and the compliance clock cannot begin until the day after both requirements are met. Outcome: We presented proof at the summary trial that no copy was ever delivered via the U.S. Postal Service; the judge ruled the service was invalid, stripping the court of jurisdiction and resulting in a judgment for the tenant (case summary)."
+  },
+  {
+    "uuid": "6c8a0d2e-4f5g-7b9c-1d2e-5f7a9b1c3d6f",
+    "metadata": {
+      "case_id": "GSA-2026-890",
+      "date": "2026-06-23",
+      "attorneys": ["Sarah Jenkins, Esq.", "Marcus Vance, Esq."],
+      "preview": "TARGETS: [Summary Eviction Self-Help], [Utility Interruption Liability], [Statutory Daily Penalties]. STATUTES: [Cal. Civ. Code § 789.3]. FACTS: Landlord bypassed the court system entirely, cut off water and electricity to force an alleged holdover tenant out, and changed the exterior door locks."
+    },
+    "case_summary": "MATTER GSA-2026-890 (Illegal Landlord Self-Help and Utility Disconnection): Client Scott Lang remained in possession of his apartment following a disputed lease termination notice (intake notes). Rather than filing an unlawful detainer summary lawsuit as mandated by the court-administered eviction process, the landlord shut off the building's water supply, disconnected Scott's electricity, and changed the deadbolt locks on the front door (memo tracking). California law stringently prohibits any self-help measures, making landlords liable for actual damages plus punitive fines of up to $100 per day for intentional utility disruption. Outcome: We obtained an emergency temporary restraining order forcing the immediate restoration of utilities and utility access, and secured a settlement awarding Scott $4,500 in statutory daily penalties and moving cost damages (case summary)."
+  },
+  {
+    "uuid": "7d9b0e1a-3f5a-4b6c-8d2e-1a2b3c4d5e6f",
+    "metadata": {
+      "case_id": "GSA-2026-911",
+      "date": "2026-01-15",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Ten Court Day Response Deadline], [Affirmative Defense Pleading], [Default Judgment Avoidance]. STATUTES: [Cal. Code Civ. Proc. § 1167]. FACTS: Tenant was served an unlawful detainer complaint but delayed filing a response, narrowly escaping a default judgment by submitting a written answer on the tenth court day."
+    },
+    "case_summary": "MATTER GSA-2026-911 (Expedited Unlawful Detainer Response): Client Matt Murdock sought urgent representation after receiving an unlawful detainer summons and complaint (intake notes). Due to recent statutory revisions, the deadline to file an answer is restricted to ten court days, excluding weekends and judicial holidays, making immediate pleading imperative to avoid a default judgment (memo tracking). We prepared a comprehensive written answer containing essential affirmative defenses, specifically noting that the landlord's underlying three-day notice demanded an incorrect and inflated rent amount. Outcome: The answer was timely filed with the Clerk of Court on the tenth court day, successfully blocking the landlord's default application and preserving the tenant's right to contest the eviction at trial (case summary)."
+  },
+  {
+    "uuid": "8e0c1f2b-4a6b-5c7d-9e3f-2b3c4d5e6f7a",
+    "metadata": {
+      "case_id": "GSA-2026-928",
+      "date": "2026-02-24",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Answer Proof of Service], [Non-Party Adult Server Requirement], [Default Judgment Technical Defeat]. STATUTES: [Cal. Code Civ. Proc. § 1013a]. FACTS: Landlord attempted to secure a default judgment by claiming they never received the tenant's answer, despite it being served by mail via an independent adult."
+    },
+    "case_summary": "MATTER GSA-2026-928 (Answer Service and Proof Verification): Client Foggy Nelson filed a timely answer to an eviction lawsuit but faced a default risk when the landlord claimed non-receipt of the document (intake notes). Under California civil procedure, a tenant must ensure that a copy of the written answer is served upon the landlord's attorney by an individual over the age of 18 who is not a party to the litigation (memo tracking). This third-party server must complete and execute a formal Proof of Service form, which is subsequently filed with the Clerk of the Court. Outcome: We produced the timestamped Proof of Service executed by the independent server; the court rejected the landlord's default motion, scheduling the matter for a standard trial (case summary)."
+  },
+  {
+    "uuid": "9f1d2e3f-5b7c-6d8e-0f4a-3c4d5e6f7a8b",
+    "metadata": {
+      "case_id": "GSA-2026-942",
+      "date": "2026-03-18",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Five-Day Discovery Notice], [Pre-Trial Discovery Completion Deadline], [Expedited Trial Discovery Prep]. STATUTES: [Cal. Code Civ. Proc. § 2030.260]. FACTS: Landlord refused to respond to a tenant's document requests, claiming the standard 30-day civil discovery window applied instead of the summary eviction timeline."
+    },
+    "case_summary": "MATTER GSA-2026-942 (Summary Eviction Discovery Enforcement): Client Luke Cage required expedited discovery to obtain property maintenance records demonstrating a major breach of the warranty of habitability (intake notes). Because unlawful detainer actions are summary proceedings, the discovery process operates under compressed timelines requiring a minimum of five days' notice for personal delivery or ten days if served by mail (memo tracking). Furthermore, all discovery mechanisms must be completed no later than five days before the scheduled trial date. Outcome: We personally served the landlord's counsel with requests for production; when they objected based on standard civil timelines, we filed an immediate motion to compel under the summary rules, forcing the production of the critical maintenance logs prior to the trial deadline (case summary)."
+  },
+  {
+    "uuid": "0a2b3c4d-6e8f-7a9b-1c2d-4e5f6g7h8i9j",
+    "metadata": {
+      "case_id": "GSA-2026-966",
+      "date": "2026-05-12",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Ex Parte Application for Stay], [Hardship Execution Delay], [Writ of Possession Postponement]. STATUTES: [Cal. Code Civ. Proc. § 1176]. FACTS: Tenant lost an eviction trial due to a technical lease breach and faced an immediate lockout, risking extreme hardship to her bedridden family member."
+    },
+    "case_summary": "MATTER GSA-2026-966 (Eviction Judgment Stay of Execution): Client Jessica Jones lost an unlawful detainer trial and was faced with an impending sheriff's lockout following the issuance of a writ of possession (intake notes). We prepared an urgent ex parte application for a stay of execution, supported by a detailed written declaration executed under penalty of perjury outlining severe medical hardships if an immediate relocation was forced (memo tracking). The court possesses equitable discretion to temporarily delay eviction execution, conditioned upon the tenant paying prospective rent for the exact duration of the stay. Outcome: The judge granted the ex parte application, staying the sheriff's lockout for 21 days to facilitate a safe, orderly relocation, while explicitly noting no past-due rent was required to secure this temporary relief (case summary)."
+  },
+  {
+    "uuid": "1b3c4d5e-7f9a-8b0c-2d3e-5f6g7h8i9j0k",
+    "metadata": {
+      "case_id": "GSA-2026-989",
+      "date": "2026-06-22",
+      "attorneys": ["Marcus Vance, Esq.", "Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Writ of Possession Five-Day Window], [Forcible Sheriff Eviction], [Personal Property Storage Duty]. STATUTES: [Cal. Civ. Code § 1951.3]. FACTS: Sheriff executed a writ of possession and locked out a tenant who left behind furniture; the landlord threatened to throw the items into the street immediately."
+    },
+    "case_summary": "MATTER GSA-2026-989 (Post-Eviction Property Reclamation): Client Danny Rand was forcibly evicted by the sheriff after failing to vacate within five days of being served a writ of possession and notice to vacate (intake notes). The landlord locked the unit containing Danny's remaining personal belongings and demanded immediate payment of all back rent before releasing the property (memo tracking). Under California law, a landlord must exercise reasonable care and store a tenant's left-behind property for at least 15 days, and cannot condition the release of personal belongings on the payment of past-due court judgments, but only on reasonable storage and moving costs. Outcome: We sent a formal demand letter outlining the statutory property storage mandates; the landlord complied, accepted a calculated daily rental value for the storage days, and released the items safely to the client (case summary)."
+  },
+  {
+    "uuid": "2c8d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
+    "metadata": {
+      "case_id": "GSA-2026-1011",
+      "date": "2026-02-18",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Default Judgment Vacate Window], [Excusable Neglect Pleading], [Proposed Answer Plausibility]. STATUTES: [Cal. Code Civ. Proc. § 473(b)]. FACTS: Tenant failed to answer an eviction complaint due to sudden medical incapacitation; landlord secured a default writ while tenant was hospitalized."
+    },
+    "case_summary": "MATTER GSA-2026-1011 (Vacating Default Eviction Judgment): Client Matt Murdock sought urgent relief after discovering that a default judgment and a writ of possession had been entered against him while he was hospitalized with a severe illness (intake notes). Because he was completely incapacitated during the ten court-day response window, we initiated an expedited proceeding under Section 473(b) to vacate the default based on excusable neglect (memo tracking). As required by California summary procedure, we accompanied the motion with a verified 'proposed answer' demonstrating a meritorious defense—specifically, that the landlord failed to properly serve the underlying notice. Outcome: The court found satisfactory excuse, set aside the default judgment, and ordered the clerk to file the proposed answer, successfully halting the impending sheriff's lockout (case summary)."
+  },
+  {
+    "uuid": "3d9e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a",
+    "metadata": {
+      "case_id": "GSA-2026-1034",
+      "date": "2026-03-24",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Automatic Stay Relief Lift], [Pre-Petition Eviction Judgment], [Bad Faith Bankruptcy Sanctions]. STATUTES: [11 U.S.C. § 362]. FACTS: Tenant filed a skeletal bankruptcy petition solely to block a pre-existing eviction judgment; landlord petitioned the federal court to lift the stay."
+    },
+    "case_summary": "MATTER GSA-2026-1034 (Bankruptcy Automatic Stay Overrule): We represented landlord Foggy Nelson regarding an eviction action against a tenant who filed a pro se bankruptcy petition on the eve of a scheduled sheriff's lockout (intake notes). The tenant had no other outstanding debts and filed no financial schedules, utilizing the filing purely as a delay tactic (memo tracking). Because the unlawful detainer judgment had been obtained prior to the bankruptcy petition, the automatic stay's protection was highly restricted. Outcome: We filed a motion for relief from the automatic stay in federal bankruptcy court; the judge ruled the petition was filed in bad faith solely to frustrate the summary state court process, lifted the stay immediately, and permitted the sheriff to proceed with the execution of the writ of possession (case summary)."
+  },
+  {
+    "uuid": "4e0f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b",
+    "metadata": {
+      "case_id": "GSA-2026-1055",
+      "date": "2026-04-09",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Six-Month Retaliation Presumption], [Repair and Deduct Exercise], [Pretextual Motive Rebuttal]. STATUTES: [Cal. Civ. Code § 1942.5(a)]. FACTS: Landlord served a 30-day notice to quit exactly two months after the tenant utilized the statutory repair-and-deduct remedy for a broken heater."
+    },
+    "case_summary": "MATTER GSA-2026-1055 (Retaliatory Eviction Defense Enforcement): Client Jessica Jones faced an eviction lawsuit after her landlord issued a notice to terminate her periodic tenancy (intake notes). Two months prior, Jessica had formally executed a 'repair and deduct' remedy after the landlord repeatedly ignored her written requests to fix a broken water heater (memo tracking). Under Section 1942.5(a), if a landlord initiates eviction actions within six months of a tenant exercising such a right, the law presumes a retaliatory motive, shifting the burden onto the landlord to prove a good-faith, non-pretextual reason. Outcome: The landlord failed to establish a credible, alternative economic justification at trial; the court ruled the eviction was unlawfully retaliatory and entered judgment for Jessica, awarding her $2,000 in statutory damages (case summary)."
+  },
+  {
+    "uuid": "5f1g7h8i-9j0k-1l2m-3n4o-5p6q7r8s9t0u",
+    "metadata": {
+      "case_id": "GSA-2026-1078",
+      "date": "2026-05-14",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Discriminatory Retaliation Motive], [Fair Housing Act Defense], [Civil Rights Department Liaison]. STATUTES: [Cal. Gov. Code § 12955]. FACTS: Landlord targeted an active tenant organizer for eviction, using a minor noise complaint as a pretext to disguise a discriminatory animus."
+    },
+    "case_summary": "MATTER GSA-2026-1078 (Retaliatory Discrimination and Fair Housing): Client Luke Cage was served with an unlawful detainer complaint after he publicly organized a building-wide tenants' association to protest unsafe living conditions (intake notes). The landlord claimed the eviction was based on a single, minor noise incident, but internal communications revealed a dominant purpose to punish Luke for his advocacy (memo tracking). California's Fair Employment and Housing Act provides an absolute affirmative defense if an eviction is driven by a desire to suppress protected tenant organizing or housing rights activities. Outcome: We presented clear proof of the landlord's retaliatory animus at trial; the court deemed the noise violation a mere pretext, ruled the eviction discriminatory, and dismissed the action with prejudice (case summary)."
+  },
+  {
+    "uuid": "6g2h8i9j-0k1l-2m3n-4o5p-6q7r8s9t0u1v",
+    "metadata": {
+      "case_id": "GSA-2026-1102",
+      "date": "2026-06-25",
+      "attorneys": ["Sarah Jenkins, Esq.", "Marcus Vance, Esq."],
+      "preview": "TARGETS: [Legal Document Assistant Limits], [Unauthorized Practice of Law], [UDA Contract Cancellation]. STATUTES: [Cal. Bus. & Prof. Code § 6400]. FACTS: Tenant paid an unregulated 'eviction defense clinic' an upfront fee, only to discover they were unregistered assistants who filled out forms incorrectly."
+    },
+    "case_summary": "MATTER GSA-2026-1102 (Unregulated Eviction Clinic Fraud): Client Danny Rand engaged our firm after previously hiring a for-profit 'eviction defense clinic' that falsely promised a guaranteed trial victory (intake notes). The clinic operators, who were merely non-lawyer Unlawful Detainer Assistants (UDAs), charged heavy upfront fees and provided flawed legal advice, nearly causing a default judgment (memo tracking). By law, UDAs cannot provide legal counsel, must be formally registered with the County Clerk, and their contracts are subject to a strict 24-hour consumer cancellation window. Outcome: We stepped in, corrected the defective court filings, and issued a formal statutory notice rescinding the UDA contract, forcing the clinic to return Danny's upfront fees (case summary)."
+  },
+  {
+    "uuid": "a7b3c4d5-e6f7-8a9b-0c1d-2e3f4a5b6c7d",
+    "metadata": {
+      "case_id": "GSA-2026-1215",
+      "date": "2026-03-11",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Legal Document Assistant Limits], [Registration Disclosure Duty], [UDA Fraud Prevention]. STATUTES: [Cal. Bus. & Prof. Code § 6400]. FACTS: Tenant paid a 'paralegal service' to prepare a motion to quash service, but the service failed to disclose mandatory registration data, indicating an illegal operation."
+    },
+    "case_summary": "MATTER GSA-2026-1215 (Defective Document Assistant Filings): Client Matt Murdock requested intervention after hiring a self-proclaimed 'paralegal service' to handle his summary responses (intake notes). The company drafted a defective Motion to Quash Service of Summons but refused to provide county registration numbers or sign as a registered Legal Document Assistant (LDA) or Unlawful Detainer Assistant (UDA) (memo tracking). Under California law, paralegals are strictly forbidden from practicing law independently or filing documents without direct attorney supervision, and authentic UDAs must explicitly disclose their valid county registration details on all pleadings. Outcome: We took over the case, corrected the technical errors, and submitted a regulatory report against the fraudulent non-attorney service for the unauthorized practice of law (case summary)."
+  },
+  {
+    "uuid": "b8c4d5e6-f7a8-9b0c-1d2e-3f4a5b6c7d8e",
+    "metadata": {
+      "case_id": "GSA-2026-1239",
+      "date": "2026-04-20",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Mediation Fee Structuring], [Voluntary Dispute Resolution], [Non-Binding Settlement Facilitation]. STATUTES: [Cal. Evid. Code § 1119]. FACTS: Parties paused an active eviction trial to try courthouse mediation, successfully engineering a voluntary move-out timetable without a court judgment."
+    },
+    "case_summary": "MATTER GSA-2026-1239 (Courthouse Mediation Settlement): Client Foggy Nelson was embroiled in an eviction dispute over alleged unauthorized occupants (intake notes). Prior to trial, we elected to utilize the county-funded alternative dispute resolution program, which provides neutral mediators right at the courthouse to facilitate a voluntary compromise (memo tracking). Unlike a formal arbitrator, the mediator has no power to impose a binding ruling, but rather helps both sides coordinate an acceptable middle ground to escape litigation risks. Outcome: The parties formulated a voluntary settlement agreement where the tenant agreed to a structured transition, avoiding an adverse trial judgment and completely saving both parties from severe litigation fees (case summary)."
+  },
+  {
+    "uuid": "c9d5e6f7-a8b9-0c1d-2e3f-4a5b6c7d8e9f",
+    "metadata": {
+      "case_id": "GSA-2026-1262",
+      "date": "2026-05-18",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Prejudgment Claim Intervention], [Unnamed Occupant Eviction Safeguard], [Writ Protection Entry]. STATUTES: [Cal. Code Civ. Proc. § 415.46]. FACTS: Unnamed occupant learned that the main tenant faced an eviction lawsuit, and filed a statutory intervention form to secure an individual hearing before the sheriff's lockout."
+    },
+    "case_summary": "MATTER GSA-2026-1262 (Unnamed Occupant Possession Claim): Client Jessica Jones had been residing in an apartment as a roommate but was never officially added to the formal written lease agreement (intake notes). When the landlord filed an unlawful detainer action against the primary tenant, they failed to serve a Prejudgment Claim of Right to Possession on the unnamed occupants at the unit (memo tracking). Because she was omitted from the original summons and met the statutory residency requirements, we executed a formal Claim of Right to Possession to halt the sheriff's post-judgment execution. Outcome: The court accepted the submission, adding Jessica as an individual party defendant, which successfully stopped the immediate lockout and granted her the full right to present her standalone habitability defenses at trial (case summary)."
+  },
+  {
+    "uuid": "d0e6f7a8-b9c0-1d2e-3f4a-5b6c7d8e9f0a",
+    "metadata": {
+      "case_id": "GSA-2026-1288",
+      "date": "2026-06-15",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Implied Warranty Substantial Breach], [Rent Withholding Justification], [Escrow Account Deposit Verification]. STATUTES: [Cal. Civ. Code § 1941.1]. FACTS: Landlord attempted to evict a tenant for nonpayment, but the tenant successfully established a complete defense by showing a major water leak was left unrepaired for months."
+    },
+    "case_summary": "MATTER GSA-2026-1288 (Habitability Defense Enforcement): Client Luke Cage withheld his monthly rent payments after a major structural pipe leak caused severe toxic mold growth across his bedroom, which the landlord neglected despite multiple notices (intake notes). The landlord responded by initiating an eviction action based strictly on nonpayment of rent (memo tracking). At trial, we asserted a breach of the implied warranty of habitability, providing verified evidence that the building code violations directly endangered the tenant's health, and confirmed the client had deposited the disputed funds securely inside an escrow account. Outcome: The court ruled the unit was legally uninhabitable, slashed the past-due rent balance by 50%, ordered the landlord to perform comprehensive remediation, and explicitly barred the eviction (case summary)."
+  },
+  {
+    "uuid": "e1f7a8b9-c0d1-2e3f-4a5b-6c7d8e9f0a1b",
+    "metadata": {
+      "case_id": "GSA-2026-1311",
+      "date": "2026-07-09",
+      "attorneys": ["Sarah Jenkins, Esq.", "Marcus Vance, Esq."],
+      "preview": "TARGETS: [Relocation Benefit Mandates], [No-Fault Just Cause Termination], [Tenant Protection Act Compliance]. STATUTES: [Cal. Civ. Code § 1946.2]. FACTS: Corporate landlord issued a notice to vacate for an owner-move-in but failed to provide the mandatory one-month statutory relocation payment, invalidating the eviction action."
+    },
+    "case_summary": "MATTER GSA-2026-1311 (No-Fault Relocation Benefit Enforcement): Client Danny Rand received an eviction notice from his landlord citing a no-fault 'just cause' provision under the Tenant Protection Act of 2019 to accommodate an owner-move-in (intake notes). Although Danny had occupied the property for over two years, the landlord refused to supply a relocation payment or waive the final month's rent as strictly mandated by state law (memo tracking). Under Section 1946.2, any no-fault tenancy termination is contextually defective unless the landlord pays an amount exactly equal to one month of the tenant's current rent at the time of notice. Outcome: We filed an answer exposing the lack of statutory compliance; the court agreed that the omission completely invalidated the termination notice and dismissed the unlawful detainer action (case summary)."
+  },
+  {
+    "uuid": "f2a8b9c0-d1e2-3f4a-5b6c-7d8e9f0a1b2c",
+    "metadata": {
+      "case_id": "GSA-2026-1402",
+      "date": "2026-03-05",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Unnamed Occupant Intervention Window], [Prejudgment Claim Ten-Day Deadline], [Automatic Pleading Requirement]. STATUTES: [Cal. Code Civ. Proc. § 415.46]. FACTS: An unnamed subtenant was served with a Prejudgment Claim form alongside the main eviction but failed to file it within ten days, risking a total lockout."
+    },
+    "case_summary": "MATTER GSA-2026-1402 (Prejudgment Claim Intervention Timeline): Client Matt Murdock discovered that an eviction action was initiated against his roommate, the primary leaseholder, and that a state process server had concurrently served a blank Prejudgment Claim of Right to Possession form on all unnamed occupants (intake notes). Under California eviction rules, unnamed occupants have exactly ten calendar days from the date of service to execute and file this form with the Clerk of Court to protect their independent rights (memo tracking). If they file timely, they automatically become direct defendants in the unlawful detainer action and must submit a formal written answer within five days. Outcome: We successfully filed the Prejudgment Claim on the ninth day along with a fee waiver request, blocking the landlord from executing an immediate building-wide default writ (case summary)."
+  },
+  {
+    "uuid": "03b9c0d1-e2f3-4a5b-6c7d-8e9f0a1b2c3d",
+    "metadata": {
+      "case_id": "GSA-2026-1428",
+      "date": "2026-04-14",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Post-Writ Claim Hearing], [Fifteen-Day Rent Escrow Deposit], [Sheriff Lockout Eviction Stop]. STATUTES: [Cal. Code Civ. Proc. § 1174.3]. FACTS: Sheriff arrived to execute a writ of possession omitting the tenant's minor aunt; she filed a direct Claim of Right to Possession on the spot."
+    },
+    "case_summary": "MATTER GSA-2026-1428 (Post-Writ Eviction Stay Challenge): Client Foggy Nelson required an emergency intervention when the county sheriff arrived to execute an eviction lockout against a property where the landlord had neglected to serve a Prejudgment Claim form at the outset (intake notes). Foggy, an unnamed occupant with established long-term residency, filled out a Claim of Right to Possession form and handed it directly to the deputy, which legally forced an immediate halt to the eviction (memo tracking). To sustain the delay, the occupant was required to pay the court filing fee and deposit an amount equal to 15 days' rent within two court days. Outcome: We successfully managed the emergency filing fee process and rent deposit, triggering a mandatory statutory hearing where the court evaluated the validity of his independent tenancy rights (case summary)."
+  },
+  {
+    "uuid": "14c0d1e2-f3a4-5b6c-7d8e-9f0a1b2c3d4e",
+    "metadata": {
+      "case_id": "GSA-2026-1455",
+      "date": "2026-05-20",
+      "attorneys": ["Sarah Jenkins, Esq."],
+      "preview": "TARGETS: [Lead paint Hazmat Disclosure], [Pre-1978 Housing Warning Mandate], [Rental Agreement Rescission]. STATUTES: [24 C.F.R. § 35.92]. FACTS: Corporate landlord leased a residential unit constructed in 1965 but failed to append a federal lead warning notice or deliver the mandatory awareness pamphlet."
+    },
+    "case_summary": "MATTER GSA-2026-1455 (Lead-Paint Warning Enforcement): Client Jessica Jones moved into an older multi-family apartment building and later uncovered extensive flaking paint chip hazards around the window sills (intake notes). A historical records check confirmed the residential property was built prior to 1978, meaning the landlord was subject to federal strict disclosure mandates requiring a signed Lead Warning Statement and the distribution of an approved prevention pamphlet (memo tracking). Failure to supply these documents constitutes a material health and safety violation, supporting an affirmative defense of structural unhabitability in state court summary actions. Outcome: We asserted the total absence of federal lead hazard notices as a complete defense in the pending eviction lawsuit, forcing the landlord to dismiss the action and pay for complete professional lead remediation (case summary)."
+  },
+  {
+    "uuid": "25d1e2f3-a4b5-6c7d-8e9f-0a1b2c3d4e5f",
+    "metadata": {
+      "case_id": "GSA-2026-1479",
+      "date": "2026-06-18",
+      "attorneys": ["Marcus Vance, Esq."],
+      "preview": "TARGETS: [Security Deposit Invoice Waiver], [Itemized Deduction Accountings], [Hourly Rate Work Description]. STATUTES: [Cal. Civ. Code § 1950.5(h)]. FACTS: Landlord deducted $1,200 for cleanup from a security deposit but refused to produce invoices, relying on a hidden waiver clause within a digital lease agreement."
+    },
+    "case_summary": "MATTER GSA-2026-1479 (Security Deposit Deduction Defeat): Client Luke Cage sought the recovery of his $2,500 security deposit after his landlord withheld the bulk of the funds using generic, handwritten line items (intake notes). The landlord claimed that Luke had waived his statutory right to receive physical invoices or receipts under an online lease provision (memo tracking). Under California amendments, any valid waiver of documentation rights must explicitly and substantially recite the full statutory text of Section 1950.5(h)(2), and internal work must itemize exact hours and reasonable rates. Outcome: We demonstrated that the landlord's generic lease clause was legally non-compliant and invalid; the court ruled the waiver ineffective, found the deductions unsubstantiated, and ordered the complete return of the security deposit (case summary)."
+  },
+  {
+    "uuid": "36e2f3a4-b5c6-7d8e-9f0a-1b2c3d4e5f6g",
+    "metadata": {
+      "case_id": "GSA-2026-1511",
+      "date": "2026-07-13",
+      "attorneys": ["Sarah Jenkins, Esq.", "Marcus Vance, Esq."],
+      "preview": "TARGETS: [Rent Cap Notice Mandates], [Just Cause Statutory Disclosures], [Termination Font Size Check]. STATUTES: [Cal. Civ. Code § 1946.2]. FACTS: Landlord attempted to execute a standard no-cause eviction against a long-term tenant, but the lease omitted the mandatory 12-point font rent cap warning notice."
+    },
+    "case_summary": "MATTER GSA-2026-1511 (Rent Cap Disclosure Omission): Client Danny Rand was served with a termination notice intended to end his tenancy after two years of occupancy without any statement of underlying cause (intake notes). Under the Tenant Protection Act, landlords are strictly required to include specific statutory language regarding state rent limits and just cause eviction rules in at least 12-point font directly within the written agreement or as an official addendum (memo tracking). Because the landlord omitted this mandatory disclosure, they were legally barred from circumventing the statutory 'just cause' requirements. Outcome: We filed an explicit motion to dismiss the eviction based on the defective lease paperwork; the court ruled that compliance was mandatory, declared the lease termination void, and entered judgment for the client (case summary)."
+  }
+]

@@ -186,7 +186,12 @@ class VectorStore:
         Returns:
             A pandas DataFrame containing the formatted search results.
         """
-        # Convert results to DataFrame
+
+        if not results:
+            return pd.DataFrame(
+                columns=["id", "content", "preview", "embedding", "distance"]
+            )
+
         df = pd.DataFrame(
             results, columns=["id", "metadata", "content", "embedding", "distance"]
         )
@@ -294,14 +299,17 @@ class VectorStore:
         self._log_search_time("Keyword", elapsed_time)
 
         if return_dataframe:
+            if not results:
+                return pd.DataFrame(columns=["id", "content", "preview", "rank"])
+
             df = pd.DataFrame(results, columns=["id", "content", "metadata", "rank"])
             df["id"] = df["id"].astype(str)
-            
+
             # preview will automatically become a column
             df = pd.concat(
                 [df.drop(["metadata"], axis=1), df["metadata"].apply(pd.Series)], axis=1
             )
-            
+
             return df
         else:
             return results
@@ -390,7 +398,7 @@ class VectorStore:
                 {
                     "id": combined_results.iloc[idx]["id"],
                     "content": documents[idx],
-                    "preview": combined_results.iloc[idx]["preview"],  
+                    "preview": combined_results.iloc[idx]["preview"],
                     "search_type": combined_results.iloc[idx]["search_type"],
                     "relevance_score": result.relevance_score,
                 }

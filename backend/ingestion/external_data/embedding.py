@@ -52,7 +52,7 @@ records_df = data.apply(prepare_record, axis=1)
 print(records_df.iloc[0]["metadata"])  
 
 # Create tables and insert data
-vec.create_tables()
-vec.create_index()  # DiskAnnIndex
-vec.create_keyword_search_index()  # GIN Index
-vec.upsert(records_df)
+vec.create_tables(table_type="external")
+vec.create_index(table_type="external")  # DiskAnnIndex
+vec.create_keyword_search_index(table_type="external")  # GIN Index
+vec.upsert(records_df, table_type="external")

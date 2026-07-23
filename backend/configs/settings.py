@@ -49,7 +49,8 @@ class DatabaseSettings(BaseModel):
 class VectorStoreSettings(BaseModel):
     """Settings for the VectorStore."""
 
-    table_name: str = "internal_documents" # dyanmic table name for external or internal documents
+    internal_table_name: str = "internal_documents" 
+    external_table_name: str = "external_documents"
     embedding_dimensions: int = 1536
     time_partition_interval: timedelta = timedelta(days=7)
     chunk_size: int = 900

@@ -1,1 +1,2 @@
-from .ingestion.external_data_schemas import Chunk, ChunkMetadata
+from .external_data_schemas import Chunk, ChunkMetadata
+from .vectorstore_search_schemas import CompleteSearchResponse, SearchResultItem

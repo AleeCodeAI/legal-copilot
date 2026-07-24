@@ -10,7 +10,7 @@ from configs.settings import get_settings
 from openai import OpenAI
 from timescale_vector import client
 
-from schemas import (CompleteSearchResponse, SearchResultItem)
+from schemas import CompleteSearchResponse, SearchResultItem
 
 # Define the allowed table types for type hinting
 TableType = Literal["internal", "external"]
@@ -29,7 +29,7 @@ class VectorStore:
         self.embedding_model = self.settings.openrouter.embedding_model
         self.cohere_client = cohere.ClientV2(api_key=self.settings.cohere.api_key)
         self.vector_settings = self.settings.vector_store
-        
+
         # Initialize clients for both external and internal tables
         self.clients = {
             "external": client.Sync(
@@ -49,24 +49,26 @@ class VectorStore:
     def _get_vec_client(self, table_type: TableType) -> client.Sync:
         """
         Helper method to resolve the target Timescale Vector client.
-        
+
         Args:
             table_type: The target table ("internal" or "external").
-            
+
         Returns:
             The corresponding Timescale Vector client instance.
         """
         if table_type not in self.clients:
-            raise ValueError(f"Invalid table_type: {table_type}. Choose 'internal' or 'external'.")
+            raise ValueError(
+                f"Invalid table_type: {table_type}. Choose 'internal' or 'external'."
+            )
         return self.clients[table_type]
 
     def _get_table_name(self, table_type: TableType) -> str:
         """
         Helper method to resolve the target table name from settings.
-        
+
         Args:
             table_type: The target table ("internal" or "external").
-            
+
         Returns:
             The string name of the table in the database.
         """
@@ -79,7 +81,7 @@ class VectorStore:
     def create_keyword_search_index(self, table_type: TableType = "external"):
         """
         Create a GIN index for keyword search if it doesn't exist.
-        
+
         Args:
             table_type (TableType, optional): The target table ("internal" or "external"). Defaults to "external".
         """
@@ -94,7 +96,9 @@ class VectorStore:
                 with conn.cursor() as cur:
                     cur.execute(create_index_sql)
                     conn.commit()
-                    logging.info(f"GIN index '{index_name}' created or already exists on '{table_name}'.")
+                    logging.info(
+                        f"GIN index '{index_name}' created or already exists on '{table_name}'."
+                    )
         except Exception as e:
             logging.error(f"Error while creating GIN index on {table_name}: {str(e)}")
 
@@ -125,7 +129,7 @@ class VectorStore:
     def create_tables(self, table_type: TableType = "external") -> None:
         """
         Create the necessary tables in the database.
-        
+
         Args:
             table_type (TableType, optional): The target table ("internal" or "external"). Defaults to "external".
         """
@@ -134,7 +138,7 @@ class VectorStore:
     def create_index(self, table_type: TableType = "external") -> None:
         """
         Create the StreamingDiskANN index to speed up similarity search.
-        
+
         Args:
             table_type (TableType, optional): The target table ("internal" or "external"). Defaults to "external".
         """
@@ -143,7 +147,7 @@ class VectorStore:
     def drop_index(self, table_type: TableType = "external") -> None:
         """
         Drop the StreamingDiskANN index in the database.
-        
+
         Args:
             table_type (TableType, optional): The target table ("internal" or "external"). Defaults to "external".
         """
@@ -161,11 +165,9 @@ class VectorStore:
         records = df.to_records(index=False)
         vec_client = self._get_vec_client(table_type)
         table_name = self._get_table_name(table_type)
-        
+
         vec_client.upsert(list(records))
-        logging.info(
-            f"Inserted {len(df)} records into {table_name}"
-        )
+        logging.info(f"Inserted {len(df)} records into {table_name}")
 
     def semantic_search(
         self,
@@ -319,14 +321,10 @@ class VectorStore:
             logging.info(f"Deleted all records from {table_name}")
         elif ids:
             vec_client.delete_by_ids(ids)
-            logging.info(
-                f"Deleted {len(ids)} records from {table_name}"
-            )
+            logging.info(f"Deleted {len(ids)} records from {table_name}")
         elif metadata_filter:
             vec_client.delete_by_metadata(metadata_filter)
-            logging.info(
-                f"Deleted records matching metadata filter from {table_name}"
-            )
+            logging.info(f"Deleted records matching metadata filter from {table_name}")
 
     def _log_search_time(self, search_type: str, elapsed_time: float) -> None:
         """
@@ -339,11 +337,11 @@ class VectorStore:
         logging.info(f"{search_type} search completed in {elapsed_time:.3f} seconds")
 
     def keyword_search(
-        self, 
-        query: str, 
-        table_type: TableType = "external", 
-        limit: int = 5, 
-        return_dataframe: bool = True
+        self,
+        query: str,
+        table_type: TableType = "external",
+        limit: int = 5,
+        return_dataframe: bool = True,
     ) -> Union[List[Tuple[str, str, float]], pd.DataFrame]:
         """
         Perform a keyword search on the contents of the vector store.
@@ -361,7 +359,7 @@ class VectorStore:
             results = vector_store.keyword_search("shipping options", table_type="external")
         """
         table_name = self._get_table_name(table_type)
-        
+
         search_sql = f"""
         SELECT id, contents, metadata, ts_rank_cd(to_tsvector('english', contents), query) as rank
         FROM {table_name}, websearch_to_tsquery('english', %s) query

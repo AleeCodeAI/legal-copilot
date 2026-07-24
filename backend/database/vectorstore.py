@@ -1,7 +1,7 @@
 import logging
 import time
 from datetime import datetime
-from typing import Any, List, Literal, Optional, Tuple, Union
+from typing import Any, Dict, List, Literal, Optional, Tuple, Union
 
 import cohere
 import pandas as pd
@@ -191,33 +191,11 @@ class VectorStore:
             limit: The maximum number of results to return.
             metadata_filter: A dictionary or list of dictionaries for equality-based metadata filtering.
             predicates: A Predicates object for complex metadata filtering.
-                - Predicates objects are defined by the name of the metadata key, an operator, and a value.
-                - Operators: ==, !=, >, >=, <, <=
-                - & is used to combine multiple predicates with AND operator.
-                - | is used to combine multiple predicates with OR operator.
             time_range: A tuple of (start_date, end_date) to filter results by time.
             return_dataframe: Whether to return results as a DataFrame (default: True).
 
         Returns:
             Either a list of tuples or a pandas DataFrame containing the search results.
-
-        Basic Examples:
-            Basic search:
-                vector_store.semantic_search("What are your shipping options?", table_type="external")
-            Search with metadata filter:
-                vector_store.semantic_search("Shipping options", metadata_filter={"category": "Shipping"})
-        
-        Predicates Examples:
-            Search with predicates:
-                vector_store.semantic_search("Pricing", predicates=client.Predicates("price", ">", 100))
-            Search with complex combined predicates:
-                complex_pred = (client.Predicates("category", "==", "Electronics") & client.Predicates("price", "<", 1000)) | \
-                               (client.Predicates("category", "==", "Books") & client.Predicates("rating", ">=", 4.5))
-                vector_store.semantic_search("High-quality products", predicates=complex_pred)
-        
-        Time-based filtering:
-            Search with time range:
-                vector_store.semantic_search("Recent updates", time_range=(datetime(2024, 1, 1), datetime(2024, 1, 31)))
         """
         query_embedding = self.get_embedding(query)
 
@@ -253,7 +231,7 @@ class VectorStore:
         results: List[Tuple[Any, ...]],
     ) -> pd.DataFrame:
         """
-        Create a pandas DataFrame from the search results.
+        Create a pandas DataFrame from the search results, preserving the full metadata dictionary.
 
         Args:
             results: A list of tuples containing the search results.
@@ -263,16 +241,11 @@ class VectorStore:
         """
         if not results:
             return pd.DataFrame(
-                columns=["id", "content", "preview", "embedding", "distance"]
+                columns=["id", "metadata", "content", "embedding", "distance"]
             )
 
         df = pd.DataFrame(
             results, columns=["id", "metadata", "content", "embedding", "distance"]
-        )
-
-        # Expand metadata column - preview will automatically become a column
-        df = pd.concat(
-            [df.drop(["metadata"], axis=1), df["metadata"].apply(pd.Series)], axis=1
         )
 
         # Convert id to string for better readability
@@ -297,16 +270,6 @@ class VectorStore:
 
         Raises:
             ValueError: If no deletion criteria are provided or if multiple criteria are provided.
-
-        Examples:
-            Delete by IDs:
-                vector_store.delete(ids=["8ab544ae-766a-11ef-81cb-decf757b836d"], table_type="internal")
-
-            Delete by metadata filter:
-                vector_store.delete(metadata_filter={"category": "Shipping"})
-
-            Delete all records:
-                vector_store.delete(delete_all=True)
         """
         if sum(bool(x) for x in (ids, metadata_filter, delete_all)) != 1:
             raise ValueError(
@@ -344,7 +307,7 @@ class VectorStore:
         return_dataframe: bool = True,
     ) -> Union[List[Tuple[str, str, float]], pd.DataFrame]:
         """
-        Perform a keyword search on the contents of the vector store.
+        Perform a keyword search on the contents of the vector store, preserving the full metadata dictionary.
 
         Args:
             query: The search query string.
@@ -353,7 +316,7 @@ class VectorStore:
             return_dataframe: Whether to return results as a DataFrame. Defaults to True.
 
         Returns:
-            Either a list of tuples (id, contents, rank) or a pandas DataFrame containing the search results.
+            Either a list of tuples or a pandas DataFrame containing the search results.
 
         Example:
             results = vector_store.keyword_search("shipping options", table_type="external")
@@ -381,15 +344,10 @@ class VectorStore:
 
         if return_dataframe:
             if not results:
-                return pd.DataFrame(columns=["id", "content", "preview", "rank"])
+                return pd.DataFrame(columns=["id", "content", "metadata", "rank"])
 
             df = pd.DataFrame(results, columns=["id", "content", "metadata", "rank"])
             df["id"] = df["id"].astype(str)
-
-            # preview will automatically become a column
-            df = pd.concat(
-                [df.drop(["metadata"], axis=1), df["metadata"].apply(pd.Series)], axis=1
-            )
 
             return df
         else:
@@ -427,14 +385,14 @@ class VectorStore:
             query, table_type=table_type, limit=keyword_k, return_dataframe=True
         )
         keyword_results["search_type"] = "keyword"
-        keyword_results = keyword_results[["id", "content", "preview", "search_type"]]
+        keyword_results = keyword_results[["id", "content", "metadata", "search_type"]]
 
         # Perform semantic search
         semantic_results = self.semantic_search(
             query, table_type=table_type, limit=semantic_k, return_dataframe=True
         )
         semantic_results["search_type"] = "semantic"
-        semantic_results = semantic_results[["id", "content", "preview", "search_type"]]
+        semantic_results = semantic_results[["id", "content", "metadata", "search_type"]]
 
         # Combine results
         combined_results = pd.concat(
@@ -453,7 +411,7 @@ class VectorStore:
         self, query: str, combined_results: pd.DataFrame, top_n: int
     ) -> pd.DataFrame:
         """
-        Rerank the combined search results using Cohere.
+        Rerank the combined search results using Cohere, preserving metadata dictionaries.
 
         Args:
             query: The original search query.
@@ -481,7 +439,7 @@ class VectorStore:
                 {
                     "id": combined_results.iloc[idx]["id"],
                     "content": documents[idx],
-                    "preview": combined_results.iloc[idx]["preview"],
+                    "metadata": combined_results.iloc[idx]["metadata"],
                     "search_type": combined_results.iloc[idx]["search_type"],
                     "relevance_score": result.relevance_score,
                 }

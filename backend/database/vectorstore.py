@@ -508,23 +508,39 @@ class VectorStore:
     def get_chunks(
         self, 
         ids: Union[str, List[str]], 
-        table_type: TableType = "internal"
-    ) -> List[Dict[str, Any]]:
+        table_type: TableType = "external",
+        include_neighbors: bool = False
+        ) -> List[Dict[str, Any]]:
         """Fetch records directly from PostgreSQL by UUID using psycopg v3."""
 
         id_list = [ids] if isinstance(ids, str) else ids
-        
-        table_name = (
-            self.vector_settings.internal_table_name 
-            if table_type == "internal" 
-            else self.vector_settings.external_table_name
-        )
+
+        table_name = (self.vector_settings.internal_table_name 
+                      if table_type=="internal" 
+                      else self.vector_settings.external_table_name)
 
         query = f"""
-            SELECT id, metadata, contents, embedding 
-            FROM {table_name} 
-            WHERE id = ANY(%s::uuid[]);
-        """
+                SELECT id, metadata, contents, embedding 
+                FROM {table_name} 
+                WHERE id = ANY(%s::uuid[]);
+            """
+
+        if include_neighbors:
+                    query = f"""
+                    WITH targets AS (
+                        SELECT ctid FROM {table_name} WHERE id = ANY(%s::uuid[])
+                    )
+                    SELECT id, contents, metadata, embedding
+                    FROM {table_name}
+                    WHERE ctid IN (
+                        SELECT ctid FROM targets
+                        UNION
+                        SELECT (SELECT ctid FROM {table_name} sub WHERE sub.ctid < t.ctid ORDER BY sub.ctid DESC LIMIT 1) FROM targets t
+                        UNION
+                        SELECT (SELECT ctid FROM {table_name} sub WHERE sub.ctid > t.ctid ORDER BY sub.ctid ASC LIMIT 1) FROM targets t
+                    )
+                    ORDER BY ctid;
+                    """
 
         with psycopg.connect(self.settings.database.service_url, row_factory=dict_row) as conn:
             with conn.cursor() as cur:

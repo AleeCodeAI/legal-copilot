@@ -6,6 +6,7 @@ from typing import Any, Dict, List, Literal, Optional, Tuple, Union
 import cohere
 import pandas as pd
 import psycopg
+from psycopg.rows import dict_row
 from configs.settings import get_settings
 from openai import OpenAI
 from timescale_vector import client
@@ -503,3 +504,29 @@ class VectorStore:
             external_results=external_items,
             internal_results=internal_items,
         )
+
+    def get_chunks(
+        self, 
+        ids: Union[str, List[str]], 
+        table_type: TableType = "internal"
+    ) -> List[Dict[str, Any]]:
+        """Fetch records directly from PostgreSQL by UUID using psycopg v3."""
+
+        id_list = [ids] if isinstance(ids, str) else ids
+        
+        table_name = (
+            self.vector_settings.internal_table_name 
+            if table_type == "internal" 
+            else self.vector_settings.external_table_name
+        )
+
+        query = f"""
+            SELECT id, metadata, contents, embedding 
+            FROM {table_name} 
+            WHERE id = ANY(%s::uuid[]);
+        """
+
+        with psycopg.connect(self.settings.database.service_url, row_factory=dict_row) as conn:
+            with conn.cursor() as cur:
+                cur.execute(query, (id_list,))
+                return cur.fetchall()

@@ -480,20 +480,26 @@ class VectorStore:
             top_n=5,
         )
 
-        # 2. Safely parse external results
+        # 2. Safely parse external results and prepend 'external_' prefix for ids
         external_items: List[SearchResultItem] = []
         if not external_df.empty:
             for record in external_df.to_dict(orient="records"):
                 try:
+                    raw_id = str(record["id"])
+                    if not raw_id.startswith("external_"):
+                        record["id"] = f"external_{raw_id}"
                     external_items.append(SearchResultItem(**record))
                 except Exception as e:
                     logging.warning(f"Failed to parse external search record: {e}")
 
-        # 3. Safely parse internal results
+        # 3. Safely parse internal results and prepend 'internal_' prefix
         internal_items: List[SearchResultItem] = []
         if not internal_df.empty:
             for record in internal_df.to_dict(orient="records"):
                 try:
+                    raw_id = str(record["id"])
+                    if not raw_id.startswith("internal_"):
+                        record["id"] = f"internal_{raw_id}"
                     internal_items.append(SearchResultItem(**record))
                 except Exception as e:
                     logging.warning(f"Failed to parse internal search record: {e}")
@@ -508,16 +514,22 @@ class VectorStore:
     def get_chunks(
         self, 
         ids: Union[str, List[str]], 
-        table_type: TableType = "external",
+        table_type: str = "external",
         include_neighbors: bool = False
-        ) -> List[Dict[str, Any]]:
+    ) -> List[Dict[str, Any]]:
         """Fetch records directly from PostgreSQL by UUID using psycopg v3."""
 
-        id_list = [ids] if isinstance(ids, str) else ids
-
+        id_list = [ids] if isinstance(ids, str) else list(ids)
+        print(id_list)
+        # Clean prefixes ("external_" or "internal_") to leave valid UUID strings
+        id_list = [
+            id_str.removeprefix("external_").removeprefix("internal_") 
+            for id_str in id_list
+        ]
+        print(id_list)
         table_name = (self.vector_settings.internal_table_name 
-                      if table_type=="internal" 
-                      else self.vector_settings.external_table_name)
+                    if table_type == "internal" 
+                    else self.vector_settings.external_table_name)
 
         query = f"""
                 SELECT id, metadata, contents, embedding 
@@ -526,7 +538,7 @@ class VectorStore:
             """
 
         if include_neighbors:
-                    query = f"""
+            query = f"""
                     WITH targets AS (
                         SELECT ctid FROM {table_name} WHERE id = ANY(%s::uuid[])
                     )

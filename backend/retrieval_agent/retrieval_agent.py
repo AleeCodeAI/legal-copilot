@@ -1,4 +1,3 @@
-import asyncio
 from pydantic_ai import Agent, UsageLimits
 from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
@@ -10,6 +9,7 @@ from prompts import AGENT_SYSTEM_PROMPT
 from schemas import CompleteSearchResponse, RetrievalResult
 from database.vectorstore import VectorStore
 
+import asyncio
 
 class RetrievalAgent(Logger):
     """
@@ -109,7 +109,7 @@ class RetrievalAgent(Logger):
                 f"Result -> Sufficient: {final_data.sufficient} | "
                 f"Selected Chunks Count: {len(final_data.selected_chunks)}"
             )
-            
+            print(result.all_messages_json().decode("utf-8"))
             return final_data
 
         except Exception as e:
@@ -122,7 +122,7 @@ class RetrievalAgent(Logger):
 
 if __name__ == "__main__":
     agent = RetrievalAgent()
-    query = "how can a landlord legally evict a tenant for non-payment of rent and property damage in California?"
+    query = "How to respond to a three-day notice by the landlord? what happens if done incorrectly"
     
-    result = agent.run(query=query)
+    result = asyncio.run(agent.run(query=query))
     print(result)

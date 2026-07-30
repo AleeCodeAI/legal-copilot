@@ -109,7 +109,6 @@ class RetrievalAgent(Logger):
                 f"Result -> Sufficient: {final_data.sufficient} | "
                 f"Selected Chunks Count: {len(final_data.selected_chunks)}"
             )
-            print(result.all_messages_json().decode("utf-8"))
             return final_data
 
         except Exception as e:

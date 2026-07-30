@@ -55,7 +55,11 @@ class VectorStoreSettings(BaseModel):
     time_partition_interval: timedelta = timedelta(days=7)
     chunk_size: int = 900
 
+class RetrievalAgentSettings(BaseModel):
+    """Settings for Retrieval Agent"""
 
+    max_retries: int = 3
+    max_iterations: int = 5
 class Settings(BaseModel):
     """Main settings class combining all sub-settings."""
 
@@ -63,6 +67,7 @@ class Settings(BaseModel):
     cohere: CohereSettings = Field(default_factory=CohereSettings)
     database: DatabaseSettings = Field(default_factory=DatabaseSettings)
     vector_store: VectorStoreSettings = Field(default_factory=VectorStoreSettings)
+    retrieval_agent: RetrievalAgentSettings = Field(default_factory=RetrievalAgentSettings)
 
 
 @lru_cache()

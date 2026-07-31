@@ -520,13 +520,11 @@ class VectorStore:
         """Fetch records directly from PostgreSQL by UUID using psycopg v3."""
 
         id_list = [ids] if isinstance(ids, str) else list(ids)
-        print(id_list)
         # Clean prefixes ("external_" or "internal_") to leave valid UUID strings
         id_list = [
             id_str.removeprefix("external_").removeprefix("internal_") 
             for id_str in id_list
         ]
-        print(id_list)
         table_name = (self.vector_settings.internal_table_name 
                     if table_type == "internal" 
                     else self.vector_settings.external_table_name)

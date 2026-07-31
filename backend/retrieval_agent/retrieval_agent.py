@@ -1,15 +1,15 @@
+import asyncio
+
 from pydantic_ai import Agent, UsageLimits
 from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
 
-from tools import search_again_tool, read_chunks_tool 
 from configs.settings import get_settings
 from utils.color import Logger
 from prompts import AGENT_SYSTEM_PROMPT
 from schemas import CompleteSearchResponse, RetrievalResult
 from database.vectorstore import VectorStore
-
-import asyncio
+from typing import List, Optional
 
 class RetrievalAgent(Logger):
     """
@@ -36,7 +36,10 @@ class RetrievalAgent(Logger):
 
         self.agent = Agent(
             model=self.model,
-            tools=[search_again_tool, read_chunks_tool],
+            tools=[
+                self._search_again_tool, 
+                self._read_chunks_tool
+                ],
             output_type=RetrievalResult,
             system_prompt=AGENT_SYSTEM_PROMPT,
             retries=self.settings.retrieval_agent.max_retries,
@@ -54,16 +57,16 @@ class RetrievalAgent(Logger):
         """
         if not results:
             return "No results found."
-
+        
         formatted = []
         for i, result in enumerate(results, start=1):
             preview = result.metadata.get("preview", "N/A")
             metadata = "\n".join(
-                f"- {key}: {value}" for key, value in result.metadata.items() if key != "preview"
-            )
+                    f"- {key}: {value}" for key, value in result.metadata.items() if key != "preview"
+                    )
             formatted.append(f"Result {i}\nID: {result.id}\n\nPreview:\n{preview}\n\nMetadata:\n{metadata}")
-
-        return "\n\n".join(formatted)
+        
+            return "\n\n".join(formatted)
 
     def _user_input(self, search_results: CompleteSearchResponse) -> str:
         """
@@ -75,6 +78,71 @@ class RetrievalAgent(Logger):
             f"External Results:\n{self._format_results(search_results.external_results)}\n\n"
             f"Internal Results:\n{self._format_results(search_results.internal_results)}\n"
         )
+
+    def _search_again_tool(self, query: str):
+        """
+        Perform a new hybrid search over the legal knowledge base.
+
+        This tool is intended for use when the currently available search results
+        do not contain sufficient information to answer the user's question.
+        It searches both the external legal reference database and the internal
+        case knowledge database, returning the highest-ranked results from each.
+
+        Args:
+            query: A refined or alternative search query describing the legal
+                information to retrieve.
+
+        Returns:
+            CompleteSearchResponse: A structured response containing the original
+                query along with separate ranked search results from the external and
+                internal knowledge sources.
+            """
+        self.log(f"ToolCall: Calling the Search Again Tool with refined query: {query}")
+
+        try:
+            search_results = self.vector_store.complete_search(query=query)
+            user_input = self._user_input(search_results)
+            return user_input
+            
+        except Exception as e:
+            self.log(f"ToolCall: Failed searching again with error: {e}")
+
+    def _read_chunks_tool(
+            self,
+            ids: List[str],
+            table_type: str = "external",
+            include_neighbors: Optional[bool] = False,
+        ):
+        """
+        Retrieve the full contents of one or more document chunks.
+
+        Use this tool after identifying relevant chunks from a search. It expands
+        the brief search previews into their complete text so the model can inspect
+        the full legal context before answering.
+
+        Args:
+            ids: List of one or more unique chunk IDs returned by the search tool.
+            table_type: The source database containing the chunks. Must be either
+                "external" or "internal".
+            include_neighbors: If True, also retrieves the chunks immediately
+                before and after each requested chunk to provide additional
+                contextual information.
+
+        Returns:
+            List[Dict[str, Any]]: A list of retrieved chunk records, including the
+            chunk ID, full contents, metadata, and embedding.
+        """
+        self.log(f"ToolCall: Calling Read Chunks Tool with number of ids: {len(ids)} and table: {table_type}")
+        try:
+            results = self.vector_store.get_chunks(
+                ids=ids,
+                table_type=table_type,
+                include_neighbors=include_neighbors,
+            )
+            return results
+        
+        except Exception as e:
+            self.log(f"ToolCall: Failed reading chunks with error: {e}")
 
     async def run(self, query: str) -> RetrievalResult:
         """
@@ -122,6 +190,5 @@ class RetrievalAgent(Logger):
 if __name__ == "__main__":
     agent = RetrievalAgent()
     query = "How to respond to a three-day notice by the landlord? what happens if done incorrectly"
-    
     result = asyncio.run(agent.run(query=query))
     print(result)

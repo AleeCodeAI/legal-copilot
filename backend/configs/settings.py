@@ -30,7 +30,7 @@ class OpenRouterSettings(LLMSettings):
 
     api_key: str = Field(default_factory=lambda: os.getenv("OPENROUTER_API_KEY"))
     base_url: str = Field(default_factory=lambda: os.getenv("OPENROUTER_URL"))
-    default_model: str = Field(default="gpt-4o-mini")
+    default_model: str = Field(default="openai/gpt-oss-120b")
     embedding_model: str = Field(default="text-embedding-3-small")
 
 
@@ -59,7 +59,7 @@ class RetrievalAgentSettings(BaseModel):
     """Settings for Retrieval Agent"""
 
     max_retries: int = 3
-    max_iterations: int = 5
+    max_iterations: int = 10
 class Settings(BaseModel):
     """Main settings class combining all sub-settings."""
 

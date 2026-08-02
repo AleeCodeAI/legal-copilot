@@ -36,10 +36,7 @@ class RetrievalAgent(Logger):
 
         self.agent = Agent(
             model=self.model,
-            tools=[
-                self._search_again_tool, 
-                self._read_chunks_tool
-                ],
+            tools=[self._read_chunks_tool],
             output_type=RetrievalResult,
             system_prompt=AGENT_SYSTEM_PROMPT,
             retries=self.settings.retrieval_agent.max_retries,
@@ -61,11 +58,7 @@ class RetrievalAgent(Logger):
         formatted = []
         for i, result in enumerate(results, start=1):
             preview = result.metadata.get("preview", "N/A")
-            metadata = "\n".join(
-                    f"- {key}: {value}" for key, value in result.metadata.items() if key != "preview"
-                    )
-            formatted.append(f"Result {i}\nID: {result.id}\n\nPreview:\n{preview}\n\nMetadata:\n{metadata}")
-        
+            formatted.append(f"Result {i}\nID: {result.id}\n\nPreview:\n{preview}")
             return "\n\n".join(formatted)
 
     def _user_input(self, search_results: CompleteSearchResponse) -> str:
@@ -78,34 +71,6 @@ class RetrievalAgent(Logger):
             f"External Results:\n{self._format_results(search_results.external_results)}\n\n"
             f"Internal Results:\n{self._format_results(search_results.internal_results)}\n"
         )
-
-    def _search_again_tool(self, query: str):
-        """
-        Perform a new hybrid search over the legal knowledge base.
-
-        This tool is intended for use when the currently available search results
-        do not contain sufficient information to answer the user's question.
-        It searches both the external legal reference database and the internal
-        case knowledge database, returning the highest-ranked results from each.
-
-        Args:
-            query: A refined or alternative search query describing the legal
-                information to retrieve.
-
-        Returns:
-            CompleteSearchResponse: A structured response containing the original
-                query along with separate ranked search results from the external and
-                internal knowledge sources.
-            """
-        self.log(f"ToolCall: Calling the Search Again Tool with refined query: {query}")
-
-        try:
-            search_results = self.vector_store.complete_search(query=query)
-            user_input = self._user_input(search_results)
-            return user_input
-            
-        except Exception as e:
-            self.log(f"ToolCall: Failed searching again with error: {e}")
 
     def _read_chunks_tool(
             self,
@@ -148,13 +113,13 @@ class RetrievalAgent(Logger):
         """
         Executes the main asynchronous agentic loop. Performs the initial complete search,
         manages tool calls, tracks token usage limits, and guarantees a strictly validated 
-        RetrievalResult on completion.
+        RetrievalResult on completion. Supports a two-pass retrieval if the first fails.
         """
         self.log(f"Starting execution run for query: '{query}'")
         
         try:
             search_results = self.vector_store.complete_search(query=query)
-            self.log("Complete search done!")
+            self.log("Initial complete search done!")
             
             user_input = self._user_input(search_results)
 
@@ -166,16 +131,44 @@ class RetrievalAgent(Logger):
             )
 
             usage = result.usage
-            self.log(
-                f"Task Completed Successfully! "
-                f"Requests: {usage.requests} | "
-                f"Tokens -> In: {usage.input_tokens}, Out: {usage.output_tokens}, Total: {usage.total_tokens}"
-            )
-            
             final_data: RetrievalResult = result.output
             self.log(
-                f"Result -> Sufficient: {final_data.sufficient} | "
-                f"Selected Chunks Count: {len(final_data.selected_chunks)}"
+                f"First Pass Completed! "
+                f"Sufficient: {final_data.sufficient} | "
+                f"Requests: {usage.requests} | "
+                f"Tokens -> Total: {usage.total_tokens}"
+            )
+            
+            if final_data.sufficient == "False" and final_data.refined_query:
+                self.log(f"Data insufficient. Running second pass with refined query: '{final_data.refined_query}'")
+                
+                refined_search_results = self.vector_store.complete_search(query=final_data.refined_query)
+                self.log("Refined complete search done!")
+                
+                refined_user_input = self._user_input(refined_search_results)
+                
+                refined_result = await self.agent.run(
+                    refined_user_input,
+                    message_history=result.new_messages(),
+                    usage_limits=UsageLimits(
+                        request_limit=self.settings.retrieval_agent.max_iterations
+                    )
+                )
+                
+                final_data = refined_result.output
+                refined_usage = refined_result.usage
+                
+                self.log(
+                    f"Second Pass Completed! "
+                    f"Sufficient: {final_data.sufficient} | "
+                    f"Requests: {refined_usage.requests} | "
+                    f"Tokens -> Total: {refined_usage.total_tokens}"
+                )
+
+            self.log(
+                f"Final Result -> Sufficient: {final_data.sufficient} | "
+                f"Selected Chunks Count: {len(final_data.selected_chunks)} | "
+                f"Confidence: {final_data.confidence}"
             )
             return final_data
 
@@ -184,7 +177,10 @@ class RetrievalAgent(Logger):
             self.log("Returning fallback response.")
             return RetrievalResult(
                 sufficient="False",
-                selected_chunks=[]
+                selected_chunks=[],
+                confidence=0.0,
+                reasoning=f"Agent failed with error: {str(e)}",
+                refined_query=None
             )
 
 if __name__ == "__main__":

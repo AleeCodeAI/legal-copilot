@@ -60,6 +60,14 @@ class RetrievalAgentSettings(BaseModel):
 
     max_retries: int = 3
     max_iterations: int = 10
+
+class LangfuseSettings(BaseModel):
+    """Settings for Langfuse observability."""
+
+    secret_key: str = Field(default_factory=lambda: os.getenv("LANGFUSE_SECRET_KEY"))
+    public_key: str = Field(default_factory=lambda: os.getenv("LANGFUSE_PUBLIC_KEY"))
+    host: str = Field(default_factory=lambda: os.getenv("LANGFUSE_HOST"))
+
 class Settings(BaseModel):
     """Main settings class combining all sub-settings."""
 
@@ -68,6 +76,7 @@ class Settings(BaseModel):
     database: DatabaseSettings = Field(default_factory=DatabaseSettings)
     vector_store: VectorStoreSettings = Field(default_factory=VectorStoreSettings)
     retrieval_agent: RetrievalAgentSettings = Field(default_factory=RetrievalAgentSettings)
+    langfuse: LangfuseSettings = Field(default_factory=LangfuseSettings)
 
 
 @lru_cache()

@@ -1,15 +1,15 @@
-import asyncio
-
 from pydantic_ai import Agent, UsageLimits
 from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
+from langfuse.decorators import langfuse_context, observe
+from typing import List, Optional
 
 from configs.settings import get_settings
 from utils.color import Logger
 from prompts import AGENT_SYSTEM_PROMPT
 from schemas import CompleteSearchResponse, RetrievalResult
+from observability import RetrievalAgentObservability
 from database.vectorstore import VectorStore
-from typing import List, Optional
 
 class RetrievalAgent(Logger):
     """
@@ -43,6 +43,7 @@ class RetrievalAgent(Logger):
         )
 
         self.vector_store = VectorStore()
+        self.obs = RetrievalAgentObservability()
 
         self.log("RetrievalAgent Initialized with PydanticAI!")
 
@@ -61,6 +62,7 @@ class RetrievalAgent(Logger):
             formatted.append(f"Result {i}\nID: {result.id}\n\nPreview:\n{preview}")
             return "\n\n".join(formatted)
 
+    @observe(as_type="span", name="compile_user_input")
     def _user_input(self, search_results: CompleteSearchResponse) -> str:
         """
         Compiles the primary user prompt by combining the original user query 
@@ -72,6 +74,7 @@ class RetrievalAgent(Logger):
             f"Internal Results:\n{self._format_results(search_results.internal_results)}\n"
         )
 
+    @observe(as_type="span", name="read_chunks_tool")
     def _read_chunks_tool(
             self,
             ids: List[str],
@@ -104,18 +107,36 @@ class RetrievalAgent(Logger):
                 table_type=table_type,
                 include_neighbors=include_neighbors,
             )
-            return results
+            cleaned_results = []
+            for result in results:
+                metadata = result.get("metadata") or {}
+                cleaned_results.append({
+                     "id": result.get("id"),
+                     "contents": result.get("contents") or result.get("content"),
+                     "headings": metadata.get("headings", [])
+                    })
+
+            return cleaned_results
         
         except Exception as e:
             self.log(f"ToolCall: Failed reading chunks with error: {e}")
+            langfuse_context.update_current_observation(level="ERROR", status_message=str(e))
+            return {"error": f"Failed to retrieve chunks: {str(e)}"}
 
-    async def run(self, query: str) -> RetrievalResult:
+    @observe()
+    async def run(self, query: str, session_id: str) -> RetrievalResult:
         """
         Executes the main asynchronous agentic loop. Performs the initial complete search,
         manages tool calls, tracks token usage limits, and guarantees a strictly validated 
         RetrievalResult on completion. Supports a two-pass retrieval if the first fails.
         """
         self.log(f"Starting execution run for query: '{query}'")
+
+        self.obs.init_agent_trace(
+            session_id=session_id, 
+            query=query, 
+            max_iterations=self.settings.retrieval_agent.max_iterations
+        )
         
         try:
             search_results = self.vector_store.complete_search(query=query)
@@ -170,11 +191,16 @@ class RetrievalAgent(Logger):
                 f"Selected Chunks Count: {len(final_data.selected_chunks)} | "
                 f"Confidence: {final_data.confidence}"
             )
+
+            self.obs.process_result(final_data)
             return final_data
 
         except Exception as e:
             self.log(f"Agent failed or hit usage limits: {e}")
             self.log("Returning fallback response.")
+
+            self.obs.process_failure(e)
+
             return RetrievalResult(
                 sufficient="False",
                 selected_chunks=[],
@@ -184,7 +210,11 @@ class RetrievalAgent(Logger):
             )
 
 if __name__ == "__main__":
-    agent = RetrievalAgent()
+    import asyncio
+    import uuid
+    
+    session_id = str(uuid.uuid4())
+    agent = RetrievalAgent(session_id=session_id)
     query = "How to respond to a three-day notice by the landlord? what happens if done incorrectly"
     result = asyncio.run(agent.run(query=query))
     print(result)

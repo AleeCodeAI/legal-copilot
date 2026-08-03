@@ -40,12 +40,12 @@ The agent therefore behaves similarly to a legal researcher who first searches f
 
 The Retrieval Agent is responsible for:
 
-* initiating retrieval using the Search tool
-* inspecting retrieved previews
-* determining whether retrieved previews provide sufficient information
+* receiving the results of the complete search
+* inspecting the retrieved previews for the candidate chunks
+* determining whether the current search results provide sufficient information
 * reading complete chunks when additional context is required
-* optionally expanding retrieval to neighboring chunks
-* determining when sufficient evidence has been collected
+* optionally expanding to neighboring chunks when needed
+* deciding whether to stop or issue a refined query for one additional retrieval iteration
 * returning structured evidence for the Answer Synthesizer
 
 The Retrieval Agent is **not** responsible for:
@@ -67,7 +67,7 @@ These responsibilities belong to later stages of the pipeline.
 User Question
         │
         ▼
-Hybrid Retrieval
+Complete Search
         │
         ▼
 Retrieval Agent
@@ -85,7 +85,7 @@ Grounding
 Final Response
 ```
 
-The Retrieval Agent acts as the bridge between document retrieval and answer generation.
+The Retrieval Agent acts as the bridge between complete search and answer generation.
 
 ---
 
@@ -123,58 +123,59 @@ It simply receives unified search results.
 
 # Available Tools
 
-The Retrieval Agent currently has two tools.
+The Retrieval Agent currently has one tool.
 
-## Tool 1 — Search
+## Tool — read_chunks
 
 ### Purpose
 
-Discover potentially relevant evidence.
+Retrieve complete chunk contents when the available previews are not sufficient.
 
-The Search tool performs the complete retrieval pipeline internally.
+The agent invokes:
 
-Internally, it executes:
-
-* Dense embedding retrieval
-* PostgreSQL Full Text Search
-* Reciprocal Rank Fusion
-* Optional Cohere reranking
-
-These implementation details remain completely hidden from the Retrieval Agent.
-
-The agent simply invokes:
-
+```python
+read_chunks(ids, table_type, include_neighbors=False)
 ```
-search(question)
-```
+
+### Parameters
+
+* ids: array of chunk IDs to read
+* table_type: either "external" or "internal"
+* include_neighbors: optional boolean, with values true or false
+
+The tool returns the complete text for the requested chunks, and optionally the neighboring chunks when requested.
 
 ---
 
-## Search Result Format
+## Complete Search Result Format
 
-Search does **not** return complete chunks.
+The system performs a complete search before the Retrieval Agent is invoked.
 
-Instead it returns retrieval previews.
+This complete search consists of two hybrid retrieval passes:
 
-Each result contains:
+* one over the internal knowledge base
+* one over the external knowledge base
 
-* chunk_id
-* source
-* retrieval_summary
-* score
+The results are combined and passed to the Retrieval Agent.
+
+From the retrieved chunks, the agent receives only:
+
+* chunk IDs
+* the corresponding preview summaries
+* the prompt is structured in a way so external and internal chunks are categorized
+
+The agent does not receive full chunk contents at this stage.
 
 Example:
 
 ```json
 {
   "chunk_id": "external_95ca6a6a-7fa8-11f1-be7a-2c75764ca3a6",
-  "source": "external",
-  "preview": "This chunk details statutory amendments to California landlord-tenant law effective in 2025. It covers procedural changes to unlawful detainer actions (extending tenant response time to ten days and masking case records for 60 days) and outlines new restrictions on application screening fees and security deposit deductions. Additionally, it details statutory requirements regarding positive rental payment reporting, mandatory landlord-funded lock changes for victims of abuse or violence, tenant options to unbundle parking fees in qualifying properties, and heightened intent and ownership standards for no-fault owner-move-in evictions. Key legislation cited includes AB 2347, AB 2304, AB 2493, AB 2801, AB 2747, SB 1051, AB 2898, and SB 479.",
-  "score": 0.94
+  "preview": "This chunk details statutory amendments to California landlord-tenant law effective in 2025. It covers procedural changes to unlawful detainer actions (extending tenant response time to ten days and masking case records for 60 days) and outlines new restrictions on application screening fees and security deposit deductions. Additionally, it details statutory requirements regarding positive rental payment reporting, mandatory landlord-funded lock changes for victims of abuse or violence, tenant options to unbundle parking fees in qualifying properties, and heightened intent and ownership standards for no-fault owner-move-in evictions. Key legislation cited includes AB 2347, AB 2304, AB 2493, AB 2801, AB 2747, SB 1051, AB 2898, and SB 479."
 }
 ```
 
-**the preview is a LLM generated summary of the chunk. It includes topics discussed in the chunk and some details. The preview here is for the purpose of helping the agent make descisions on what chunks to fully read while often agent can get enough info from the summaries. The complete chunks are not shown to agent for the context limit and token consumption. And, preview summaries are very structured, clean and shorter.**
+**The preview is an LLM-generated summary of the chunk. It is designed to help the agent decide whether the full chunk is necessary. The complete chunk contents are not shown to the agent initially in order to reduce context usage and token consumption.**
 
 ---
 
@@ -207,25 +208,20 @@ This allows the Retrieval Agent to make better decisions while avoiding unnecess
 
 ---
 
-# Tool 2 — Read
+# Read Tool Behavior
 
 ### Purpose
 
-Retrieve complete chunk contents.
+Retrieve complete chunk contents when the agent needs more detail than the preview provides.
 
 The agent invokes:
 
-```
-read(chunk_ids)
-```
-
-Example:
-
-```
-read([
-    "external_18a9f2",
-    "internal_0041"
-])
+```python
+read_chunks(
+    ids=["external_18a9f2", "internal_0041"],
+    table_type="external",
+    include_neighbors=False
+)
 ```
 
 The tool returns the complete text for the requested chunks.
@@ -234,13 +230,14 @@ The tool returns the complete text for the requested chunks.
 
 # Neighbor Expansion
 
-The Read tool optionally supports neighboring chunk retrieval.
+The read tool optionally supports neighboring chunk retrieval.
 
 Example:
 
-```
-read(
-    chunk_ids=["external_18a9f2"],
+```python
+read_chunks(
+    ids=["external_18a9f2"],
+    table_type="external",
     include_neighbors=True
 )
 ```
@@ -253,7 +250,7 @@ This returns:
 
 Neighbor expansion is disabled by default.
 
-```
+```python
 include_neighbors = False
 ```
 
@@ -287,18 +284,22 @@ This keeps the tool interface simpler while preserving flexibility.
 
 # Agent Workflow
 
-The Retrieval Agent follows an iterative evidence-gathering process.
+The Retrieval Agent follows an evidence-gathering process that operates over the current search results.
 
 ```
 User Question
 
 ↓
 
-Search
+Complete Search
 
 ↓
 
-Inspect retrieval summaries
+Pass chunk IDs and previews to Retrieval Agent
+
+↓
+
+Inspect previews
 
 ↓
 
@@ -319,15 +320,15 @@ Enough information?
 
 ├── Yes
 │
+│   Return selected chunk IDs
+│
 └── No
         │
         ▼
-Read neighboring chunks
-
-↓
-
-Return selected chunk IDs
+Produce refined query and stop
 ```
+
+The agent works only with the current search results. If it still cannot find enough evidence after reading the relevant chunks, it returns a refined query and stops. A second retrieval iteration is performed only once, using that refined query.
 
 This process resembles how legal professionals first review search results before deciding which documents deserve closer examination.
 
@@ -351,22 +352,20 @@ Only chunks judged useful are expanded into their complete text.
 
 ---
 
-# Expected Search Behaviour
+# Expected Complete Search Behaviour
 
-The architecture assumes that retrieval quality is sufficiently strong that the Retrieval Agent will rarely need to perform multiple searches.
+The architecture assumes that retrieval quality is sufficiently strong that the Retrieval Agent will usually be able to make a decision from the initial complete search results.
 
 This expectation is based on several design decisions:
 
 * dense semantic retrieval
 * PostgreSQL Full Text Search
-* Reranking
+* reranking
 * optional neighboring chunk expansion
 
 Together these components are expected to provide high retrieval recall.
 
-Consequently, most legal questions should be answerable after a single retrieval operation followed by selective reading.
-
-Although repeated searches remain possible, they are expected to be exceptional rather than routine.
+Consequently, most legal questions should be answerable after one complete search followed by selective reading. If the first iteration is insufficient, the system may perform one additional retrieval iteration using a refined query.
 
 ---
 
@@ -374,18 +373,39 @@ Although repeated searches remain possible, they are expected to be exceptional 
 
 The Retrieval Agent returns structured evidence rather than natural-language responses.
 
-Example:
+Examples:
 
 ```json
 {
   "sufficient": true,
   "selected_chunks": [
-      "external_18a9f2",
-      "external_6d72ce",
-      "internal_0041",
-  ]
+    "external_18a9f2",
+    "external_6d72ce",
+    "internal_0041"
+  ],
+  "confidence": 0.93,
+  "reasoning": "Brief explanation.",
+  "refined_query": null
 }
 ```
+
+```json
+{
+  "sufficient": false,
+  "selected_chunks": [],
+  "confidence": 0.42,
+  "reasoning": "Brief explanation.",
+  "refined_query": "improved retrieval query"
+}
+```
+
+Field definitions:
+
+* sufficient: whether the current retrieval contains enough evidence
+* selected_chunks: chunk IDs to send to the synthesis stage
+* confidence: a value between 0 and 1 indicating confidence in the sufficiency decision
+* reasoning: one or two concise sentences explaining the decision without revealing internal reasoning
+* refined_query: an improved search query for the next retrieval iteration; it must be null when sufficient is true
 
 The backend validates all returned chunk identifiers before retrieving the corresponding chunk contents for the Answer Synthesizer.
 

@@ -7,11 +7,11 @@ class RetrievalAgentObservability:
     """Class to handle observability for the Retrieval Agent using Langfuse."""
 
     def __init__(self):
-        settings = get_settings()
+        self.settings = get_settings()
         self.langfuse = Langfuse(
-            secret_key=settings.langfuse.secret_key,
-            public_key=settings.langfuse.public_key,
-            host=settings.langfuse.host
+            secret_key=self.settings.langfuse.secret_key,
+            public_key=self.settings.langfuse.public_key,
+            host=self.settings.langfuse.host
         )
 
     def init_agent_trace(self, session_id: str, query: str, max_iterations: int):
@@ -24,6 +24,39 @@ class RetrievalAgentObservability:
             input={"user_query": query},
             metadata={"max_iterations": max_iterations}
         )
+
+    def log_generation(self, usage, output):
+        """
+        Logs a generation to Langfuse with token usage and cost information.
+
+        Args:
+            usage: The usage object from pydantic-ai
+            output: The output of the generation
+        """
+
+        input_cost = (usage.input_tokens / 1_000_000) * self.settings.openrouter.GPT_OSS_INPUT_PRICE
+        output_cost = (usage.output_tokens / 1_000_000) * self.settings.openrouter.GPT_OSS_OUTPUT_PRICE
+        total_cost = round(input_cost + output_cost, 6)
+
+        langfuse_context.update_current_observation(
+            output=output,
+            model=self.settings.openrouter.default_model,
+            usage={
+                "input": usage.input_tokens,
+                "output": usage.output_tokens,
+                "total": usage.total_tokens,
+                "unit": "TOKENS",
+                "inputCost": input_cost,
+                "outputCost": output_cost,
+                "totalCost": total_cost,
+            },
+            metadata={
+                "requests": getattr(usage, "requests", None),
+                "max_iterations": self.settings.retrieval_agent.max_iterations
+                },
+        )
+
+        return input_cost, output_cost, total_cost
 
     def process_result(self, result: RetrievalResult):
         """Logs the final Pydantic model as output and dynamically scores it."""

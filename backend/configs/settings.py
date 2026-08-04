@@ -33,6 +33,10 @@ class OpenRouterSettings(LLMSettings):
     default_model: str = Field(default="openai/gpt-oss-120b")
     embedding_model: str = Field(default="text-embedding-3-small")
 
+    GPT_OSS_INPUT_PRICE: float = 0.030
+    GPT_OSS_OUTPUT_PRICE: float = 0.17
+    GPT_NANO_INPUT_PRICE: float = 0.10
+    GPT_NANO_OUTPUT_PRICE: float = 0.40
 
 class CohereSettings(BaseModel):
     """Cohere-specific settings."""
@@ -59,7 +63,7 @@ class RetrievalAgentSettings(BaseModel):
     """Settings for Retrieval Agent"""
 
     max_retries: int = 3
-    max_iterations: int = 10
+    max_iterations: int = 5
 
 class LangfuseSettings(BaseModel):
     """Settings for Langfuse observability."""

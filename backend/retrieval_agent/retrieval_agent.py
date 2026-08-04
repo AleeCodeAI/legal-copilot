@@ -60,7 +60,8 @@ class RetrievalAgent(Logger):
         for i, result in enumerate(results, start=1):
             preview = result.metadata.get("preview", "N/A")
             formatted.append(f"Result {i}\nID: {result.id}\n\nPreview:\n{preview}")
-            return "\n\n".join(formatted)
+
+        return "\n\n".join(formatted)
 
     @observe(as_type="span", name="compile_user_input")
     def _user_input(self, search_results: CompleteSearchResponse) -> str:
@@ -123,6 +124,33 @@ class RetrievalAgent(Logger):
             langfuse_context.update_current_observation(level="ERROR", status_message=str(e))
             return {"error": f"Failed to retrieve chunks: {str(e)}"}
 
+    @observe(as_type="generation", name="agent_generation")
+    async def _agent(self, user_input: str): 
+        """
+        Executes the PydanticAI agent with the provided user input, returning a 
+        strictly validated RetrievalResult. Handles exceptions and logs errors.
+        """
+        try:
+            result = await self.agent.run(
+                            user_input,
+                            usage_limits=UsageLimits(
+                                request_limit=self.settings.retrieval_agent.max_iterations
+                            )
+                        )
+            usage = result.usage
+            input_cost, output_cost, total_cost = self.obs.log_generation(usage=usage, output=result.output)
+            costs = {
+                "input_cost": input_cost,
+                "output_cost": output_cost,
+                "total_cost": total_cost
+            }
+            return result, costs, usage
+        
+        except Exception as e:
+            self.log(f"Agent execution failed: {e}")
+            langfuse_context.update_current_observation(level="ERROR", status_message=str(e))
+            raise 
+
     @observe()
     async def run(self, query: str, session_id: str) -> RetrievalResult:
         """
@@ -144,20 +172,16 @@ class RetrievalAgent(Logger):
             
             user_input = self._user_input(search_results)
 
-            result = await self.agent.run(
-                user_input,
-                usage_limits=UsageLimits(
-                    request_limit=self.settings.retrieval_agent.max_iterations
-                )
-            )
-
-            usage = result.usage
+            result, costs, usage = await self._agent(user_input)
+            
             final_data: RetrievalResult = result.output
+            
             self.log(
                 f"First Pass Completed! "
                 f"Sufficient: {final_data.sufficient} | "
                 f"Requests: {usage.requests} | "
-                f"Tokens -> Total: {usage.total_tokens}"
+                f"Tokens -> Total: {usage.total_tokens} | "
+                f"Cost -> Input: ${costs.get('input_cost', 0)} | Output: ${costs.get('output_cost', 0)} | Total: ${costs.get('total_cost', 0)}"
             )
             
             if final_data.sufficient == "False" and final_data.refined_query:
@@ -168,22 +192,15 @@ class RetrievalAgent(Logger):
                 
                 refined_user_input = self._user_input(refined_search_results)
                 
-                refined_result = await self.agent.run(
-                    refined_user_input,
-                    message_history=result.new_messages(),
-                    usage_limits=UsageLimits(
-                        request_limit=self.settings.retrieval_agent.max_iterations
-                    )
-                )
-                
+                refined_result, costs, usage = await self._agent(refined_user_input)
                 final_data = refined_result.output
-                refined_usage = refined_result.usage
-                
+
                 self.log(
                     f"Second Pass Completed! "
                     f"Sufficient: {final_data.sufficient} | "
-                    f"Requests: {refined_usage.requests} | "
-                    f"Tokens -> Total: {refined_usage.total_tokens}"
+                    f"Requests: {usage.requests} | "
+                    f"Tokens -> Total: {usage.total_tokens} | "
+                    f"Cost -> Input: ${costs.get('input_cost', 0)} | Output: ${costs.get('output_cost', 0)} | Total: ${costs.get('total_cost', 0)}"
                 )
 
             self.log(
@@ -214,7 +231,7 @@ if __name__ == "__main__":
     import uuid
     
     session_id = str(uuid.uuid4())
-    agent = RetrievalAgent(session_id=session_id)
+    agent = RetrievalAgent()
     query = "How to respond to a three-day notice by the landlord? what happens if done incorrectly"
-    result = asyncio.run(agent.run(query=query))
+    result = asyncio.run(agent.run(query=query, session_id=session_id))
     print(result)

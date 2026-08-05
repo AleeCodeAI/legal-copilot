@@ -25,13 +25,14 @@ class RetrievalAgentObservability:
             metadata={"max_iterations": max_iterations}
         )
 
-    def log_generation(self, usage, output):
+    def log_generation(self, usage, output, prompt):
         """
         Logs a generation to Langfuse with token usage and cost information.
 
         Args:
             usage: The usage object from pydantic-ai
             output: The output of the generation
+            prompt: The prompt used for the generation
         """
 
         input_cost = (usage.input_tokens / 1_000_000) * self.settings.openrouter.GPT_OSS_INPUT_PRICE
@@ -40,6 +41,7 @@ class RetrievalAgentObservability:
 
         langfuse_context.update_current_observation(
             output=output,
+            prompt=prompt,
             model=self.settings.openrouter.default_model,
             usage={
                 "input": usage.input_tokens,

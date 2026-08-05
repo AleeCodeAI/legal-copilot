@@ -6,7 +6,7 @@ from typing import List, Optional
 
 from configs.settings import get_settings
 from utils.color import Logger
-from prompts import AGENT_SYSTEM_PROMPT
+from prompts.prompt_manager import PromptManager
 from schemas import CompleteSearchResponse, RetrievalResult
 from observability import RetrievalAgentObservability
 from database.vectorstore import VectorStore
@@ -25,7 +25,8 @@ class RetrievalAgent(Logger):
         model provider, and building the PydanticAI agent with specified tools and retry limits.
         """
         self.settings = get_settings()
-        
+        self.prompt = PromptManager().get_agent_system_prompt()
+
         self.model = OpenAIChatModel(
             self.settings.openrouter.default_model,
             provider=OpenAIProvider(
@@ -38,7 +39,7 @@ class RetrievalAgent(Logger):
             model=self.model,
             tools=[self._read_chunks_tool],
             output_type=RetrievalResult,
-            system_prompt=AGENT_SYSTEM_PROMPT,
+            system_prompt=self.prompt.prompt,
             retries=self.settings.retrieval_agent.max_retries,
         )
 
@@ -138,7 +139,9 @@ class RetrievalAgent(Logger):
                             )
                         )
             usage = result.usage
-            input_cost, output_cost, total_cost = self.obs.log_generation(usage=usage, output=result.output)
+            input_cost, output_cost, total_cost = self.obs.log_generation(usage=usage, 
+                                                                          output=result.output,
+                                                                          prompt=self.prompt)
             costs = {
                 "input_cost": input_cost,
                 "output_cost": output_cost,

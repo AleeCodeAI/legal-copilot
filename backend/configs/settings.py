@@ -38,6 +38,13 @@ class OpenRouterSettings(LLMSettings):
     GPT_NANO_INPUT_PRICE: float = 0.10
     GPT_NANO_OUTPUT_PRICE: float = 0.40
 
+class GroqSettings(LLMSettings):
+    """Groq-specific settings extending LLMSettings."""
+
+    api_key: str = Field(default_factory=lambda: os.getenv("GROQ_API_KEY"))
+    base_url: str = Field(default_factory=lambda: os.getenv("GROQ_URL"))
+    default_model: str = Field(default="openai/gpt-oss-120b")
+
 class CohereSettings(BaseModel):
     """Cohere-specific settings."""
 
@@ -76,6 +83,7 @@ class Settings(BaseModel):
     """Main settings class combining all sub-settings."""
 
     openrouter: OpenRouterSettings = Field(default_factory=OpenRouterSettings)
+    groq: GroqSettings = Field(default_factory=GroqSettings)
     cohere: CohereSettings = Field(default_factory=CohereSettings)
     database: DatabaseSettings = Field(default_factory=DatabaseSettings)
     vector_store: VectorStoreSettings = Field(default_factory=VectorStoreSettings)

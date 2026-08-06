@@ -1,3 +1,4 @@
 from .external_data_schemas import Chunk, ChunkMetadata
 from .vectorstore_search_schemas import CompleteSearchResponse, SearchResultItem
 from .retrieval_agent_schema import RetrievalResult
+from .complete_search_evals_schema import CompleteSearchEvalsSchema

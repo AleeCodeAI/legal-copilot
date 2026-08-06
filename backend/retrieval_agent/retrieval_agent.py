@@ -3,6 +3,7 @@ from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
 from langfuse.decorators import langfuse_context, observe
 from typing import List, Optional
+import logging
 
 from configs.settings import get_settings
 from utils.color import Logger
@@ -11,6 +12,7 @@ from schemas import CompleteSearchResponse, RetrievalResult
 from observability import RetrievalAgentObservability
 from database.vectorstore import VectorStore
 
+logging.basicConfig(level=logging.INFO, format="%(message)s")
 class RetrievalAgent(Logger):
     """
     An asynchronous agent that orchestrates external search and file-reading tools.

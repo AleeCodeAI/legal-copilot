@@ -1,0 +1,278 @@
+[
+    {
+        "query": "Under California law effective January 1, 2025, how many days does a tenant have to respond to an unlawful detainer complaint, and how was this amendment applied in a 2025 case where the landlord prematurely sought default judgment?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved evidence includes the statutory change to a ten\u2011day response period effective Jan\u202f1\u202f2025 and an internal case summary (GSA\u20112025\u2011101) showing a landlord mistakenly sought a default judgment under the old five\u2011day rule, which was successfully challenged using the new ten\u2011day rule."
+    },
+    {
+        "query": "What are the legal requirements for a landlord to charge an application screening fee, and what remedies exist when a landlord collects such fees while knowing no unit is actually available, as demonstrated in a 2025 case?",
+        "sufficient": true,
+        "confidence": 0.97,
+        "reasoning": "The retrieved external chunk details the legal requirements for charging screening fees and the prohibition when no vacancy exists, and the internal case provides a concrete 2025 example of a landlord collecting fees despite no unit being available, including remedies (refund and statutory penalty). Together they fully address the question."
+    },
+    {
+        "query": "Under what conditions does a person living in a hotel or motel become a tenant with full eviction protections, and how did a 2025 case establish tenant status after 45 consecutive days of occupancy despite missed payments?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved evidence includes a detailed list of situations where a hotel/motel resident is NOT a tenant, which can be inverted to define the conditions for gaining full tenant status and eviction protections, and an internal 2025 case summary showing a court recognizing tenant status after 45 consecutive days of occupancy despite missed payments."
+    },
+    {
+        "query": "What are the legal distinctions between a single lodger and a tenant in a private residence, and what notice is required before a homeowner can remove a lodger who pays monthly rent?",
+        "sufficient": true,
+        "confidence": 0.94,
+        "reasoning": "The retrieved chunks explain that a single lodger lives in a room of a house occupied by the owner, giving the owner control and allowing eviction with written notice equal to the periodic tenancy term, whereas tenants have broader rights. They also specify that the required notice is the same as for a month\u2011to\u2011month tenancy (typically 30 days) before the homeowner can remove a lodger who pays monthly rent."
+    },
+    {
+        "query": "How does California law protect domestic violence survivors from discrimination in rental applications, and what enforcement actions were taken in a 2026 case where a qualified applicant was rejected solely because of prior lease termination due to abuse?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved evidence includes statutory provisions (SB 1051 and related law) that prohibit landlords from rejecting rental applicants who broke a lease due to domestic violence and set penalties up to $5,000, and it also provides a detailed 2026 case (MATTER GSA-2026-027) where a qualified applicant was denied for that reason, leading to a civil action, settlement, and the statutory penalty."
+    },
+    {
+        "query": "What are the statutory requirements for a landlord to disclose a property's location in a flood hazard zone, and how does this disclosure obligation apply to rental agreements entered into after July 1, 2018?",
+        "sufficient": true,
+        "confidence": 0.93,
+        "reasoning": "Result 1 provides the statutory disclosure requirement (landlord must disclose if they have actual knowledge the unit is in a flood hazard zone) and specifies that this obligation applies to all rental agreements entered into after July 1, 2018."
+    },
+    {
+        "query": "What is the maximum security deposit a landlord can charge under California law starting July 1, 2024, and what exemptions apply to small landlords, including the separate treatment of application screening fees?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "Result 1 provides the July\u202f1\u202f2024 cap of one month\u2019s rent for standard landlords, notes that small landlords may charge up to two months\u2019 rent, defines small landlords, and explains that application screening fees are excluded from the security\u2011deposit limit."
+    },
+    {
+        "query": "What mandatory disclosures must a landlord include in every rental agreement regarding registered sex offenders under Megan's Law, and what is the specific statutory language required?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved chunks include the required disclosure that every rental agreement must contain a Megan's Law notice and provide the exact statutory language to be included, satisfying both aspects of the question."
+    },
+    {
+        "query": "What are the notice requirements for terminating a tenancy in a condominium conversion project, including the 90-day advance notice of sale and first option to purchase, and how were these requirements enforced in a 2026 case?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved chunks provide the statutory notice requirements (90\u2011day advance notice of sale and right of first refusal) and include internal 2026 case summaries showing how those requirements were enforced through administrative complaints and corrective actions."
+    },
+    {
+        "query": "Under what circumstances can a landlord require a tenant to pay rent in cash rather than by check, and what notice requirements must be met after a check has been dishonored?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved evidence (external result 1 and internal result 1) explicitly states that a landlord may require cash payment only after a tenant's check is dishonored within the past three months, and outlines the required written notice, attachment of the dishonored check, and notice period limitations."
+    },
+    {
+        "query": "What are the legal limits on late fees and dishonored check fees in California rental agreements, and what constitutes a reasonable fee under the law?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved evidence includes explicit statutory limits for dishonored check fees (up to $25 for the first check and $35 for subsequent checks) and explains that late fees must be a reasonable estimate of the landlord's actual costs and not a penalty, providing the criteria for what constitutes a reasonable fee."
+    },
+    {
+        "query": "What are a tenant's rights and obligations when making partial rent payments, and how should a tenant document an agreement with the landlord to avoid eviction proceedings?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved evidence includes explicit guidance on partial rent payments, the landlord's right to refuse or issue a notice, and the tenant's obligation to obtain a written agreement detailing the payment schedule, signatures, and retention of the document to prevent eviction. A case example further confirms that a signed partial\u2011payment agreement can serve as an absolute defense against eviction."
+    },
+    {
+        "query": "What are the requirements for a landlord to provide a receipt for rent payments made in cash, and what proof should a tenant retain for record-keeping?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "Result 1 states that a landlord must give a signed, dated written receipt for cash rent payments and that tenants should keep those receipts (or canceled checks) indefinitely for record-keeping, directly covering both required elements."
+    },
+    {
+        "query": "What notice is required when a single-family home is exempt from the Tenant Protection Act's just-cause eviction requirements, and what happens if the landlord fails to include the mandatory exemption disclosure in the lease?",
+        "sufficient": true,
+        "confidence": 0.94,
+        "reasoning": "The retrieved chunks explain that for a single-family home to be exempt, the landlord must include a specific statutory exemption disclosure in the lease or as an addendum, and internal case notes show that failure to include this disclosure results in the eviction being dismissed or the termination notice being void."
+    },
+    {
+        "query": "Under California law, what is the correct method for calculating the three-day notice period when a notice is served on a Friday before a federal holiday, and how did this issue arise in a 2026 eviction case?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved evidence includes the statutory rule for counting curable three\u2011day notices (start on the first non\u2011weekend, non\u2011court\u2011holiday day after service, with an example of a Friday before Labor Day) and a specific 2026 eviction matter (GSA\u20112026\u2011840) where the issue arose from a landlord miscalculating the notice period and the court quashing the suit."
+    },
+    {
+        "query": "What are the two-pronged requirements for substituted service of a three-day notice under California law, and how does failure to comply with the mailing prong invalidate an unlawful detainer action?",
+        "sufficient": true,
+        "confidence": 0.94,
+        "reasoning": "External Result 2 clearly states the two-pronged requirements for substituted service\u2014leaving the notice with a suitable person at home or work and mailing a copy to the tenant\u2019s home\u2014and that service is only complete when both steps are done, meaning the three\u2011day period does not begin until then. This implies that failure to mail the notice makes service incomplete and prevents a valid unlawful detainer action."
+    },
+    {
+        "query": "What remedies are available to a tenant when a landlord engages in self-help eviction by cutting off utilities and changing locks, and what statutory daily penalties apply under Civil Code Section 789.3?",
+        "sufficient": true,
+        "confidence": 0.94,
+        "reasoning": "The internal case summary describes a landlord's self\u2011help eviction (utility shutoff and lock change) and cites California law prohibiting such actions, providing remedies such as an emergency temporary restraining order to restore utilities and a settlement for damages. It also specifies the statutory daily penalty of up to $100 per day under Civil Code \u00a7789.3."
+    },
+    {
+        "query": "What is a tenant's right to withhold rent for habitability defects, and what procedural requirements must be followed regarding the establishment of an escrow account and providing notice to the landlord?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved chunks explain that tenants may withhold rent when serious habitability defects threaten health or safety, outline the need to give written notice describing the defects and allowing a reasonable repair period, and describe the procedural steps for handling the withheld rent, including the recommendation to place it in an escrow account and to notify the landlord of the escrow deposit."
+    },
+    {
+        "query": "Under what circumstances can a tenant be barred from withholding rent due to tenant-caused defects, and how does a landlord establish that the tenant's own actions created the substandard condition?",
+        "sufficient": true,
+        "confidence": 0.94,
+        "reasoning": "The internal case summary provides a concrete scenario where a tenant is barred from withholding rent because the defect was caused by the tenant's own actions, and explains that the landlord can establish this by evidence such as discovery and contractor logs showing the tenant or guests caused the problem."
+    },
+    {
+        "query": "What are the statutory requirements for a landlord to change a domestic violence survivor's locks within 24 hours of a written request, and what reimbursement obligations arise when the landlord fails to act and the tenant hires an independent locksmith?",
+        "sufficient": true,
+        "confidence": 0.87,
+        "reasoning": "The retrieved evidence includes statutory language detailing the 24\u2011hour lock\u2011change requirement, the landlord's duty to reimburse within 21 days, and the tenant's right to hire a locksmith and seek reimbursement when the landlord fails to act."
+    },
+    {
+        "query": "When a landlord changes locks to exclude a co-tenant under a domestic violence protective order, how does that affect the financial liability of the excluded co-tenant under the original lease?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "Both external and internal sources state that when locks are changed to exclude a co-tenant under a protective order, the excluded co-tenant remains fully liable for their share of the rent under the original lease."
+    },
+    {
+        "query": "What are the requirements for a domestic violence survivor to terminate a fixed-term lease early without penalty, including the required documentation and notice period, and how does this affect security deposit returns?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved chunks detail the statutory 14\u2011day written notice requirement, the need to attach a restraining order, police report, or qualified third\u2011party statement (all within 180 days), and state that landlords must return the security deposit without early\u2011termination penalties, confirming the effect on deposit returns."
+    },
+    {
+        "query": "After a building sale, what are the respective obligations of the selling and purchasing landlords regarding a tenant's security deposit, and what happens when the seller fails to transfer the deposit?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved evidence explains that the selling landlord must either transfer the tenant's security deposit to the new landlord (with notice and allowable deductions) or return it to the tenant, and that the new landlord becomes responsible upon receipt. It also states that if the seller fails to transfer or return the deposit, both the old and new landlords are jointly liable and the new landlord must refund the deposit to the tenant, without charging a replacement deposit. This collectively covers the obligations of both parties and the consequences of a failed transfer."
+    },
+    {
+        "query": "What statutory penalties apply for a landlord's bad faith retention of a security deposit, and how does the small claims jurisdictional limit affect recovery in such cases?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved evidence includes statutory language that a court may award up to twice the security deposit as a bad\u2011faith penalty, and it explains that small\u2011claims courts are limited to claims not exceeding $12,500, requiring a claimant to waive any amount above that limit, which can cap the total recovery."
+    },
+    {
+        "query": "What are the obligations of a tenant's estate to continue paying rent after the tenant's death during a fixed-term lease, and what is the landlord's duty to mitigate damages by reletting the unit?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "Both the external and internal chunks explicitly state that a tenant's estate remains liable for rent for the remainder of a fixed\u2011term lease after death, and that the landlord has a legal duty to make a good\u2011faith effort to re\u2011let the unit to mitigate the estate's liability."
+    },
+    {
+        "query": "When a landlord accepts rent after a fixed-term lease expires, what type of tenancy is created, and how does that affect the landlord's ability to terminate the tenancy without cause?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved chunks explain that acceptance of rent after a fixed\u2011term lease creates a periodic (holdover) tenancy and that, under both general law and just\u2011cause protections, the landlord must give proper notice and cannot simply terminate without cause."
+    },
+    {
+        "query": "What protections apply to active-duty service members terminating a lease due to deployment orders, including the effective date of termination and the timeline for refunding advance rent and deposits?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved evidence (External Result 1 and Internal Result 1) clearly outlines the military lease termination right, the effective date (30 days after the next rent due date following notice), and the requirement that any advance rent or security deposit be refunded within 30 days after that effective date."
+    },
+    {
+        "query": "What are the requirements for a landlord to provide an adverse action notice when rejecting a tenant based on a consumer screening report, and what remedies exist for failure to provide the required disclosure?",
+        "sufficient": true,
+        "confidence": 0.94,
+        "reasoning": "The retrieved chunks detail the statutory content and timing required for an adverse action notice (statement of reliance on the report, agency contact info, right to obtain and dispute the report, and a 7\u2011day copy provision) and provide a concrete example of remedies (actual damages, fee waivers, and statutory monetary penalties) when a landlord fails to furnish the notice."
+    },
+    {
+        "query": "Under California fair housing law, what constitutes illegal source of income discrimination, and how was this enforced in a case where a landlord rejected a Section 8 voucher holder based on credit score criteria?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved evidence defines illegal source\u2011of\u2011income discrimination as a prohibition on refusing to rent to someone because of the source of their income, including housing vouchers, and requires landlords to offer alternative credit verification. The internal case summary shows how a landlord who rejected a Section\u202f8 voucher holder based on a credit\u2011score requirement was sued under California source\u2011of\u2011income protections, resulting in a preliminary injunction and settlement, demonstrating enforcement."
+    },
+    {
+        "query": "What are the legal requirements for a landlord to disclose a death that occurred in a rental unit within the last three years, and what limitations apply regarding HIV/AIDS-related deaths?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "External Result 1 explicitly states the statutory requirement that landlords must disclose any death and its manner within the past three years, and also notes that landlords are not required to disclose HIV status or AIDS-related deaths, covering both aspects of the query."
+    },
+    {
+        "query": "What disclosures are required when a rental unit is within one mile of a closed military base where ammunition or explosives were used, and when must this notice be provided?",
+        "sufficient": true,
+        "confidence": 0.97,
+        "reasoning": "External Result 1 explicitly states that landlords must give written notice of the proximity to a closed military base with ammunition or explosives, and that the notice must be provided before the tenant signs the rental agreement, directly covering both required disclosure and timing."
+    },
+    {
+        "query": "What are the rights and responsibilities of residents in transitional housing, and how does the payment of rent affect their status as tenants versus participants?",
+        "sufficient": true,
+        "confidence": 0.86,
+        "reasoning": "The retrieved chunks explain that residents who do not pay rent are considered participants subject to specific behavior rules and eviction procedures, while paying rent makes them tenants, and they then receive the full set of tenant rights and responsibilities outlined in the tenant rights and responsibilities sections."
+    },
+    {
+        "query": "What are the specific landlord-tenant relationships governed by the Mobilehome Residency Law versus standard landlord-tenant law, particularly for tenants who lease a mobilehome from its owner?",
+        "sufficient": true,
+        "confidence": 0.97,
+        "reasoning": "Result 1 explicitly states that most mobilehome park relationships are governed by the Mobilehome Residency Law, but tenants who lease a mobilehome from its owner (or lease occupancy directly from park management) are governed by standard landlord\u2011tenant law, not the Mobilehome Residency Law."
+    },
+    {
+        "query": "What is the legal status of a residential hotel guest who has lived in the unit for more than 30 days and uses it as a primary residence, and what rights do they possess compared to transient hotel guests?",
+        "sufficient": true,
+        "confidence": 0.94,
+        "reasoning": "The retrieved chunks explain that a residential hotel guest who has lived there >30 days and uses it as a primary residence is treated similarly to a tenant and gains many tenant rights, whereas transient guests retain only guest status with limited protections such as lockout rights."
+    },
+    {
+        "query": "What are the requirements for a landlord to provide an Inventory Checklist at the beginning of a tenancy, and how does completing this checklist protect both parties from disputes at move-out?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved chunks explain that while an inventory checklist is not strictly required by law, landlords are expected to provide it (or a similar form) before move\u2011in, both parties should complete, sign, and keep copies, and recent statutes mandate photographic documentation at tenancy start. They also state that completing and signing the checklist (and taking photos) helps prevent or resolve disputes over unit condition at move\u2011out."
+    },
+    {
+        "query": "What are the legal obligations of a landlord to provide a written statement to a service member explaining why a higher security deposit is being charged, and when must that additional deposit be returned?",
+        "sufficient": true,
+        "confidence": 0.97,
+        "reasoning": "External Result 1 explicitly states the landlord must give a written statement before lease signing explaining the higher deposit and amount, and that the additional deposit must be returned after six months if rent is current, with the lease specifying the return date."
+    },
+    {
+        "query": "Under California law, what is the maximum application screening fee that can be charged as of December 2023, and how does this fee relate to the overall security deposit limits?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved evidence states that the application screening fee cannot exceed $62.02 as of December 2023 and clarifies that this fee is not part of the security deposit, allowing it to be charged in addition to the security deposit, which is limited to one month's rent (or two months for small landlords)."
+    },
+    {
+        "query": "What are the specific conditions under which a mobilehome park resident is subject to standard landlord-tenant eviction procedures rather than the Mobilehome Residency Law?",
+        "sufficient": true,
+        "confidence": 0.94,
+        "reasoning": "Result 1 explicitly states the conditions: a resident who leases a mobilehome from its owner (with the owner leasing the site directly from park management) or a resident who leases occupancy directly from the park management is subject to standard landlord\u2011tenant eviction procedures, not the Mobilehome Residency Law."
+    },
+    {
+        "query": "What is the difference between a lodger and a tenant in a private residence where the owner lives, and what is the eviction procedure for a single lodger versus a tenant in a multi-unit building?",
+        "sufficient": true,
+        "confidence": 0.88,
+        "reasoning": "The retrieved chunks define a lodger as a room\u2011share occupant in a house where the owner lives and note the owner's right to enter all areas, contrasting with tenant rights that involve exclusive possession and limited landlord entry. They also detail the eviction notice required for a single lodger and the formal unlawful\u2011detainer court process for evicting a tenant, which applies to multi\u2011unit buildings."
+    },
+    {
+        "query": "What are the legal requirements for a landlord to include the name and address of the person authorized to receive legal notices in the rental agreement, and where must this information be posted?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved evidence includes statutory language stating that the rental agreement must contain the name, address, and telephone number of the authorized manager or agent for legal notices, and that this information must also be posted conspicuously in the rental unit or building."
+    },
+    {
+        "query": "For tenancies beginning on or after July 1, 2025, what are the landlord's obligations regarding photographing the rental unit, and how should tenants use these photographs for their records?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved chunks explicitly state that for tenancies beginning on or after July 1, 2025, landlords must photograph the unit at or before the tenancy starts, and tenants should request copies of those photographs (or take their own) for their records."
+    },
+    {
+        "query": "What are the requirements for a landlord to offer tenants the option of reporting positive rental payments to consumer reporting agencies under AB 2747, and what opt-in/opt-out rights do tenants have?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved chunks detail the statutory timing, method, and content requirements for landlords to offer positive rent reporting (including fee caps, disclosure, and annual offer), as well as tenants' opt\u2011in rights at any time and opt\u2011out rights with a six\u2011month re\u2011opt\u2011in restriction and fee\u2011nonpayment consequences, satisfying the question."
+    },
+    {
+        "query": "What are the requirements for a landlord to offer an application screening process under AB 2493, and when is a landlord prohibited from collecting an application screening fee?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "External Result 2 enumerates the specific requirements a landlord must meet to offer an application screening process under AB 2493, and both Result 1 and Result 2 state that a landlord is prohibited from collecting a fee when they know or should know no unit is available."
+    },
+    {
+        "query": "Under SB 479, what ownership interest percentage is required for a landlord who is a beneficial owner of an LLC or partnership to utilize the owner move-in no-fault eviction process starting in 2025?",
+        "sufficient": true,
+        "confidence": 0.97,
+        "reasoning": "Result 1 explicitly states that under SB 479, a landlord who is a beneficial owner of an LLC or partnership must have at least a 25% ownership interest to use the landlord move-in no-fault eviction process starting in 2025."
+    },
+    {
+        "query": "What are the legal remedies available to a tenant when a landlord uses threats, force, or menacing conduct to influence a tenant to vacate, including statutory penalties and injunctive relief?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "The retrieved chunks describe the landlord's prohibited conduct, the tenant's right to sue, statutory civil penalties up to $2,000 per violation, and the availability of injunctive relief such as restraining orders and court orders to abate nuisance or compel repairs, providing sufficient evidence to answer the question."
+    },
+    {
+        "query": "Under the Tenant Protection Act, what is the requirement for a landlord to provide a separate opportunity to cure a curable at-fault violation before serving an immediate three-day notice to quit?",
+        "sufficient": true,
+        "confidence": 0.96,
+        "reasoning": "Multiple retrieved chunks explicitly state that under the Tenant Protection Act, a landlord must first give a separate notice of the curable at\u2011fault violation and a reasonable opportunity to cure before serving an immediate three\u2011day notice to quit."
+    }
+]

@@ -77,16 +77,15 @@ Filtering irrelevant information is not the responsibility of this stage.
 
 ---
 
-## Ground Truth Dataset
+## Evaluation Dataset
 
-A manually curated evaluation dataset is created.
+The evaluation dataset consists of a list of legal queries.
 Each evaluation sample contains:
 
 * user query
-* annotated chunk identifiers that contain the required evidence
 
-These annotations represent the chunks that should be discoverable by retrieval.
-Unlike the Retrieval Agent evaluation, exact chunk identifiers are appropriate here because the Complete Search is evaluated on retrieval recall rather than evidence sufficiency.
+For each query, the Complete Search is executed and the retrieved candidate set is passed to an LLM judge together with the query.
+The judge assesses whether the candidate set contains the relevant information needed to answer the question.
 
 ---
 
@@ -95,21 +94,22 @@ Unlike the Retrieval Agent evaluation, exact chunk identifiers are appropriate h
 For every evaluation query:
 
 1. Execute the Complete Search.
-2. Collect the retrieved candidate chunk identifiers.
-3. Compare the retrieved identifiers against the annotated identifiers.
-4. Compute retrieval performance.
+2. Collect the retrieved candidate chunk identifiers and associated content.
+3. Pass the query and the retrieved candidate set to an LLM judge.
+4. Ask the judge to determine whether the candidate set contains the relevant evidence needed to answer the query.
+5. Record the structured judgment produced by the judge according to the predefined evaluation schema.
 
-The objective is to determine whether the required evidence entered the candidate set.
-The evaluation does not assess ranking quality or filtering decisions.
-Those responsibilities belong to the Retrieval Agent.
+The objective is to determine whether the required evidence entered the candidate set from the perspective of an independent judge.
+This evaluation does not rely on simple rule-based matching against predefined chunk identifiers.
+Instead, it evaluates whether the candidate set is sufficient for downstream reasoning.
 
 ---
 
 ## Success Criterion
 
-The Complete Search succeeds when the required evidence is retrieved.
+The Complete Search succeeds when the LLM judge determines that the retrieved candidate set contains relevant evidence for the query.
 It is acceptable for additional irrelevant candidates to appear in the results.
-High recall is preferred over aggressive filtering because the Retrieval Agent performs evidence selection later in the pipeline.
+High recall remains preferable to aggressive filtering because the Retrieval Agent performs evidence selection later in the pipeline.
 
 ---
 

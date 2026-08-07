@@ -24,8 +24,8 @@ class CompleteSearchEvals(Logger):
         self.settings = get_settings()
         self.prompt = PromptManager().get_complete_search_evals().prompt
 
-        self.client = OpenAI(api_key=self.settings.openrouter.api_key,
-                             base_url=self.settings.openrouter.base_url)
+        self.client = OpenAI(api_key=self.settings.groq.api_key,
+                             base_url=self.settings.groq.base_url)
 
         self.evals_data = Path(__file__).parents[3] / "data" / "evals_data" / "complete_search_evals_data.json"
         self.execution_result = Path(__file__).parent / "results" / "complete_search_execution_results.json"

@@ -117,37 +117,99 @@ High recall remains preferable to aggressive filtering because the Retrieval Age
 
 ## Purpose
 
-The Retrieval Agent is evaluated independently from the Complete Search.
-Its responsibility is to identify a sufficient set of evidence from the candidate set returned by retrieval.
-The agent is not evaluated on whether it retrieves every relevant chunk.
-Instead, it is evaluated on whether the selected evidence is sufficient for the Answer Synthesizer to answer the user's question completely.
+The Retrieval Agent sits between Complete Search and the Answer Synthesizer.
+
+Its responsibility is to examine the evidence returned by Complete Search, determine whether enough evidence is available, and select a focused set of chunks for downstream synthesis.
+
+The system only sends the selected evidence to the Answer Synthesizer when the Retrieval Agent determines that the evidence is sufficient. Therefore, the primary evaluation question is:
+
+> **When the Retrieval Agent says the evidence is sufficient, is it actually sufficient to answer the user's question?**
+
+A secondary objective is to evaluate how focused the selected evidence is and whether it contains unnecessary or distracting chunks.
+
+The evaluation is performed at the **chunk level**. Information that is unnecessary within an otherwise useful chunk is not penalized because the system selects and passes complete chunks rather than individual portions of chunks.
 
 ---
 
 ## Evaluation Philosophy
 
-Traditional retrieval evaluation often compares retrieved documents against a predefined list of "correct" documents.
-This approach is intentionally not used here.
-Multiple combinations of chunks may provide sufficient evidence for answering a question.
-Requiring the Retrieval Agent to reproduce one exact set of chunk identifiers would incorrectly penalize valid retrieval decisions.
-Instead, the evaluation focuses on evidence sufficiency.
+The Retrieval Agent is not evaluated by comparing its output against a predefined set of "correct" chunk IDs.
+
+Multiple different combinations of chunks may contain sufficient evidence to answer the same question. Requiring the agent to select one exact set of chunks would therefore incorrectly penalize valid retrieval decisions.
+
+Instead, evaluation focuses on the **quality of the final selected evidence**:
+
+1. Does the selected evidence contain everything necessary to answer the question?
+2. Is the selected evidence reasonably focused, without an excessive number of unnecessary chunks?
+
+This reflects the actual role of the Retrieval Agent in the production pipeline.
+
+---
+
+## Evaluation Metrics
+
+### 1. Evidence Sufficiency
+
+Sufficiency is the primary metric.
+
+The judge determines whether the selected chunks collectively contain enough evidence for the Answer Synthesizer to answer **all material aspects** of the user's question.
+
+A result is considered sufficient when:
+
+* the necessary evidence is present across the selected chunks;
+* all material aspects of the query can be addressed;
+* no important information has been omitted from the selected evidence.
+
+Minor missing details that would not meaningfully change the answer do not make a result insufficient.
+
+The evaluation does not assess the quality of the final synthesized answer. It only determines whether the selected evidence is sufficient to support one.
+
+### 2. Focus
+
+Focus measures whether the Retrieval Agent selects unnecessary or distracting chunks in addition to the evidence required to answer the question.
+
+A chunk may be relevant to the broader topic but still be unnecessary for answering the specific query. Such a chunk is considered **relevant-but-unnecessary**, rather than irrelevant.
+
+The evaluation therefore distinguishes between:
+
+* **Necessary chunks** — required to answer the question.
+* **Relevant-but-unnecessary chunks** — useful or related information that is not required to answer the current question.
+* **Distracting chunks** — chunks that provide little or no meaningful value for the current question.
+
+A small number of relevant-but-unnecessary chunks is acceptable. The selection becomes unfocused when unnecessary or distracting chunks constitute a substantial portion of the selected set. In particular, when more than half of the selected chunks are relevant-but-unnecessary or distracting, the result is considered unfocused.
+
+This assessment is performed strictly at the **chunk level**. Unnecessary information contained within a selected chunk is not separately penalized.
 
 ---
 
 ## Evaluation Dataset
 
-Each evaluation sample contains:
+The evaluation dataset consists of **real-world Retrieval Agent outputs** produced by running  user queries through the system.
 
-* user query
-* candidate chunks returned to the Retrieval Agent
+The process used to construct the dataset is:
 
-These candidate chunks include:
+1. Select a set of evaluation queries.
+2. Run the queries through the retrieval agent.
+3. Collect the Retrieval Agent's outputs and selected chunks.
+4. Keep only cases where the Retrieval Agent itself returned `sufficient=true`.
+5. Exclude cases where the Retrieval Agent returned `sufficient=false`.
 
-* necessary evidence
-* partially relevant evidence
-* irrelevant distracting evidence
+This filtering is intentional.
 
-The Retrieval Agent receives exactly the same type of input that it would receive during normal system execution.
+The production system only forwards evidence to the Answer Synthesizer when the Retrieval Agent claims that the evidence is sufficient. Therefore, the evaluation specifically tests the reliability of this decision:
+
+> **When the Retrieval Agent claims sufficiency, is that claim actually correct?**
+
+The resulting dataset therefore represents real Retrieval Agent behavior under the same conditions encountered during normal system execution.
+
+Each retained evaluation sample contains:
+
+* user query;
+* Retrieval Agent's selected internal chunks, if any;
+* Retrieval Agent's selected external chunks, if any;
+* the corresponding chunk content.
+
+The Retrieval Agent's original sufficiency decision is retained as the basis for constructing the evaluation dataset, but the LLM Judge independently determines whether the selected evidence is actually sufficient.
 
 ---
 
@@ -155,24 +217,16 @@ The Retrieval Agent receives exactly the same type of input that it would receiv
 
 For every evaluation sample:
 
-1. Execute the Retrieval Agent.
-2. Obtain the selected chunk identifiers.
-3. Retrieve the corresponding chunk contents.
-4. Submit the user query together with the selected chunk contents to an independent evaluation process.
-5. Determine whether the selected evidence is sufficient to answer the query.
+1. Take the original user query.
+2. Provide the selected chunks produced by the Retrieval Agent to the evaluator.
+3. Evaluate the selected chunks collectively.
+4. Determine whether the evidence is sufficient to answer all material aspects of the query.
+5. Determine whether the selected chunk set is focused or contains excessive unnecessary evidence.
+6. Record the evaluator's confidence and concise reasoning.
 
-The evaluation focuses on the final evidence selected by the Retrieval Agent rather than the specific chunk identifiers it returns.
+The evaluator does not receive the original Complete Search candidate set.
 
----
-
-# Evidence Sufficiency Assessment
-
-The Retrieval Agent is evaluated on one central question:
-
-> Can the Answer Synthesizer produce a complete and accurate answer using only the selected evidence?
-
-This question reflects the actual contract between the Retrieval Agent and the downstream Answer Synthesizer.
-The evaluation therefore measures the usefulness of the selected evidence rather than agreement with predefined chunk identifiers.
+This is intentional: the evaluation is focused on the **final evidence passed downstream**, rather than on how effectively the Retrieval Agent filtered the original candidate set.
 
 ---
 
@@ -180,71 +234,124 @@ The evaluation therefore measures the usefulness of the selected evidence rather
 
 ## Purpose
 
-An LLM Judge is used to automate evidence sufficiency assessment.
-Before relying on the judge for large-scale evaluation, its decisions must first be calibrated against human judgments.
-This process establishes confidence that the judge produces decisions similar to those of a human evaluator.
-Calibration is performed infrequently.
-Evaluation is performed continuously.
+An LLM Judge is used to automate the evaluation of Retrieval Agent outputs.
+
+Before using the judge for the larger evaluation dataset, its ability to identify insufficient evidence must be tested through a calibration process.
+
+The calibration is particularly important because the production evaluation dataset contains only cases where the Retrieval Agent itself claims `sufficient=true`. The judge must therefore be capable of identifying cases where the agent's sufficiency decision is incorrect.
 
 ---
 
 ## Calibration Dataset
 
-A representative collection of evaluation cases is selected.
+The calibration dataset contains **15 mocked Retrieval Agent results**.
 
-Each case contains:
+These samples are not generated by the Retrieval Agent. Instead, they are manually constructed to follow the same output structure and format that the Retrieval Agent would produce.
 
-* user query
-* retrieved evidence
+The dataset intentionally contains a mixture of:
 
-The Retrieval Agent's internal reasoning, confidence, and decisions are **not** provided to the judge.
-The judge evaluates only the evidence itself.
-This prevents anchoring on the Retrieval Agent's conclusions.
+* sufficient and focused selections;
+* sufficient but unnecessarily broad selections;
+* insufficient selections;
+* cases where the evidence is insufficient even though the mocked Retrieval Agent output is explicitly labeled `sufficient=true`.
+
+The final category is particularly important.
+
+Because the production system relies on the Retrieval Agent's `sufficient=true` decision before forwarding evidence to the Answer Synthesizer, the judge must demonstrate that it can **challenge an incorrect sufficiency claim** rather than simply agreeing with the agent's label.
+
+The mocked labels therefore act as controlled test conditions rather than ground truth supplied to the judge.
 
 ---
 
 ## Human Evaluation
 
-A human evaluator reviews each evaluation case and records:
+Each calibration sample is independently reviewed by a human evaluator.
 
-* decision
-* sufficient
-* not sufficient
-* short justification
-* missing legal concepts (if insufficient)
+The human evaluator determines:
 
-The human judgment becomes the reference for calibration.
+* whether the selected evidence is sufficient;
+* whether the selected chunks are focused;
+* the reasoning supporting the decision.
+
+These human judgments serve as the reference for evaluating the LLM Judge.
 
 ---
 
 ## LLM Judge Evaluation
 
-The LLM Judge receives the same information.
-It independently produces:
+The LLM Judge receives only:
 
-* decision
-* short justification
-* missing legal concepts (if insufficient)
+* the user query;
+* the selected chunk contents.
 
-The judge is not expected to reproduce identical wording.
-Instead, agreement is measured primarily through decision consistency and identification of missing concepts.
+It does not receive the Retrieval Agent's sufficiency label or internal reasoning.
+
+The judge independently produces:
+
+* `sufficient`;
+* `focused`;
+* `confidence`;
+* concise reasoning.
+
+This prevents the judge from simply reproducing or anchoring on the Retrieval Agent's original decision.
 
 ---
 
 ## Calibration Objective
 
-The objective is to determine whether the LLM Judge reaches decisions that consistently align with human evaluation.
-Once acceptable agreement has been established, the LLM Judge may be used to evaluate larger datasets automatically.
+The objective is to verify that the LLM Judge can reliably distinguish between:
+
+* genuinely sufficient evidence;
+* evidence that is missing a material aspect of the question;
+* focused selections;
+* selections containing excessive unnecessary or distracting chunks.
+
+Particular attention is given to **false sufficiency cases**, where the Retrieval Agent claims `sufficient=true` even though the selected evidence is not sufficient.
+
+Once the judge demonstrates acceptable agreement with human evaluation, it can be used to evaluate the larger real-world Retrieval Agent dataset.
 
 ---
 
 # What Is Considered Success?
 
-The Retrieval Agent succeeds when the selected evidence allows the downstream Answer Synthesizer to answer the user's question completely.
-It is **not** required to retrieve every relevant chunk.
-It is acceptable to omit relevant information that is unnecessary for answering the current question.
-Likewise, including a small amount of additional evidence is not necessarily considered a failure if the selected evidence remains efficient and sufficient.
-The primary objective is to return the smallest set of evidence that fully supports the requested answer.
+The Retrieval Agent's ideal behavior is:
+
+> **Select enough chunks to completely support the answer while avoiding unnecessary chunks.**
+
+A successful result therefore has two properties:
+
+1. **Sufficient** — the selected chunks contain all evidence necessary to answer the user's question.
+2. **Focused** — the selected chunk set does not contain an excessive amount of unnecessary or distracting evidence.
+
+The agent does **not** need to select every relevant chunk. If two chunks completely support the answer and a third chunk only provides additional background information, selecting the third chunk is unnecessary but does not automatically constitute failure.
+
+Likewise, information that is unnecessary inside a selected chunk is not penalized because evaluation operates at the chunk level.
+
+The primary failure mode is **insufficient evidence**: if the Retrieval Agent claims that the evidence is sufficient but has omitted a material piece of information required to answer the query, the result is considered insufficient.
+
+The secondary failure mode is **poor focus**: if the selected set contains too many unnecessary or distracting chunks, the result is considered unfocused.
+
+Together, these metrics measure whether the Retrieval Agent provides the Answer Synthesizer with evidence that is both **complete and appropriately focused**.
+
+---
+
+# LLM Judge Calibration Strategy
+
+Both Complete Search and Retrieval Agent are evaluated using an LLM Judge, but calibration is applied only to the Retrieval Agent evaluation.
+
+### Complete Search
+
+The Complete Search evaluation asks a relatively simple question:
+
+> **Does the candidate set contain sufficient evidence to answer the user's question?**
+
+The judge only needs to determine whether the required evidence exists somewhere within the candidate set. It does not need to select chunks, assess minimality, or evaluate focus. Because this is a straightforward evidence-presence task with limited reasoning complexity, separate judge calibration was not considered necessary.
+
+### Retrieval Agent
+
+The Retrieval Agent evaluation is more complex. The judge must determine whether the **selected chunks themselves** are sufficient and whether the selection is sufficiently focused without excessive unnecessary or distracting chunks.
+
+Because this requires more nuanced judgment, the LLM Judge was calibrated using a controlled set of mocked Retrieval Agent results and human evaluations before being used on the larger evaluation dataset.
 
 ---
 

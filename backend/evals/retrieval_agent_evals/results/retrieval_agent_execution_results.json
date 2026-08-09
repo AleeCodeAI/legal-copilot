@@ -1,0 +1,156 @@
+[
+    {
+        "query": "Under California law effective January 1, 2025, how many days does a tenant have to respond to an unlawful detainer complaint, and how was this amendment applied in a 2025 case where the landlord prematurely sought default judgment?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.96,
+        "reasoning": "The chunks together give the statutory 10\u2011day response period under AB\u202f2347 and illustrate its application in a 2025 case where a landlord\u2019s premature default\u2011judgment request was denied, providing all needed information."
+    },
+    {
+        "query": "What are the legal requirements for a landlord to charge an application screening fee, and what remedies exist when a landlord collects such fees while knowing no unit is actually available, as demonstrated in a 2025 case?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.96,
+        "reasoning": "The external chunk outlines the statutory requirements for charging an application screening fee, while the internal chunk provides a 2025 case illustrating violations and the remedies (refund and statutory penalty). Together they fully address both parts of the query, and both chunks are directly needed."
+    },
+    {
+        "query": "Under what conditions does a person living in a hotel or motel become a tenant with full eviction protections, and how did a 2025 case establish tenant status after 45 consecutive days of occupancy despite missed payments?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.96,
+        "reasoning": "The two selected chunks together describe the statutory criteria for hotel\u2011guest tenancy and detail the 2025 case that granted tenant status after 45 days despite missed rent, providing sufficient evidence for both parts of the query. Both chunks are directly needed, so focus is high."
+    },
+    {
+        "query": "What are the legal distinctions between a single lodger and a tenant in a private residence, and what notice is required before a homeowner can remove a lodger who pays monthly rent?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.96,
+        "reasoning": "The chunk provides the distinction that a single lodger is subject to the owner's overall control and can be evicted with notice equivalent to a periodic tenancy, directly answering both parts of the query."
+    },
+    {
+        "query": "How does California law protect domestic violence survivors from discrimination in rental applications, and what enforcement actions were taken in a 2026 case where a qualified applicant was rejected solely because of prior lease termination due to abuse?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.96,
+        "reasoning": "The chunks together describe California\u2019s statutory protection for domestic\u2011violence survivors in rental applications and detail the 2026 enforcement outcome (civil action under SB\u202f1051, settlement and $5,000 penalty), covering all material aspects. Both chunks are directly needed, so focus is adequate."
+    },
+    {
+        "query": "What are the statutory requirements for a landlord to disclose a property's location in a flood hazard zone, and how does this disclosure obligation apply to rental agreements entered into after July 1, 2018?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.96,
+        "reasoning": "Chunk 1 directly provides the statutory disclosure requirement and its applicability to agreements after July\u202f1\u202f2018, making the answer sufficient; Chunk 2 is only tangentially related and not needed, so the set remains focused."
+    },
+    {
+        "query": "What is the maximum security deposit a landlord can charge under California law starting July 1, 2024, and what exemptions apply to small landlords, including the separate treatment of application screening fees?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.98,
+        "reasoning": "The chunk provides the post\u2011July\u202f1\u202f2024 security\u2011deposit cap (one month\u2019s rent), the small\u2011landlord exemption (up to two months\u2019 rent and definition), and explains that application\u2011screening fees are separate and not part of the deposit, covering all aspects of the query."
+    },
+    {
+        "query": "What mandatory disclosures must a landlord include in every rental agreement regarding registered sex offenders under Megan's Law, and what is the specific statutory language required?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.96,
+        "reasoning": "The two chunks provide the exact statutory notice language required by Section 290.46 and thus cover both the mandatory disclosure and its precise wording, making them sufficient and necessary."
+    },
+    {
+        "query": "Under what circumstances can a landlord require a tenant to pay rent in cash rather than by check, and what notice requirements must be met after a check has been dishonored?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.96,
+        "reasoning": "The two selected chunks together explain that a landlord may require cash payment only after a tenant\u2019s check is dishonored within the past three months, and that the landlord must provide a written notice attaching the dishonored check and give proper advance notice, satisfying the query. Both chunks are directly on point, so the selection is focused."
+    },
+    {
+        "query": "What are the legal limits on late fees and dishonored check fees in California rental agreements, and what constitutes a reasonable fee under the law?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.96,
+        "reasoning": "The chunks together provide the statutory caps for returned\u2011check fees ($25 first, $35 additional) and explain that late fees must be a reasonable estimate of actual costs, illustrating that excessive flat fees like $250 are invalid, thus answering both parts of the query. Both chunks are directly needed, so focus is adequate."
+    },
+    {
+        "query": "What are a tenant's rights and obligations when making partial rent payments, and how should a tenant document an agreement with the landlord to avoid eviction proceedings?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.96,
+        "reasoning": "The two chunks together explain the tenant's legal rights and duties regarding partial rent payments and give clear instructions on drafting and preserving a written agreement to prevent eviction, making them sufficient and appropriately focused."
+    },
+    {
+        "query": "What are the requirements for a landlord to provide a receipt for rent payments made in cash, and what proof should a tenant retain for record-keeping?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.96,
+        "reasoning": "The single chunk directly addresses both the landlord's obligation to give a signed, dated receipt for cash rent and the tenant's need to retain receipts (or canceled checks) indefinitely, making it sufficient and necessary."
+    },
+    {
+        "query": "What notice is required when a single-family home is exempt from the Tenant Protection Act's just-cause eviction requirements, and what happens if the landlord fails to include the mandatory exemption disclosure in the lease?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.96,
+        "reasoning": "The chunks together specify the statutory disclosure that must be included in the lease to claim the exemption and show that without it the landlord remains bound by just\u2011cause rules, leading to dismissal of the eviction. Two chunks are essential for these points and the third provides only supplementary context, so focus remains acceptable."
+    },
+    {
+        "query": "Under California law, what is the correct method for calculating the three-day notice period when a notice is served on a Friday before a federal holiday, and how did this issue arise in a 2026 eviction case?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.96,
+        "reasoning": "The two selected chunks together explain the statutory counting rule for a three\u2011day notice served on a Friday before a federal holiday and describe the 2026 eviction case where the landlord misapplied that rule, providing all needed information."
+    },
+    {
+        "query": "What are the two-pronged requirements for substituted service of a three-day notice under California law, and how does failure to comply with the mailing prong invalidate an unlawful detainer action?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.92,
+        "reasoning": "The external chunk clearly states the two prongs of substituted service (leaving notice with a suitable person and mailing a copy) and that service is incomplete without both, satisfying the query; the internal chunk is about a different service method and is not needed. Thus the set is sufficient, and only one of two chunks is necessary, so focus remains acceptable."
+    },
+    {
+        "query": "What remedies are available to a tenant when a landlord engages in self-help eviction by cutting off utilities and changing locks, and what statutory daily penalties apply under Civil Code Section 789.3?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.96,
+        "reasoning": "The chunk directly describes the illegal self\u2011help eviction, the tenant's remedies (emergency TRO and damages) and cites the statutory daily penalty of up to $100 per day under Civil Code\u202f789.3, thus covering both question aspects. It is the only selected chunk and is necessary, so focus is adequate."
+    },
+    {
+        "query": "What is a tenant's right to withhold rent for habitability defects, and what procedural requirements must be followed regarding the establishment of an escrow account and providing notice to the landlord?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.96,
+        "reasoning": "The four selected chunks together explain the tenant's legal right to withhold rent for habitability defects, define the required notice to the landlord, and describe the escrow\u2011account recommendation, providing sufficient coverage of all material aspects. All chunks are directly relevant to the question, with none being merely distracting, so focus is acceptable."
+    },
+    {
+        "query": "What disclosures are required when a rental unit is within one mile of a closed military base where ammunition or explosives were used, and when must this notice be provided?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.99,
+        "reasoning": "The selected chunk directly states the required written notice and that it must be given before the tenant signs a rental agreement, fully addressing both aspects of the question."
+    },
+    {
+        "query": "What are the rights and responsibilities of residents in transitional housing, and how does the payment of rent affect their status as tenants versus participants?",
+        "sufficient": "False",
+        "focused": "True",
+        "confidence": 0.86,
+        "reasoning": "The chunk mentions that non\u2011paying residents are participants subject to behavior rules and eviction, and that paying rent makes them tenants, but it does not provide a comprehensive list of rights and responsibilities, so it cannot fully answer the question."
+    },
+    {
+        "query": "What are the specific landlord-tenant relationships governed by the Mobilehome Residency Law versus standard landlord-tenant law, particularly for tenants who lease a mobilehome from its owner?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.96,
+        "reasoning": "The chunk directly explains which landlord\u2011tenant relationships fall under the Mobilehome Residency Law and identifies that tenants who lease a mobilehome from its owner (or lease occupancy from park management) are governed by standard landlord\u2011tenant law, fully addressing the query."
+    },
+    {
+        "query": "What is the legal status of a residential hotel guest who has lived in the unit for more than 30 days and uses it as a primary residence, and what rights do they possess compared to transient hotel guests?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.96,
+        "reasoning": "The selected chunks together explain that a residential hotel guest residing >30 days and using it as a primary residence is treated as a tenant under California law and enjoys tenant-like rights, while also outlining exceptions and differences from transient guests. Three chunks are essential and one is merely supplementary, so focus remains acceptable."
+    },
+    {
+        "query": "What are the requirements for a landlord to provide an Inventory Checklist at the beginning of a tenancy, and how does completing this checklist protect both parties from disputes at move-out?",
+        "sufficient": "True",
+        "focused": "True",
+        "confidence": 0.94,
+        "reasoning": "The chunks together state that landlords are not legally required to supply an inventory checklist (though it is standard practice and soon tied to photographic documentation), and that completing, signing, and retaining the checklist (plus photos) helps avoid disagreements at move\u2011out."
+    }
+]

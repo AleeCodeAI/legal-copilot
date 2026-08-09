@@ -1,0 +1,107 @@
+[
+  {
+    "query": "What happens when a tenant loses an unlawful detainer case and what options exist to delay moving out?",
+    "sufficient": "True",
+    "focused": "True",
+    "confidence": 0.96,
+    "reasoning": "The two chunks together explain the consequences for a losing tenant and detail the primary mechanisms—stay of execution and relief from forfeiture—to postpone vacating, fully covering the question."
+  },
+  {
+    "query": "What happens if a tenant fails to respond to an unlawful detainer complaint, and how can they get a default judgment set aside?",
+    "sufficient": "True",
+    "focused": "True",
+    "confidence": 0.96,
+    "reasoning": "The chunks together describe the default judgment consequences and the procedural steps and grounds for setting it aside, fully covering the question, and both are directly relevant."
+  },
+  {
+    "query": "How can a landlord evict unnamed occupants residing in a rental unit, and what are the legal consequences for an unnamed occupant who files a Prejudgment Claim of Right to Possession versus one who does not?",
+    "sufficient": "True",
+    "focused": "True",
+    "confidence": 0.96,
+    "reasoning": "The two selected chunks together explain the landlord's method of serving a Prejudgment Claim of Right to Possession to unnamed occupants and detail the differing outcomes for an occupant who files the claim versus one who does not, fully covering the query. Both chunks are directly relevant and necessary, so focus is adequate."
+  },
+  {
+    "query": "What defines an 'uninhabitable' rental unit under housing standards, and what is the function of a 'writ of possession' after a landlord wins an unlawful detainer lawsuit?",
+    "sufficient": "True",
+    "focused": "True",
+    "confidence": 0.96,
+    "reasoning": "The external chunk supplies the legal definition of an uninhabitable rental unit and the function of a writ of possession, while the internal chunk offers a case illustration that also mentions the writ's notice-to-vacate role, together covering both query aspects. One chunk is necessary and the other is relevant but not essential, so focus is acceptable."
+  },
+  {
+    "query": "What are the restrictions on rent increases under California's Tenant Protection Act (AB 1482), and what types of residential properties are exempt from these state rent caps?",
+    "sufficient": "True",
+    "focused": "True",
+    "confidence": 0.96,
+    "reasoning": "The two chunks together provide the statutory rent-increase limits (5%+CPI up to 10% and no more than two increases per 12 months) and enumerate the exemptions under AB 1482, so the answer can be fully addressed. One chunk supplies the detailed list of exemptions, while the other repeats the caps; thus only one is strictly necessary, but the proportion of unnecessary chunks is not over half, so focus is acceptable."
+  },
+  {
+    "query": "What are a tenant's primary maintenance and repair responsibilities for a rental unit under California law, and what damage is excluded from this obligation?",
+    "sufficient": "True",
+    "focused": "True",
+    "confidence": 0.96,
+    "reasoning": "The selected chunks together state that California tenants must take reasonable care of the unit and repair any damage they or their guests cause, while normal wear and tear is excluded, directly covering both the responsibilities and the excluded damage required by the question."
+  },
+  {
+    "query": "Under what conditions can a landlord in California require a tenant to pay rent in cash, and what are the specific notice requirements and limitations associated with this rule?",
+    "sufficient": "True",
+    "focused": "True",
+    "confidence": 0.96,
+    "reasoning": "The external chunk fully outlines the conditions, notice requirements, and three-month limitation, while the internal chunk reinforces the same limitations, providing sufficient evidence to answer the question. One chunk is necessary and the other is relevant but not essential, so less than half are unnecessary, meeting the focus criterion."
+  },
+  {
+    "query": "What are the legal standard requirements for a landlord to enforce a predetermined late fee and a returned check service charge in California?",
+    "sufficient": "True",
+    "focused": "True",
+    "confidence": 0.94,
+    "reasoning": "The two chunks together provide the statutory and practical standards for enforcing a predetermined late fee and a returned check service charge in California; the external chunk supplies the core legal requirements, while the internal case illustrates application, making the set sufficient. One chunk is necessary and the other is relevant but not essential, so less than half are unnecessary, yielding focused=true."
+  },
+  {
+    "query": "Can a landlord refuse a partial rent payment, and what specific details must be included in a written agreement if a landlord accepts partial rent?",
+    "sufficient": "True",
+    "focused": "True",
+    "confidence": 0.96,
+    "reasoning": "The chunk directly answers whether a landlord may refuse partial rent and enumerates the required written agreement details, making it sufficient and necessary."
+  },
+  {
+    "query": "Under what conditions can a landlord increase a security deposit during a tenancy, and what notice and payment method requirements apply to such increases?",
+    "sufficient": "True",
+    "focused": "True",
+    "confidence": 0.96,
+    "reasoning": "The single chunk provides the conditions under which a landlord may raise a security deposit, including lease terms and legal limits, and specifies the required advance written notice and payment method restrictions, fully covering the query."
+  },
+  {
+    "query": "Under the Tenant Protection Act, what is the maximum rent increase allowed when inflation exceeds 5%, and what specific types of rental properties are exempt from this state rent limit?",
+    "sufficient": "False",
+    "focused": "True",
+    "confidence": 0.93,
+    "reasoning": "The chunk gives the 10% maximum increase when inflation exceeds 5% but does not specify which rental property types are exempt, so it cannot fully answer the query; however, the chunk is directly relevant and needed for the first part, making the selection focused."
+  },
+  {
+    "query": "How is rent prorated when a notice of rent increase takes effect in the middle of a rental period, and what specific service methods (such as personal delivery vs. mailing) determine the required advance delivery dates?",
+    "sufficient": "True",
+    "focused": "True",
+    "confidence": 0.97,
+    "reasoning": "The chunk explains the prorated rent calculation when a rent increase takes effect mid-period and details the required notice delivery methods (personal vs. mailed) and their advance dates, covering both aspects of the query."
+  },
+  {
+    "query": "What specific statutory notice periods and permissible hours govern a landlord's right of entry into a rental unit in California, and what legal remedies exist if a landlord intentionally abuses access rules to force a tenant to move?",
+    "sufficient": "False",
+    "focused": "True",
+    "confidence": 0.92,
+    "reasoning": "The chunk supplies information on legal remedies for abusive entry but does not contain the statutory notice periods or permissible entry hours, so it cannot fully answer the question; however, it is necessary for the remedies portion, making the selection focused."
+  },
+  {
+    "query": "How does an assignment of a lease differ from a sublease under California law, and what specific steps are required for a landlord to consent to a tenant assigning their lease?",
+    "sufficient": "True",
+    "focused": "True",
+    "confidence": 0.92,
+    "reasoning": "The chunk explains how an assignment differs from a sublease and outlines the landlord's role in consenting—requiring agreement of all parties and a written novation—covering the material aspects of the query. It is the only selected chunk and directly addresses the question, so focus is adequate."
+  },
+  {
+    "query": "What are the restrictions regarding using a rental unit as a short-term rental on platforms like Airbnb, and what specific monetary fines do local municipalities impose for violations?",
+    "sufficient": "False",
+    "focused": "True",
+    "confidence": 0.95,
+    "reasoning": "The single chunk mentions lease prohibitions and that many local laws forbid short-term rentals, but it does not provide any specific monetary fine amounts, so it cannot fully answer the monetary-penalty part of the query. The chunk is relevant to the restriction aspect and not distracting, so focus remains acceptable."
+  }
+]

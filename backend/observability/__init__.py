@@ -1,1 +1,2 @@
 from .retrieval_agent_observability import RetrievalAgentObservability
+from .agent_evaluator_observability import AgentEvaluatorObservability

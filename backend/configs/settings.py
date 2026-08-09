@@ -45,6 +45,13 @@ class GroqSettings(LLMSettings):
     base_url: str = Field(default_factory=lambda: os.getenv("GROQ_URL"))
     default_model: str = Field(default="openai/gpt-oss-120b")
 
+class GoogleSettings(LLMSettings):
+    """Groq-specific settings extending LLMSettings."""
+
+    api_key: str = Field(default_factory=lambda: os.getenv("GOOGLE_API_KEY"))
+    base_url: str = Field(default_factory=lambda: os.getenv("GOOGLE_URL"))
+    default_model: str = Field(default="gemma-4-31b")
+
 class CohereSettings(BaseModel):
     """Cohere-specific settings."""
 
@@ -84,6 +91,7 @@ class Settings(BaseModel):
 
     openrouter: OpenRouterSettings = Field(default_factory=OpenRouterSettings)
     groq: GroqSettings = Field(default_factory=GroqSettings)
+    google: GoogleSettings = Field(default_factory=GoogleSettings)
     cohere: CohereSettings = Field(default_factory=CohereSettings)
     database: DatabaseSettings = Field(default_factory=DatabaseSettings)
     vector_store: VectorStoreSettings = Field(default_factory=VectorStoreSettings)

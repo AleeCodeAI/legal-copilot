@@ -1,0 +1,271 @@
+[
+    {
+    "query": "What happens when a tenant loses an unlawful detainer case and what options exist to delay moving out?",
+    "sufficient": "True",
+    "selected_chunks": [
+      "external_95cae65c-7fa8-11f1-b890-44a67339516e",
+      "internal_3a8f2d14-7fa9-11f1-b890-44a67339516e"
+    ],
+    "internal_chunks": [
+      {
+        "id": "3a8f2d14-7fa9-11f1-b890-44a67339516e",
+        "content": "MATTER GSA-2025-087 (Unlawful Detainer - Stay of Execution): Client Maria Gonzalez lost unlawful detainer case due to non-payment. Filed ex parte application for stay citing medical hardship (recent surgery). Court granted 12-day stay conditioned on payment of current rent. Client vacated within stay period avoiding lockout. Outcome: Stay granted; sheriff's lockout delayed; voluntary vacatur achieved."
+      }
+    ],
+    "external_chunks": [
+      {
+        "id": "95cae65c-7fa8-11f1-b890-44a67339516e",
+        "content": "If the court decides in favor of the tenant, the tenant will not have to move out, and the landlord may be ordered to pay the tenant's court costs (for example, ling fees) and the tenant's attorney's fees if that is a provision of the rental agreement and the tenant was represented by an attorney at trial. However, the tenant may have to pay any rent that the court orders within 5 days, which if not paid within that timeframe could result in the court issuing a judgment in favor of the landlord instead.[448 ] If the tenant's defense to the landlord's unlawful detainer action was based on a breach of the warranty of habitability the rent to be paid will likely be reduced from that called for by the rental agreement. The court may order a continued reduction in rent until certain necessary repairs are made.\nIf the landlord wins, the tenant will have to move out. In some circumstances, the court may order the tenant to pay the landlord's court costs and attorney's fees if the landlord was represented by an attorney at trial and the rental agreement contains an attorneys' fees clause. The court also may order the tenant to pay rent during the holdover period (i.e., the period of time between the end of the rental term and the date of trial).\nThe court has discretion to stay the execution of any judgment.[449 ] A stay of execution does not change the eviction judgment or reinstate your tenancy, but it does allow a losing tenant can request the court to exercise that discretion to delay when they will have to move out. Different courts may use different procedures for requesting a stay of execution, but each one will require you to notify your landlord and le a written request. That request would typically be made through an 'ex parte' application, before the trial judge, for more time to surrender the premises due to hardship or other good cause. Proper notice of this 'ex parte' application needs to be provided to the landlord or the landlord's attorney, and the 'ex parte' hearing needs to happen quickly, and prior to the sheriff's lockout . The sheriff will post a 5-day notice to vacate the property before the lockout can occur (see Writ of Possession, page 106).\nThe application to stay the execution of the Court's judgment should be supported by the tenant's written declaration (i.e., a statement by the tenant made under penalty of perjury) that states detailed facts regarding the hardship or other good cause. If the court agrees to stay the execution of the judgement it will condition it on payment of rent for the period of the stay, but not upon paying any past due rent. The extra time likely will be limited, as the judge might deem equitable, perhaps as little as a week or up to a month. Most likely this type of stay would not be granted for any period past 10 days after the time limit to appeal the judgment, which could be around 40 days.[450 ] For any further stay it would be necessary to seek or already have sought a stay pending appeal pursuant to Code of Civil Procedure section 1176, further discussed below.\nIt is possible, but very rare, for a losing tenant to convince the court to allow the tenant to remain in the rental unit. This is called relief from forfeiture of the tenancy. The tenant must convince the court of two things in order to obtain relief from forfeiture: (1) that the eviction would cause the tenant severe hardship, and (2) either that the tenant is able to pay all of the rent that is due or that the tenant will fully comply with the rental agreement.[451 ]\nA tenant can obtain relief from forfeiture even if the tenancy has terminated (ended),\nso long as possession of the unit has not been turned over to the landlord. A tenant seeking relief from forfeiture must apply for relief at any time prior to restoration of the premises to the landlord, but such a petition should be made as soon as possible after the court issues its judgment in the unlawful detainer lawsuit. To do this, the tenant must le a motion for relief from forfeiture.[452 ] A tenant who is not represented by an attorney at trial can even make an oral motion for relief from forfeiture immediately following the court's decision or by speaking with the judge in an 'ex parte' hearing."
+      }
+    ]
+  },
+  {
+    "query": "What happens if a tenant fails to respond to an unlawful detainer complaint, and how can they get a default judgment set aside?",
+    "sufficient": "True",
+    "selected_chunks": [
+      "external_95cae8aa-7fa8-11f1-a608-16d18f7771cf",
+      "internal_8fd17a6e-7fa9-11f1-b890-44a67339516e"
+    ],
+    "internal_chunks": [
+      {
+        "id": "8fd17a6e-7fa9-11f1-b890-44a67339516e",
+        "content": "MATTER GSA-2025-203 (Set Aside Default Judgment): Client Patricia Nguyen failed to respond to unlawful detainer complaint due to hospitalization for emergency surgery. Landlord obtained default judgment and writ of possession. Client filed motion to set aside default within 14 days of receiving notice, citing excusable neglect (incapacitation). Submitted proposed answer with affirmative defense of improper notice. Court granted motion, vacated default, restored case to trial calendar. Client represented by retained counsel. Outcome: Default set aside; case scheduled for trial; possession not yet restored to landlord."
+      }
+    ],
+    "external_chunks": [
+      {
+        "id": "95cae8aa-7fa8-11f1-a608-16d18f7771cf",
+        "content": "If the tenant does not le a written response to the landlord's complaint, the landlord can ask the court to enter a default judgment against the tenant. Upon the court entering default, the tenant will receive a notice of judgment, and a writ of possession as described above.\nThere are many reasons why a tenant might not respond to the landlord's complaint. For example, the tenant may have received the summons and complaint, but was not able to respond because the tenant was ill or incapacitated or for some other very good reason. There are also circumstances where the landlord failed properly to serve the tenant with the summons and complaint, hence the reason why the tenant may have been unaware of the legal proceeding or the need to appear at trial. In situations such as these, where the tenant has a valid reason for not responding to the landlord's complaint, the tenant can ask the court to set aside the default judgment.\nSetting aside or 'vacating' a judgment can be a complex legal proceeding, so be sure to retain an attorney as early as possible if you plan on having an attorney represent you in your efforts to set aside or vacate a judgment. Common reasons for seeking to set aside a default judgment are the tenant's (or the tenant's lawyer's) mistake, inadvertence, surprise, or excusable neglect.[460] A tenant who wants to ask the court to set aside a judgment must act promptly. The tenant should be able to show the court that they have a satisfactory excuse for not ling a response or missing the trial, acted promptly in making the request, and had a good chance to win at trial.[461] This last item is crucial, and is achieved by submitting a 'proposed answer' that states a seemingly plausible armative defense to the eviction, along with the other required documents when requesting a default be set aside. If possession of the unit has been returned to the landlord (i.e. the tenant has been locked out) the tenant can still seek to set aside the default, but it may not result in the tenant being restored to the unit.\nSpecial rules for tenants in the military may make it more dicult for a landlord to obtain a default judgment against the tenant and may make it possible for a tenant to reopen a default judgment and defend the unlawful detainer action.[462 ]"
+      }
+    ]
+  },
+  {
+  "query": "How can a landlord evict unnamed occupants residing in a rental unit, and what are the legal consequences for an unnamed occupant who files a Prejudgment Claim of Right to Possession versus one who does not?",
+  "sufficient": "True",
+  "selected_chunks": [
+    "external_95cae346-7fa8-11f1-8fb1-a797f4e2db64",
+    "internal_1a8f9c02-839e-11f1-92b3-00155d812a1f"
+  ],
+  "internal_chunks": [
+    {
+      "id": "1a8f9c02-839e-11f1-92b3-00155d812a1f",
+      "content": "MATTER UD-2025-388 (Unnamed Occupant Claim): Landlord Apex Property Group served a Summons and Complaint for Unlawful Detainer along with a Prejudgment Claim of Right to Possession to named tenant John Doe and 'all unknown occupants' via a registered process server (intake notes). An unnamed occupant, Jane Roe, completed and submitted the Prejudgment Claim form to assert a right of possession. Internal memo noted that while Roe gained the standing to present her independent defense at trial, doing so created a public court eviction record under her name. Outcome: Judgment entered for landlord; eviction enforced against all occupants including Roe, illustrating the trade-off of asserting a prejudgment claim (case summary)."
+    }
+  ],
+  "external_chunks": [
+    {
+      "id": "95cae346-7fa8-11f1-8fb1-a797f4e2db64",
+      "content": "Sometimes, adults who are not parties to the rental agreement move into the rental unit with the tenant or after the tenant leaves, but before the unlawful detainer lawsuit is led. When a landlord thinks that these 'occupants' might claim a legal right to possess the rental unit, the landlord may seek to include them as defendants in the eviction action, even if the landlord does not know who they are. In this case, the landlord will serve the tenant and 'all other occupants' with a Prejudgment Claim of Right to Possession at the same time that the eviction summons and complaint are served on the tenants who are named defendants.[436 ] Note that when service includes this form it\nmay only be performed by a marshal, sheriff, or a process served registered with the state. (See additional discussion of 'unnamed occupants' and the Claim of Right to Possession on page 95.) Unnamed occupants should consider whether it is prudent to complete and submit the Prejudgment Claim form, which effectively adds their name as a defendant in the eviction lawsuit. While being a defendant may allow a person to state their own defense, it may come at the price of having a record of a court eviction. However, without making such a submission, the unnamed occupants' fate with respect to being evicted will depend on what happens to those already named in the lawsuit. If those tenants lose at court, the sheriff will evict everyone at the unit, as the opportunity to submit a (postjudgment) Claim of Right to Possession is foreclosed by the service of the Prejudgment Claim form."
+    }
+  ]
+    },
+    {
+  "query": "What defines an 'uninhabitable' rental unit under housing standards, and what is the function of a 'writ of possession' after a landlord wins an unlawful detainer lawsuit?",
+  "sufficient": "True",
+  "selected_chunks": [
+    "external_95caf48a-7fa8-11f1-827b-f1263cad7993",
+    "internal_4c72e109-83a0-11f1-b8d2-12e84d99c305"
+  ],
+  "internal_chunks": [
+    {
+      "id": "4c72e109-83a0-11f1-b8d2-12e84d99c305",
+      "content": "MATTER UD-2025-412 (Habitability Defense and Eviction Execution): Tenant Maria Santos defended an unlawful detainer suit claiming the property was uninhabitable due to severe lead hazards and structural defects affecting safety (intake notes). Court ruled in favor of landlord post-remediation and issued an unlawful detainer judgment. Subsequently, a writ of possession was issued and served by the county sheriff, notifying Santos to vacate within five days before forced removal (case summary)."
+    }
+  ],
+  "external_chunks": [
+    {
+      "id": "95caf48a-7fa8-11f1-827b-f1263cad7993",
+      "content": "uninhabitable -a rental unit which has such serious problems or defects that the tenant's health or safety is affected. A rental unit may be uninhabitable if it is not t for human beings to live in, if it fails to substantially comply with building and safety code standards that materially affect tenants' health and safety, if it contains a lead hazard, or\nif it is a dangerous substandard building. (Compare to habitable.)\nunlawful detainer lawsuit -a lawsuit that a landlord must le and win before they can evict a tenant (also called an eviction lawsuit).\nunlawful detainer judgment -a judgment issued at the conclusion of an unlawful detainer (eviction) action.\nU.S. Department of Housing and Urban Development -the federal agency that enforces the federal fair housing law, which prohibits discrimination based on sex, race, color, religion, national or ethnic origin, familial status, or disability.\nwaive/waiver -to sign a written document (a waiver) giving up a right, claim, privilege, etc. In order for a waiver to be effective, the person giving the waiver must do so knowingly, and must know the right, claim, privilege, etc. that they are giving up.\nwrit of possession -a document issued by the court after the landlord wins an unlawful detainer (eviction) lawsuit. The writ of possession is served on the tenant by the sheriff. The writ informs the tenant that the tenant must leave the rental unit by the end of ve days, or the sheriff will forcibly remove the tenant.\n3-day notice to cure or quit -see eviction notice.\n3-day notice to pay or quit -see eviction notice.\n30-day notice -see eviction notice or notice to vacate.\n60-day notice -see eviction notice or notice to vacate.\n90-day notice -see eviction notice or notice to vacate."
+    }
+  ]
+},
+    {
+    "query": "What are the restrictions on rent increases under California's Tenant Protection Act (AB 1482), and what types of residential properties are exempt from these state rent caps?",
+    "sufficient": "True",
+    "selected_chunks": [
+        "external_95ca954e-7fa8-11f1-b84d-7d7fb57dc8a1",
+        "internal_8b31a44e-83a3-11f1-a12c-52540091e2bc"
+    ],
+    "internal_chunks": [
+        {
+        "id": "8b31a44e-83a3-11f1-a12c-52540091e2bc",
+        "content": "MATTER TPA-2025-189 (Illegal Rent Increase Dispute): Client Marcus Vance received a 12% rent increase notice from his landlord within a 12-month period for a 20-year-old apartment unit (intake notes). Vance challenged the increase under Assembly Bill (AB) 1482, which caps annual rent increases at 5% plus CPI (max 10%) and limits increases to no more than twice in 12 months. Internal review confirmed the property did not fall under any exemption (e.g., housing built under 15 years ago or owner-occupied duplex) and was subject to the state cap (memo tracking). Outcome: Pre-litigation demand letter sent citing Cal. Civ. Code § 1947.12; landlord acknowledged non-exempt status and reduced the rent increase to 7.2% to comply with the legal statutory limit (case summary)."
+        }
+    ],
+    "external_chunks": [
+        {
+        "id": "95ca954e-7fa8-11f1-b84d-7d7fb57dc8a1",
+        "content": "In 2019, the California Legislature approved and the Governor signed Assembly Bill (AB) 1482 (known as the Tenant Protection Act of 2019) (hereinafter referred to as the 'Tenant Protection Act').[152 ] The Tenant Protection Act caps gross rental increases at covered properties within a 12-month period at 5% plus the change in the cost of living pursuant to the Consumer Price Index, or 10%, whichever is lower. [153 ] Landlords are also prohibited from increasing rent more than two times in a 12-month period.[154 ]\nUnder the law, landlords can still establish the initial rental rate at any amount they choose. The cap on gross rental increases is only applicable to rental increases after the initial rental rate has been established,[155 ] the rent cap does not apply to the following types of properties:\n- Some types of government-subsidized housing.[156]\n- Housing that is limited by agreement or other restriction to providing affordable housing for persons and families of very low, low, or moderate income.\n- School dormitories.\n- Housing subject to a local rent stabilization law that has more restrictive limits on rent increases.\n- Housing that is less than 15 years old, unless it is a mobile home.\n- A duplex in which the owner occupied one of the units as their principal place of residence at the beginning of your tenancy and the owner still lives there.\n- Single family home or condominium if the owner is not a real estate investment trust (REIT), a corporation, or an LLC in which at least one member is a\ncorporation, and the owner gave the tenant written notice stating the unit is exempt from this law.[157 ] You can nd out the members of an LLC through a search on the California Secretary of State business search website.[158]\nThe rent cap applies to all rent increases occurring on or after March 15, 2019. Tenants, however, are not entitled to a credit for rent overcharges paid between March 15, 2019, and January 1, 2020. The law expires on January 1, 2030, unless extended.\nSome California cities have rent stabilization ordinances that limit or prohibit rent increases.[159 ] Each jurisdiction's ordinance is different. Local rent stabilization ordinances that were enacted before September 1, 2019, will take precedence over the statewide measure, regardless whether the protections offered are stronger or weaker. Local ordinances enacted after that date take precedence over the Tenant Protection Act only if they offer stronger protections. To the extent a local ordinance applies, some local ordinances specify procedures that a landlord must follow before increasing a tenant's rent.\nSome cities have rent boards that have the power to approve or deny increases in rent. Other city ordinances allow a certain percentage increase in rent each year. Under state law, all units are subject to 'vacancy decontrol.' This means that the landlord can re-rent a unit at the market rate when the tenant moves out voluntarily, abandons the unit, or when the landlord evicts a tenant because of a breach of the rental agreement, terminates the tenancy for nonpayment of rent or other allowed reasons.\nA rent stabilization ordinance may impact the landlord-tenant relationship in other important ways besides those described herein. Find out if you live in a city or county with rent stabilization or other rental housing laws (see the list of cities and counties with rent stabilization in Appendix 2). Contact your local housing ocials or rent stabilization program for information. Most cities and counties post information about their rent stabilization ordinances on their website (for example, information about City of Los Angeles' rent stabilization ordinance is available at https://hcidla.lacity.org/)."
+        }
+    ]
+    },
+    {
+    "query": "What are a tenant's primary maintenance and repair responsibilities for a rental unit under California law, and what damage is excluded from this obligation?",
+    "sufficient": "True",
+    "selected_chunks": [
+        "external_95ca96b6-7fa8-11f1-9745-d9f1022146ff",
+        "internal_3d9b107e-83a6-11f1-b92c-42010a0800c2"
+    ],
+    "internal_chunks": [
+        {
+        "id": "3d9b107e-83a6-11f1-b92c-42010a0800c2",
+        "content": "MATTER SEC-2025-082 (Tenant Maintenance and Security Deposit Deduction): Former tenant Chloe Bennett disputed a $450 security deposit deduction made by her landlord for carpet scuffs and minor wall scuffs upon move-out (intake notes). Bennett argued that under California standards, tenants are only liable for repairing damage caused by themselves or their guests beyond normal wear and tear. Internal analysis confirmed the carpet scuffs constituted standard wear and tear rather than negligence or intentional damage (memo tracking). Outcome: Landlord agreed to refund $450 after receiving a pre-litigation demand letter referencing Cal. Civ. Code § 1950.5 and tenant responsibility standards (case summary)."
+        }
+    ],
+    "external_chunks": [
+        {
+        "id": "95ca96b6-7fa8-11f1-9745-d9f1022146ff",
+        "content": "As a tenant, you must take reasonable care of your rental unit and any common areas that you use. You must also repair all damage, other than normal wear and tear, that you cause, or that is caused by anyone for whom you are responsible, such as your family, guests, or pets.[161] These important tenant responsibilities are discussed in more detail under 'Dealing with Problems,' pages 51-68.\nThis section discusses other issues that can come up while you're living in the rental unit. For example, can the landlord enter the rental unit without notifying you? Can the landlord raise the rent even if you have a rental agreement? What can you do if you have to move out before the end of the term of your rental agreement?"
+        }
+    ]
+    },
+    {
+    "query": "Under what conditions can a landlord in California require a tenant to pay rent in cash, and what are the specific notice requirements and limitations associated with this rule?",
+    "sufficient": "True",
+    "selected_chunks": [
+        "external_95ca981e-7fa8-11f1-9561-2f4e21afb9c8",
+        "internal_5e821034-83a8-11f1-a83d-90e2ba114f09"
+    ],
+    "internal_chunks": [
+        {
+        "id": "5e821034-83a8-11f1-a83d-90e2ba114f09",
+        "content": "MATTER PAY-2025-109 (Dishonored Check and Cash Payment Demand): Tenant Julian Vance paid April rent via check, which was subsequently returned for insufficient funds. On April 12, the landlord provided written notice demanding all future rent payments in cash for a period of six months, but failed to attach a copy of the dishonored check (intake notes). Internal legal review noted two key violations: statutory maximum for mandatory cash payments is capped at three months following a dishonored check, and failure to attach the dishonored check invalidates the notice under California standards (memo tracking). Outcome: Landlord amended the notice to a valid three-month window and provided the missing check copy after receiving a pre-litigation letter citing Cal. Civ. Code § 1947.3 (case summary)."
+        }
+    ],
+    "external_chunks": [
+        {
+        "id": "95ca981e-7fa8-11f1-9561-2f4e21afb9c8",
+        "content": "The landlord or landlord's agent normally cannot require you to pay rent in cash or to use electronic funds transfer. They must allow you to pay by some other means such as a personal check, a money order or cashier's check. Beginning January 1, 2025, a landlord cannot charge you a fee if you decide to pay your rent or security deposit by check.[164] The manner of payment of your rent will usually be specied in your rental agreement. The landlord must also accept payment on your behalf by a third party, if that third party provides a legally required written acknowledgment that the payment gives the third party no rights of tenancy.[165]\nHowever, the landlord or agent can require you to pay rent in cash if, within the last three months, you paid the landlord or agent with a check that was dishonored by the bank. (A dishonored check is one that the bank returns without paying because you stopped payment on it or because your account did not contain sucient funds.)\nIn order to require you to pay rent in cash, the landlord must rst give you a written notice stating that your check was dishonored and that you must pay cash for the period of time stated by the landlord. This period cannot be more than three months after you:\n- [ordered the bank to stop payment on the check, or]\n- [attempted to pay with a check that the bank returned to the landlord because of ] insucient funds in your account.\nThe landlord must attach a copy of the dishonored check to the notice. If the notice changes the terms of your rental agreement, the landlord must give you the proper amount of advance notice (see pages 73-74).[166 ]\nThese same rules apply if the landlord requests you to pay the security deposit in cash.\nExample: Suppose that you have a month-to-month rental agreement and that your rent is due on the rst of each month. Suppose that the rental agreement does not specify the form of rent payment (check, cash, money order, etc.) or the amount of notice required to change the terms of the agreement (see pages 24-27). On April 1, you give your landlord your rent check for April. On April 11, your landlord receives a notice from his or her bank stating that your check was dishonored because you did not have enough money in your account. On April 12, the landlord hands you a notice stating that your check was dishonored and that you must pay rent in cash or money order for the next three months. What are your rights and obligations under these facts? What are the landlord's rights and obligations?\nUnfortunately, the law that allows the landlord to require payments in cash or by money order does not clearly answer these questions. The following is based on a reasonable interpretation of the law.\nThe requirement that you pay rent in cash or by money order arguably changes the terms of your rental agreement and takes effect in 30 days (on May 12) (see pages 40-41). Therefore, you might argue you could pay your May 1 rent payment by check. However, this might cause the landlord to return your check and serve a three-day notice to pay or quit or decide to serve you with a 30-day or 60-day notice to end the tenancy (see pages 92-95). It would be better to interpret the maximum 3-month period for cash payment or payment by money order to include May's rent payment. The requirement that you pay rent in cash or by money order continues for a maximum of three months as specied by the landlord after the landlord received the notice that your check was dishonored (through July 10). You very well might have to pay your June and July rent in cash or by money order, and, if you tried to claim you were not required to do so in May, the August payment as well, if the tenancy continues. It would be prudent to not insist that you do not need to pay in cash or by money order for May."
+        }
+    ]
+    },
+    {
+    "query": "What are the legal standard requirements for a landlord to enforce a predetermined late fee and a returned check service charge in California?",
+    "sufficient": "True",
+    "selected_chunks": [
+        "external_95ca9a44-7fa8-11f1-ae0b-aa8c1bb055a9",
+        "internal_7f19024a-83aa-11f1-9c81-18659021a8bc"
+    ],
+    "internal_chunks": [
+        {
+        "id": "7f19024a-83aa-11f1-9c81-18659021a8bc",
+        "content": "MATTER FEE-2025-044 (Unlawful Late Fees and NSF Service Charge): Tenant David Chen was assessed a $150 late fee on rent paid on the 7th of the month and a $60 returned check fee following a bank processing error (intake notes). Internal discovery revealed the landlord had made no attempt to estimate actual administrative costs for late payments, rendering the $150 fee an unenforceable penalty under California law, and the NSF fee exceeded the statutory maximums established by Cal. Civ. Code § 1719 (memo tracking). Outcome: Pre-litigation demand sent; landlord adjusted the NSF fee down to $25 and credited the excessive late fee back to the tenant's account balance (case summary)."
+        }
+    ],
+    "external_chunks": [
+        {
+        "id": "95ca9a44-7fa8-11f1-ae0b-aa8c1bb055a9",
+        "content": "While there is a legal argument that a rental agreement cannot include a predetermined late fee, most rental agreements contain a late fee provision. This is because there is an exception to this rule when it would be dicult to gure out the actual cost to the landlord caused by the late rent payment, and the landlord has made an effort to determine that cost. Even then, the predetermined late fee should not be more than the reasonable estimate of costs that the landlord will face as a result of the late payment. A late fee that is so high that it amounts to a penalty is not legally valid.[169 ] It is common for rental agreements to provide a 'grace period' before the late fee becomes effective. A typical grace period waives the fee if the rent is paid before the 6[th] . Be sure to read and understand the rental agreement's late fee provisions.\nAdditionally, in some communities, late fees are limited by local rent control ordinances (see 'Rent Control,' pages 119).\nWhat if you've signed a rental agreement that contains a late-fee provision, and you're going to be late for the rst time paying your rent? If you have a good reason for being late (for example, your paycheck was late), explain this to your landlord. Some landlords will waive (forgive) the late fee if there is a good reason for the rent being late and if the tenant has been responsible in other ways. If the landlord isn't willing to forgive or lower the late fee, ask the landlord to justify it (for example, in terms of administrative costs for processing the payment late). However, if the late fee is reasonable, it may be valid.\nThe landlord also can charge the tenant a fee if the tenant's check for the rent (or any other payment) is dishonored by the tenant's bank. A dishonored check is often called a 'bounced' or 'NSF' (non-sucient funds) or 'returned' check. In order for the landlord to charge the tenant a returned check fee, the rental agreement must authorize the fee, and the amount of the fee must be reasonable.\nFor example, a reasonable returned check fee would be the amount that the bank charges the landlord, plus the landlord's reasonable costs because the check was returned. Under California's 'bad check' statute, the landlord can charge a service charge instead of the dishonored check fee described in this paragraph. The service charge can be up to $25 for the rst check that is returned for insucient funds, and up to $35 for each additional check.[170]"
+        }
+    ]
+    },
+    {
+    "query": "Can a landlord refuse a partial rent payment, and what specific details must be included in a written agreement if a landlord accepts partial rent?",
+    "sufficient": "True",
+    "selected_chunks": [
+        "external_95ca9af8-7fa8-11f1-8f99-12c2b23ce15d"
+    ],
+    "internal_chunks": [],
+    "external_chunks": [
+        {
+        "id": "95ca9af8-7fa8-11f1-8f99-12c2b23ce15d",
+        "content": "You will violate your rental agreement if you do not pay the full amount of your rent on time. If you cannot pay the full amount on time, you may want to offer to pay part of the rent. However, the law allows your landlord to refuse a partial payment or to take the partial payment and still give you a threeday notice to pay or quit.[171 ]\nIf your landlord is willing to accept a partial rent payment and give you extra time to\npay the balance, it is important that you and the landlord agree on the details in writing, and that you save this writing forever. The written agreement should state the amount of partial rent that you paid, the date by which the rest of the rent must be paid, the amount of any late fee due, and the landlord's agreement not to take any action to evict you if you pay the amount due by the specied date. Both you and the landlord should sign the agreement, and you should keep a copy forever. An agreement of this kind is legally binding."
+        }
+    ]
+    },
+    {
+    "query": "Under what conditions can a landlord increase a security deposit during a tenancy, and what notice and payment method requirements apply to such increases?",
+    "sufficient": "True",
+    "selected_chunks": [
+        "external_95ca9bac-7fa8-11f1-b669-d7f4bd8a2ce3"
+    ],
+    "internal_chunks": [],
+    "external_chunks": [
+        {
+        "id": "95ca9bac-7fa8-11f1-b669-d7f4bd8a2ce3",
+        "content": "Whether the landlord can increase the amount of the security deposit after you move in depends on what the rental agreement says, how much of a security deposit you have paid already, what the reason for the increase is and whether local law permits such an increase.\nIf you have a rental agreement, the security deposit cannot be increased unless increases are permitted by the terms of the rental agreement. Again, security deposit increases can only reach the amount of one month's rent.\nIn a periodic rental agreement (for example, a month-to-month agreement), the landlord can increase the security deposit unless prohibited by the agreement. The landlord must give you proper notice before increasing the security deposit. (For example, 30 days' advance written notice normally is required in a month-to-month rental agreement.). In a xed-term rental agreement, a change in deposit can typically only occur upon renewal of the agreement, unless the rental agreement provides otherwise.\nLimits on security deposits may vary for tenants who are active-duty military service personnel (see the discussion of the limits on security deposits, page 88). Local rent stabilization ordinances may also limit or prohibit increases in security deposits.\nThe landlord must give you proper advance written notice of any increase in the security deposit (see 'Proper Service of Notices,' pages 96-97).\nThe landlord normally cannot require you to pay the security deposit increase in cash or by electronic funds transfer, without offering other options (see pages 34-36)."
+        }
+    ]
+    },
+    {
+    "query": "Under the Tenant Protection Act, what is the maximum rent increase allowed when inflation exceeds 5%, and what specific types of rental properties are exempt from this state rent limit?",
+    "sufficient": "True",
+    "selected_chunks": [
+        "external_95ca9c60-7fa8-11f1-9cb4-7d5caa2e74aa"
+    ],
+    "internal_chunks": [],
+    "external_chunks": [
+        {
+        "id": "95ca9c60-7fa8-11f1-9cb4-7d5caa2e74aa",
+        "content": "If you are covered by the Tenant Protection Act (State rent limits), which applies to a signicant percentage of rental properties, the landlord can only raise rent in a 12-month period by 5% plus the ination rate or 10 percent, whichever is lower.[172 ] If the rate of ination exceeds 5%, the maximum rent increase will be 10% for properties covered by the Act.\nThe rent limit does not apply to certain types of properties, as discussed on pages 73-74 of this guide."
+        }
+    ]
+    },
+    {
+        "chunk_id": "95ca9dc8-7fa8-11f1-a94d-dd3183a4207f",
+        "text": "The percentage of increase is calculated using the lowest rent charged during the preceding 12 months. The lowest rent charged was $2,500. The percentage of increase equals:\nSince the increase is greater than 10 percent, the landlord must give you at least 90 days' notice.\nA landlord must give proper advance written notice of the increase in rent, and the increase cannot be retaliatory (see pages 109-111). If the rental unit is subject to a local rent stabilization ordinance instead of the Tenant Protection Act, the local ordinance may impose stricter rent limits and additional requirements on the landlord.\nIncreases in rent for government-subsidized housing usually are restricted. If a tenant lives in government-subsidized housing, the tenant should check with the local public housing authority, housing counseling agency, legal aid organization, tenant-landlord program, or housing clinic to nd out whether there are any restrictions on rent increases.",
+        "metadata": {
+        "page_number": "45",
+        "headings": [
+            "==> picture [81 x 24] intentionally omitted <=="
+        ],
+        "filename": "2025_Landlord_Tenant_Guide.pdf"
+        }
+    },
+    {
+    "query": "How is rent prorated when a notice of rent increase takes effect in the middle of a rental period, and what specific service methods (such as personal delivery vs. mailing) determine the required advance delivery dates?",
+    "sufficient": "True",
+    "selected_chunks": [
+        "external_95ca9f1c-7fa8-11f1-b102-993c5d43ddc1"
+    ],
+    "internal_chunks": [],
+    "external_chunks": [
+        {
+        "id": "95ca9f1c-7fa8-11f1-b102-993c5d43ddc1",
+        "content": "Most notices of rent increases state that the increase will go into effect at the beginning of the next rental period. For example, a landlord who wishes to increase the rent by 5 percent in a month-to-month rental effective on October 1 must make sure that notice of the increase is delivered to the tenant personally by September 1 or mailed to the tenant by August 27. However, a landlord can make the increase effective at any time in the month if proper advance notice is given.\nIf the increase in the rent becomes effective in the middle of the rental period, the landlord is entitled to receive the increased rent for only the last half of the rental period. For example:\n- [Rental period: month-to-month, from the rst day of the month to the last day of the ] month.\n- [Rent: $2,500 per month.]\n- [Rent increase: $125 (from $2,500 to $2,625) per month (a 5 percent increase).]\n- [Date that the notice of rent increase is delivered to the tenant personally: March 17 ] (that is, the middle of the month).\n- [Earliest date that the rent increase can take effect: April 16.]\nIf the landlord delivers the notice on March 17, the increase becomes effective 30 days later, on April 16. The landlord is entitled to the increased rent beginning on April 16. On April 1, the tenant would pay $1,250 for the rst half of April (that is, 15 days at the old rent of $2,500, from April 1 to 15), plus $1,312.50 for the last half of April (that is, 15 days at the new rent of $2,625, from April 16-30). The total rent for April that is due on April 1 would be $2,562.50. Looking at it another way, the landlord is entitled to only one-half of the increase in the rent during April, since the notice of rent increase became effective in the middle of the month.\nOf course, the landlord could deliver a notice of rent increase on March 17 which states that the rent increase takes effect on May 1. In that case, the tenant would pay $2,500 rent on April 1, and $2,625 rent on May 1."
+        }
+    ]
+    },
+    {
+    "query": "What specific statutory notice periods and permissible hours govern a landlord's right of entry into a rental unit in California, and what legal remedies exist if a landlord intentionally abuses access rules to force a tenant to move?",
+    "sufficient": "True",
+    "selected_chunks": [
+        "external_95caa138-7fa8-11f1-b2af-bb97f2ef651a"
+    ],
+    "internal_chunks": [],
+    "external_chunks": [
+        {
+        "id": "95caa138-7fa8-11f1-b2af-bb97f2ef651a",
+        "content": "The landlord cannot abuse the right of access allowed by these rules or use this right of access to harass (repeatedly disturb) the tenant.[191 ] Also, the law prohibits a landlord from signicantly and intentionally violating these access rules in an attempt to inuence the tenant to move out.[192 ]\nIf your landlord violates these access rules, talk to the landlord about your concerns. If that is not successful in stopping the landlord's misconduct, send the landlord a formal letter asking the landlord to strictly observe the access rules stated above, and retain a copy of the letter for your records. If the landlord continues to violate these rules, you can talk to an attorney or a legal aid organization, or le suit in small claims court to recover the damages that you suffered due to the landlord's misconduct. If the landlord's violation of these rules was signicant and intentional, and the landlord's purpose was to inuence you to move from the rental unit, you can sue the landlord in small claims court for a civil penalty of up to $2,000 for each violation.[193]"
+        }
+    ]
+    },
+    {
+    "query": "How does an assignment of a lease differ from a sublease under California law, and what specific steps are required for a landlord to consent to a tenant assigning their lease?",
+    "sufficient": "True",
+    "selected_chunks": [
+        "external_95caa354-7fa8-11f1-9a4f-771d7267b1c2"
+    ],
+    "internal_chunks": [],
+    "external_chunks": [
+        {
+        "id": "95caa354-7fa8-11f1-9a4f-771d7267b1c2",
+        "content": "An assignment is a transfer of your rights as a tenant to someone else. You might use an assignment if you have a rental agreement for one year and need to move permanently before the term ends. Like a sublease, an assignment is a contract between the original tenant and the new tenant (not the landlord).\nHowever, an assignment differs from a sublease in one important way. If the new tenant accepts the assignment, the new tenant is directly responsible to the landlord for the payment of rent, for damage to the rental unit, and so on. Nevertheless, an assignment does not relieve the original tenant of his or her legal obligations to the landlord unless the landlord explicitly releases the original tenant from his/her obligations. If the new tenant does not pay rent or damages the rental unit, the original tenant (unless released from his/her obligations by the landlord) remains legally responsible to the landlord.[195]\nIn order for the original tenant to be relieved of his/her obligations under the original rental agreement, the landlord, the original tenant, and the new tenant all must agree that the new tenant will be solely responsible to the landlord under the assignment. This agreement is called a novation and must be in writing."
+        }
+    ]
+    },
+    {
+    "query": "What are the restrictions regarding using a rental unit as a short-term rental on platforms like Airbnb, and what specific monetary fines do local municipalities impose for violations?",
+    "sufficient": "True",
+    "selected_chunks": [
+        "external_95caa3fe-7fa8-11f1-ad51-15a51d5087e1"
+    ],
+    "internal_chunks": [],
+    "external_chunks": [
+        {
+        "id": "95caa3fe-7fa8-11f1-ad51-15a51d5087e1",
+        "content": "It is important to understand that most rental agreements will prohibit you from using your unit as a short-term rental, such as renting the unit through websites like AirBnB and VRBO. Many local laws also prohibit rental units from being rented in this way and carry with them heavy nes for violating the law.\nRemember: Even if the landlord agrees to a sublease or assignment, the original tenant is still responsible for the rental unit unless there is a written agreement (a novation) that states otherwise. For this reason, think very carefully about who you consider subleasing or assigning your rental unit to."
+        }
+    ]
+    }
+]

@@ -50,7 +50,16 @@ class PromptManager:
                 label=label,
             )
 
+    def get_retrieval_agent_evals(self, label: str = "latest"):
+                """
+                Retrieve the Retrieval Agent Evals prompt from Langfuse.
+                """
+                return self._langfuse.get_prompt(
+                    name="RETRIEVAL_AGENT_EVALS_JUDGE",
+                    label=label,
+                )
+
 if __name__ == "__main__":
     prompt_manager = PromptManager()
-    prompt = prompt_manager.get_complete_search_evals()
+    prompt = prompt_manager.get_retrieval_agent_evals()
     print(prompt.prompt)

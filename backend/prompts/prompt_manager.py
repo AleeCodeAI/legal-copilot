@@ -59,7 +59,16 @@ class PromptManager:
                     label=label,
                 )
 
+    def get_answer_synthesizer_prompt(self, label: str = "latest"):
+                """
+                Retrieve the Answer Synthesizer prompt from Langfuse.
+                """
+                return self._langfuse.get_prompt(
+                        name="ANSWER_SYNTHESIZER_PROMPT",
+                        label=label,
+                    )
+
 if __name__ == "__main__":
     prompt_manager = PromptManager()
-    prompt = prompt_manager.get_retrieval_agent_evals()
+    prompt = prompt_manager.get_answer_synthesizer_prompt()
     print(prompt.prompt)

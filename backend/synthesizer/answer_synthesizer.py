@@ -187,6 +187,10 @@ class AnswerSynthesizer(Logger):
         self.log("All LLM providers failed")
         raise last_error
 
+    # ------------------------------------------------------------------
+        # Main Method
+    # ------------------------------------------------------------------
+
     def answer(
         self,
         query: str,
@@ -231,10 +235,10 @@ if __name__ == "__main__":
     with open(data, "r") as f:
         data = json.load(f)
 
-    data = data[0]
+    data = data[6]
     query = data["query"]
     retrieval_result = RetrievalResult(
-        sufficient=data["'sufficient'"],
+        sufficient=data["sufficient"],
         selected_chunks=data["selected_chunks"],
         confidence=0.96,
         reasoning="The two provided chunks are highly relevant and complete to answer the query completely",

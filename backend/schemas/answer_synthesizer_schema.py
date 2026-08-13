@@ -4,7 +4,7 @@ class Answer(BaseModel):
     """
     Pydantic Schema of the final response generated for the query.
     """
-    answer: str = Field(
+    answer: str | None = Field(
         description="The final answer generated to the query"
         )
     reasoning_summary: str = Field(

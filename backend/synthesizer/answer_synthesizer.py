@@ -5,8 +5,9 @@ from schemas import Answer, RetrievalResult
 from utils.color import Logger
 from prompts.prompt_manager import PromptManager
 from configs.settings import get_settings
-from chunks_loader import get_chunks
-
+from .chunks_loader import get_chunks
+from observability import AnswerSynthesizerObservability
+from langfuse.decorators import observe, langfuse_context
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 
@@ -14,18 +15,13 @@ logging.basicConfig(level=logging.INFO, format="%(message)s")
 class AnswerSynthesizer(Logger):
     """
     Synthesizes a final legal research answer from retrieved evidence.
-
-    The synthesizer receives the user's query and the chunks selected by the
-    retrieval agent, formats the evidence into an LLM-friendly prompt, and
-    generates a structured `Answer`. Groq is attempted first, with OpenRouter
-    used as a fallback provider if the first call fails.
     """
 
     name: str = "AnswerSynthesizer"
     color: str = Logger.MAGENTA
 
     def __init__(self):
-        """Initialize LLM clients, configuration, and the synthesizer prompt."""
+        """Initialize LLM clients, configuration, and observability context."""
         self.log("Initializing AnswerSynthesizer...")
 
         self.settings = get_settings()
@@ -42,27 +38,20 @@ class AnswerSynthesizer(Logger):
 
         self.gpt_oss_model = self.settings.openrouter.default_model
 
+        self.obs = AnswerSynthesizerObservability()
+
         self.log("AnswerSynthesizer initialized")
 
     # ------------------------------------------------------------------
-    # Internal Methods
+    # Internal Methods wrapped with Spans
     # ------------------------------------------------------------------
 
     @staticmethod
     def _format_internal_chunks(internal_chunks) -> str:
-        """
-        Format internal case records into a structured text representation.
-        Args:
-            internal_chunks: Retrieved internal case records containing
-                case metadata and content.
-        Returns:
-            A formatted string containing the available internal cases.
-        """
         if not internal_chunks:
             return "No internal cases provided."
 
         formatted = []
-
         for i, chunk in enumerate(internal_chunks, start=1):
             formatted.append(
                 f"Case: {i}\n"
@@ -76,18 +65,10 @@ class AnswerSynthesizer(Logger):
 
     @staticmethod
     def _format_external_chunks(external_chunks) -> str:
-        """
-        Format external legal source chunks into a structured text format.
-        Args:
-            external_chunks: Retrieved chunks from external legal sources.
-        Returns:
-            A formatted string containing the available external evidence.
-        """
         if not external_chunks:
             return "No external sources provided."
 
         formatted = []
-
         for i, chunk in enumerate(external_chunks, start=1):
             formatted.append(
                 f"Chunk: {i}\n"
@@ -98,24 +79,13 @@ class AnswerSynthesizer(Logger):
 
         return "\n\n".join(formatted)
 
+    @observe(name="prompt_formatting", as_type="span")
     def _user_prompt(
         self,
         query: str,
         retrieval_result: RetrievalResult,
     ) -> str:
-        """
-        Build the user prompt from the query and selected evidence.
-
-        The selected chunk IDs are loaded and separated into internal cases
-        and external legal sources before being formatted for the LLM.
-
-        Args:
-            query: The user's original legal research question.
-            retrieval_result: Retrieval output containing the selected chunks.
-
-        Returns:
-            A formatted user prompt containing the query and retrieved evidence.
-        """
+        """Constructs prompt and records it as a span."""
         internal_chunks, external_chunks = get_chunks(
             ids=retrieval_result.selected_chunks
         )
@@ -128,32 +98,17 @@ class AnswerSynthesizer(Logger):
             f"{self._format_internal_chunks(internal_chunks)}"
         )
 
+    @observe(name="construct_messages", as_type="span")
     def _make_messages(self, user_prompt: str) -> list[dict]:
-        """
-        Construct the system and user messages sent to the LLM.
-        Args:
-            user_prompt: Formatted prompt containing the query and evidence.
-        Returns:
-            A list of chat messages compatible with the OpenAI API.
-        """
         return [
             {"role": "system", "content": self.prompt.prompt},
             {"role": "user", "content": user_prompt},
         ]
 
-    def _call_llm(self, messages: list[dict]) -> Answer:
+    @observe(name="synthesizer_generation", as_type="generation")
+    def _call_llm(self, messages: list[dict], user_prompt: str) -> Answer:
         """
-        Generate a structured answer using the configured LLM providers.
-        Providers are attempted sequentially. If a provider fails, the next
-        provider is used as a fallback. The method raises the last encountered
-        exception if all providers fail.
-
-        Args:
-            messages: System and user messages for the LLM.
-        Returns:
-            A parsed `Answer` object generated by the LLM.
-        Raises:
-            Exception: The last provider error if all providers fail.
+        Executes the LLM request and logs generation metrics via observability.
         """
         self.log("Calling LLM providers for answer synthesis...")
 
@@ -176,6 +131,14 @@ class AnswerSynthesizer(Logger):
                 )
 
                 result = raw.choices[0].message.parsed
+                
+                if hasattr(raw, "usage") and raw.usage:
+                    self.obs.log_generation(
+                        usage=raw.usage,
+                        output=result.model_dump(),
+                        prompt=self.prompt,
+                        model=self.gpt_oss_model
+                    )
 
                 self.log("Answer successfully generated")
                 return result
@@ -188,65 +151,72 @@ class AnswerSynthesizer(Logger):
         raise last_error
 
     # ------------------------------------------------------------------
-        # Main Method
+    # Main Execution Method 
     # ------------------------------------------------------------------
 
+    @observe(name="AnswerSynthesizer_Execution")
     def answer(
         self,
         query: str,
         retrieval_result: RetrievalResult,
+        session_id: str = "default_session"
     ) -> Answer:
         """
-        Generate the final answer for a legal research query.
-
-        Args:
-            query: The user's legal research question.
-            retrieval_result: Results produced by the retrieval pipeline,
-                including the chunks selected as evidence.
-
-        Returns:
-            A structured `Answer` containing the synthesized response.
-
-        Raises:
-            Exception: If prompt construction, message creation, or all
-                configured LLM providers fail.
+        Main pipeline entry point. Initializes traces, executes spans, and handles logging.
         """
+        # 1. Initialize trace
+        self.obs.init_trace(
+            session_id=session_id, 
+            query=query
+        )
+
         try:
+            # 2. Build Prompt (Span 1)
             user_prompt = self._user_prompt(
                 query=query,
                 retrieval_result=retrieval_result,
             )
 
+            # 3. Construct Messages (Span 2)
             messages = self._make_messages(user_prompt=user_prompt)
 
-            result = self._call_llm(messages=messages)
+            # 4. Invoke LLM (Generation Step)
+            result = self._call_llm(messages=messages, user_prompt=user_prompt)
+
+            # 5. Score output success
+            self.obs.process_result(result)
             return result
 
         except Exception as e:
             self.log(f"Answer synthesis failed: {e}")
+            self.obs.process_failure(e)
             raise
+        finally:
+            self.obs.flush()
+
 
 if __name__ == "__main__":
     from pathlib import Path
     import json 
 
-    data = Path(__file__).parents[2] / "data" / "evals_data" / "retrieval_agent_evals_data.json"
+    data_path = Path(__file__).parents[2] / "data" / "evals_data" / "retrieval_agent_evals_data.json"
 
-    with open(data, "r") as f:
-        data = json.load(f)
+    if data_path.exists():
+        with open(data_path, "r") as f:
+            data = json.load(f)
 
-    data = data[6]
-    query = data["query"]
-    retrieval_result = RetrievalResult(
-        sufficient=data["sufficient"],
-        selected_chunks=data["selected_chunks"],
-        confidence=0.96,
-        reasoning="The two provided chunks are highly relevant and complete to answer the query completely",
-        refined_query=None    
+        data = data[8]
+        query = data["query"]
+        retrieval_result = RetrievalResult(
+            sufficient=data["sufficient"],
+            selected_chunks=data["selected_chunks"],
+            confidence=0.96,
+            reasoning="The two provided chunks are highly relevant and complete to answer the query completely",
+            refined_query=None    
         )
 
-    synthesizer = AnswerSynthesizer()
-    result = synthesizer.answer(query=query, retrieval_result=retrieval_result)
-    print(query)
-    print(result.answer)
-    print(result.reasoning_summary)
+        synthesizer = AnswerSynthesizer()
+        result = synthesizer.answer(query=query, retrieval_result=retrieval_result, session_id="test_session_123")
+        print("Query:", query)
+        print("Answer:", result.answer)
+        print("Reasoning:", result.reasoning_summary)

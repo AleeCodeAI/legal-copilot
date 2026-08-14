@@ -1,6 +1,3 @@
-import json 
-from schemas import RetrievalResult
-from pathlib import Path 
 from database.vectorstore import VectorStore
 
 store = VectorStore()

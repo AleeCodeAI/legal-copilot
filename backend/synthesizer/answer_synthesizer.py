@@ -7,7 +7,7 @@ from prompts.prompt_manager import PromptManager
 from configs.settings import get_settings
 from .chunks_loader import get_chunks
 from observability import AnswerSynthesizerObservability
-from langfuse.decorators import observe, langfuse_context
+from langfuse.decorators import observe
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 

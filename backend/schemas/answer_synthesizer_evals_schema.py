@@ -34,14 +34,14 @@ class AnswerSynthesizerEvalsSchema(BaseModel):
     @computed_field
     @property
     def overall_score(self) -> float:
-        """Average of the three evaluation scores."""
+        """Weighted average of the evaluation scores."""
 
         return round(
             (
-                self.faithfulness
-                + self.completeness
-                + self.source_attribution
-            ) / 3,
+                self.faithfulness * 0.50
+                + self.completeness * 0.25
+                + self.source_attribution * 0.25
+            ),
             2,
         )
 

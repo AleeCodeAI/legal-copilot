@@ -4,3 +4,4 @@ from .retrieval_agent_schema import RetrievalResult
 from .complete_search_evals_schema import CompleteSearchEvalsSchema
 from .retrieval_agent_evals_schema import RetrievalAgentEvalsSchema
 from .answer_synthesizer_schema import Answer
+from .answer_synthesizer_evals_schema import AnswerSynthesizerEvalsSchema

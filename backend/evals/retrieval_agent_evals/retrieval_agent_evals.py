@@ -6,7 +6,7 @@ from schemas import RetrievalAgentEvalsSchema
 from openai import OpenAI
 from langfuse.decorators import observe
 from utils.color import Logger
-from observability import AgentEvaluatorObservability  
+from evals.evals_observability.agent_evaluator_observability import AgentEvaluatorObservability  
 import json
 import time
 import uuid

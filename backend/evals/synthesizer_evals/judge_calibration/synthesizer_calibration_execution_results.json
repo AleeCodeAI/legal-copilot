@@ -1,0 +1,202 @@
+[
+    {
+        "query": "How long does a landlord have to return a security deposit after I move out, and what happens if they withhold it in bad faith?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.99,
+        "reasoning": "The answer accurately reflects the external guide\u2019s 21\u2011day return requirement, the need for an itemized statement, and the statutory penalty of up to twice the deposit for bad\u2011faith retention. It also correctly summarizes the internal case details (45\u2011day delay, lack of statement, demand letter, refund plus penalty). All key facts from the retrieved evidence are included, and citations are provided for both the external guide and the internal case, allowing a reader to trace each claim to its source."
+    },
+    {
+        "query": "What are the rules regarding a landlord entering my apartment? Can they just show up to look around?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.99,
+        "reasoning": "The response accurately reflects the external Right of Entry Guide, citing the statutory reasons for entry, the 24\u2011hour notice requirement, and business\u2011hour limitation, and correctly notes that general inspections are not permitted. The case example is directly supported by the internal case chunk. No statements go beyond the provided evidence, and all key points from the evidence are included. Citations are clear and correctly attributed to the external guide and internal case, allowing a reader to trace each claim to its source."
+    },
+    {
+        "query": "What must be included in a 3-day notice to pay rent or quit for it to be legally valid?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.99,
+        "reasoning": "The response lists exactly the elements required by the external source (exact rent amount, landlord\u2019s name/address/telephone, and days/hours for payment) and cites that source. It also correctly references the internal case illustrating the consequence of omitting the telephone number, matching the internal chunk. No statements go beyond the provided evidence, and all required information is included, so faithfulness and completeness are full. Citations are clear and correctly tied to the external and internal sources, satisfying source attribution."
+    },
+    {
+        "query": "Can my landlord charge me a non-refundable pet fee for my emotional support animal?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.99,
+        "reasoning": "The response accurately reflects the external source stating that ESA owners cannot be charged pet fees or rent and are only liable for actual damage, and it correctly summarizes the internal case where illegal ESA fees were refunded. All claims are supported by the provided evidence, and the answer fully addresses the user\u2019s question about non\u2011refundable pet fees. Citations are clearly provided for both the external guidance and the internal case, allowing a reader to trace each statement to its source."
+    },
+    {
+        "query": "Is my landlord required to fix a broken heater, and what can I do if they ignore my requests?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.98,
+        "reasoning": "The response is fully grounded in the provided external and internal chunks. It accurately states the landlord\u2019s duty to repair heating under the implied warranty of habitability and lists the statutory remedies (repair\u2011and\u2011deduct, rent withholding, abandonment) that are directly supported by the external source. The case example aligns with the internal chunk details. All key points from the evidence are included, and citations clearly identify the external habitability standards and the internal case, distinguishing between them. No unsupported claims or omissions are present."
+    },
+    {
+        "query": "How much can a landlord legally increase my rent in a single year?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.99,
+        "reasoning": "The answer directly mirrors the retrieved evidence: it states the rent\u2011increase cap of 5% plus CPI or 10% whichever is lower, notes the same exemptions (units less than 15\u202fyears old and single\u2011family homes not owned by a corporation/REIT), and mentions that stricter local ordinances prevail. No unsupported statements are added, and each claim is cited to the Rent Control Guide (page\u202f28), allowing a reader to trace the information to the source. All key points from the evidence are included, fully addressing the user\u2019s question about the allowable annual increase."
+    },
+    {
+        "query": "Are late fees on rent legal in California, and is there a limit to how much they can charge?",
+        "faithfulness": 0.85,
+        "completeness": 0.95,
+        "source_attribution": 1.0,
+        "overall_score": 0.91,
+        "final_verdict": "GOOD",
+        "confidence": 0.97,
+        "reasoning": "The answer is largely grounded in the retrieved evidence, correctly stating that late fees are permissible if in the lease and must be a reasonable estimate of actual damages. However, it adds an unsupported specific example of a $100 flat fee, which is not present in the evidence, reducing faithfulness. The response fully addresses both parts of the user\u2019s query\u2014legality and limits\u2014without omitting key evidence, so completeness is high. Source citations are provided and clearly point to the external chunk, satisfying source attribution."
+    },
+    {
+        "query": "Can my landlord evict me because I called the health department about a mold issue?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.99,
+        "reasoning": "The response accurately reflects the retrieved external chunk, stating that California Civil Code \u00a71942.5 bars eviction for reporting mold to a government agency, describes the 180\u2011day presumption, and mentions available damages. No statements go beyond the provided evidence. All key points from the evidence are included, fully answering the user\u2019s question, and each claim is cited as [Tenant Protections, p. 60], allowing a reader to identify the source. Hence, scores are maximal for faithfulness, completeness, and source attribution."
+    },
+    {
+        "query": "I am on a month-to-month lease and have lived here for 2 years. How much notice does the landlord have to give to end the lease?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.99,
+        "reasoning": "The answer correctly states that a landlord must give 60 days' written notice for a tenant who has lived in a month\u2011to\u2011month tenancy for two years, which is directly supported by the retrieved chunk. It also accurately includes the related details about 30\u2011day notice for less than a year and the just\u2011cause limitation, all of which are present in the evidence. No unsupported statements are made, and the source is clearly cited as 'Terminating Tenancies, p. 81', matching the provided source. Therefore, the answer is fully faithful, complete, and properly attributed."
+    },
+    {
+        "query": "My landlord changed the locks on my door because I was late on rent. Is this legal?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.99,
+        "reasoning": "The synthesizer answer is fully supported by the retrieved external chunk, accurately reflecting the prohibition of self\u2011help lock changes, the required unlawful detainer process, and the penalties under Civil Code \u00a7789.3. It addresses the user\u2019s question directly and includes all material points from the evidence. Citations to the source are provided consistently, allowing a reader to trace each claim back to the chunk. No unsupported or omitted information is present."
+    },
+    {
+        "query": "Can my landlord automatically deduct a standard $500 cleaning fee from my security deposit?",
+        "faithfulness": 0.0,
+        "completeness": 0.0,
+        "source_attribution": 0.1,
+        "overall_score": 0.03,
+        "final_verdict": "BAD",
+        "confidence": 0.95,
+        "reasoning": "The synthesizer answer claims California law permits a flat $500 non\u2011refundable cleaning fee, directly contradicting both the internal and external chunks, which state that automatic or non\u2011refundable cleaning fees are prohibited and only actual costs may be deducted. Thus the answer is not grounded in the provided evidence (faithfulness 0.0) and fails to convey the correct legal rule, omitting the key prohibition (completeness 0.0). While the answer includes a citation to the external chunk, it misrepresents that source\u2019s content, resulting in poor source attribution (score 0.1)."
+    },
+    {
+        "query": "I want to sublet my room. Do I need my landlord's permission, and what happens if my lease prohibits subletting but I do it anyway?",
+        "faithfulness": 1.0,
+        "completeness": 0.6,
+        "source_attribution": 1.0,
+        "overall_score": 0.9,
+        "final_verdict": "GOOD",
+        "confidence": 0.95,
+        "reasoning": "The answer correctly states that written landlord consent is required, which is directly supported by the retrieved evidence, so faithfulness is perfect. However, it omits the crucial consequences of violating a lease prohibition\u2014namely that such a breach allows the landlord to issue a 3\u2011day notice to cure or quit and can lead to eviction of both tenant and subtenant\u2014so completeness is limited. The source is clearly cited as \"Subletting Rules, p. 45,\" matching the provided chunk, giving full credit for source attribution."
+    },
+    {
+        "query": "Can I break my lease without a penalty if I receive military deployment orders?",
+        "faithfulness": 1.0,
+        "completeness": 0.85,
+        "source_attribution": 0.8,
+        "overall_score": 0.91,
+        "final_verdict": "GOOD",
+        "confidence": 0.97,
+        "reasoning": "The answer accurately reflects the internal case and the SCRA provisions described in the evidence, stating the right to terminate, required notice, and 30\u2011day effective date, so it is fully faithful. It answers the user\u2019s question but omits the specific condition that the deployment must last 90 days or more, which is a material detail present in the external chunk, lowering completeness. The response cites the internal case (GSA-2023-010) but does not explicitly reference the external SCRA source, resulting in partial but not complete source attribution."
+    },
+    {
+        "query": "I've lived in my apartment for 5 years. If the landlord wants to sell the building and kick me out, how much notice do they have to give me?",
+        "faithfulness": 0.0,
+        "completeness": 0.1,
+        "source_attribution": 0.2,
+        "overall_score": 0.08,
+        "final_verdict": "BAD",
+        "confidence": 0.95,
+        "reasoning": "The synthesizer answer contradicts the retrieved evidence. The evidence states that for tenancies of one year or longer, a 60\u2011day notice is required, even when the landlord is selling the property. The answer incorrectly claims only a 30\u2011day notice is needed for a 5\u2011year tenancy, which is not supported by the source. Thus the answer is not faithful to the evidence, omits the correct 60\u2011day requirement (affecting completeness), and while it cites the source, the cited information is inaccurate, leading to poor source attribution."
+    },
+    {
+        "query": "What are the landlord and tenant duties regarding a bedbug infestation, and can I hire my own pest control and deduct it?",
+        "faithfulness": 0.2,
+        "completeness": 0.4,
+        "source_attribution": 0.5,
+        "overall_score": 0.33,
+        "final_verdict": "BAD",
+        "confidence": 0.9,
+        "reasoning": "The answer includes several statements not supported by the provided evidence: the claim that the landlord must pay for a hotel stay is absent from both internal and external chunks, and the assertion that the tenant can successfully deduct the cost of self\u2011hired pest control is overstated\u2014evidence shows the deduction was contested and resolved via settlement, not affirmed as a right. While the answer correctly notes the landlord\u2019s duty to hire professional pest control and the tenant\u2019s duty to cooperate, it omits the key point that California courts generally disallow the repair\u2011and\u2011deduct remedy for bedbugs (Civil Code\u202f1942.5). Thus the answer is only partially complete. Citations are provided, but they are attached to unsupported claims, making source attribution misleading. Overall, the answer is not fully faithful, only moderately complete, and source attribution is inadequate."
+    },
+    {
+        "query": "What are the rules regarding security deposit returns in California?",
+        "faithfulness": 0.0,
+        "completeness": 0.2,
+        "source_attribution": 0.3,
+        "overall_score": 0.12,
+        "final_verdict": "BAD",
+        "confidence": 0.95,
+        "reasoning": "The answer claims a 14\u2011day return period and a 5% federal interest requirement, neither of which appears in the provided evidence. The evidence states a 21\u2011day period and the need for an itemized statement, which the answer omits. Thus the answer is not faithful to the evidence, is incomplete (missing the itemized\u2011statement requirement), and provides a citation that does not support the asserted facts, resulting in low scores for all criteria."
+    },
+    {
+        "query": "What are the exact legal requirements and notice periods for terminating a month-to-month tenancy in California?",
+        "faithfulness": 0.9,
+        "completeness": 0.2,
+        "source_attribution": 0.0,
+        "overall_score": 0.5,
+        "final_verdict": "BAD",
+        "confidence": 0.95,
+        "reasoning": "The answer correctly states that notice is required, which aligns with the evidence, so it is faithful to the source and contains no unsupported claims. However, it omits the critical details about the length of notice (30 days for tenants under one year, 60 days for those one year or longer) and does not specify who must give the notice, making it far from complete for the user\u2019s query. Additionally, the response provides no citation or attribution to the external source, resulting in a zero score for source attribution."
+    },
+    {
+        "query": "How are internal firm matters and external statutes applied when handling illegal screening fees?",
+        "faithfulness": 0.0,
+        "completeness": 0.0,
+        "source_attribution": 0.2,
+        "overall_score": 0.05,
+        "final_verdict": "BAD",
+        "confidence": 0.95,
+        "reasoning": "The answer asserts that landlords may charge up to $500 and cites California Civil Code \u00a71950.6, but the internal chunk only notes a disputed screening fee charge and contains no fee amount or statutory citation. The external chunk states that fees cannot exceed actual out\u2011of\u2011pocket costs, with no mention of $500 or the cited code. Thus the answer introduces unsupported facts, violating faithfulness. It also fails to explain how internal firm matters and external statutes together guide handling illegal screening fees, omitting the relevant discussion from both chunks, so completeness is lacking. While the answer attributes the internal case correctly, it attributes unsupported content to that source and does not reference the external rule, resulting in poor source attribution."
+    },
+    {
+        "query": "Can a landlord enter an apartment without notice in California?",
+        "faithfulness": 0.1,
+        "completeness": 0.2,
+        "source_attribution": 0.8,
+        "overall_score": 0.3,
+        "final_verdict": "BAD",
+        "confidence": 0.9,
+        "reasoning": "The answer asserts that landlords may enter any unit at any time without notice for general inspections, but the only retrieved evidence is a vague internal memo that does not contain this specific rule. Thus the claim is not grounded in the evidence, violating faithfulness. Because the evidence provides no clear statement, the answer fails to incorporate the available information and instead adds unsupported detail, leading to low completeness. The answer does cite the internal case ID, matching the source, so source attribution is clear, though the cited source does not support the claim; attribution clarity earns a relatively high score."
+    },
+    {
+        "query": "What remedies exist for retaliatory eviction in California?",
+        "faithfulness": 0.1,
+        "completeness": 0.2,
+        "source_attribution": 0.4,
+        "overall_score": 0.2,
+        "final_verdict": "BAD",
+        "confidence": 0.9,
+        "reasoning": "The answer asserts remedies (unlimited emotional distress damages and forced transfer of ownership) that are not present in the retrieved evidence. The evidence only mentions recovery of actual damages and punitive damages capped at $2,000 per act. Thus the answer is largely unfaithful to the source and omits the correct remedy, leading to low completeness. A citation is provided, but it is tied to inaccurate statements, so source attribution is only partially met."
+    }
+]

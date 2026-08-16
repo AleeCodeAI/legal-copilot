@@ -1,0 +1,540 @@
+[
+    {
+        "query": "How long does a landlord have to return a security deposit after I move out, and what happens if they withhold it in bad faith?",
+        "synthesizer_response": "**Timeline for Security Deposit Return**\nUnder California law, a landlord must return the tenant's security deposit within 21 days of the tenant vacating the premises. [California Sec. Dep. Guide, p. 32] If deductions are made, the landlord must provide an itemized statement along with the remaining balance. [California Sec. Dep. Guide, p. 32]\n\n**Bad Faith Retention Penalty**\nIf a landlord retains the deposit in bad faith, the tenant may recover actual damages plus a statutory penalty of up to twice the amount of the security deposit. [California Sec. Dep. Guide, p. 32]\n\n**Illustration from Internal Case**\nIn *GSA-2023-012*, the landlord withheld a $2,000 deposit for 45 days without providing an itemized statement. A demand letter citing bad faith was sent, resulting in the landlord refunding the full $2,000 plus an additional $2,000 penalty to avoid a lawsuit. [Internal Case GSA-2023-012, 2023-08-14, Attorney Sarah Lin]",
+        "synthesizer_reasoning": "Synthesized the 21-day statutory rule and the bad faith penalty from the external chunk. Illustrated the application of the bad faith penalty using the internal case GSA-2023-012 where a 2x penalty was successfully recovered.",
+        "selected_chunks": [
+            "external_a1b2c3d4-1111-2222-3333-444455556666",
+            "internal_f9e8d7c6-1111-2222-3333-444455556666"
+        ],
+        "internal_chunks": [
+            {
+                "id": "f9e8d7c6-1111-2222-3333-444455556666",
+                "content": "MATTER GSA-2023-012 (Security Deposit Bad Faith): Client Jane Doe vacated her apartment on June 1, but by July 15 had not received her $2,000 deposit or an itemized statement from landlord Apex Properties (intake notes). Internal discovery confirmed the landlord intentionally ignored communications to pressure the tenant into dropping the matter. We sent a demand letter citing Civil Code Section 1950.5 for bad faith retention. Outcome: Demand met; landlord refunded the $2,000 deposit plus a $2,000 statutory penalty to avoid litigation (case summary).",
+                "source": {
+                    "case_id": "GSA-2023-012",
+                    "attorneys": [
+                        "Sarah Lin"
+                    ],
+                    "date": "2023-08-14"
+                }
+            }
+        ],
+        "external_chunks": [
+            {
+                "id": "a1b2c3d4-1111-2222-3333-444455556666",
+                "content": "A landlord has 21 days after the tenant vacates the premises to either return the security deposit in full or provide an itemized statement listing any lawful deductions along with the remaining balance.[65] If the landlord retains any portion of the deposit in bad faith, the tenant may sue for actual damages and a statutory penalty of up to twice the amount of the original security deposit.[66]",
+                "source": {
+                    "headings": [
+                        "California Sec. Dep. Guide"
+                    ],
+                    "page_number": "32"
+                }
+            }
+        ]
+    },
+    {
+        "query": "What are the rules regarding a landlord entering my apartment? Can they just show up to look around?",
+        "synthesizer_response": "**Rules for Landlord Entry**\n- A landlord cannot simply show up to look around. California law restricts entry to specific reasons, such as making necessary repairs, showing the unit to prospective buyers or tenants, or in the event of an emergency. [Right of Entry Guide, p. 22]\n- Except in emergencies, the landlord must provide reasonable advance written notice. [Right of Entry Guide, p. 22]\n- \"Reasonable notice\" is legally presumed to be 24 hours. [Right of Entry Guide, p. 22]\n- Entry must occur during normal business hours. [Right of Entry Guide, p. 22]\n\n**Case Example**\nIn *GSA-2022-199*, a landlord was using non-emergency \"welfare checks\" to enter a tenant's unit unannounced multiple times a week. The firm intervened with a cease and desist, and secured a $3,000 rent abatement for the tenant due to harassment and breach of quiet enjoyment. [Internal Case GSA-2022-199, 2022-11-05, Attorney Marcus Vance, Esq.]",
+        "synthesizer_reasoning": "Answered the query directly by outlining the restricted reasons for entry and the 24-hour notice requirement from the external chunk. Used the internal case to show how unauthorized \"inspections\" violate the law and can result in rent abatement.",
+        "selected_chunks": [
+            "external_b2c3d4e5-2222-3333-4444-555566667777",
+            "internal_e8d7c6b5-2222-3333-4444-555566667777"
+        ],
+        "internal_chunks": [
+            {
+                "id": "e8d7c6b5-2222-3333-4444-555566667777",
+                "content": "MATTER GSA-2022-199 (Unauthorized Entry/Harassment): Client Mark Smith reported his landlord was entering his unit 2-3 times a week unannounced under the guise of 'welfare checks' to snoop (intake notes). Internal discovery verified no emergencies existed and no written 24-hour notices were ever provided. We drafted a formal cease and desist letter citing breach of the covenant of quiet enjoyment and harassment. Outcome: Landlord ceased unannounced entries and agreed to a $3,000 rent abatement settlement (case summary).",
+                "source": {
+                    "case_id": "GSA-2022-199",
+                    "attorneys": [
+                        "Marcus Vance, Esq."
+                    ],
+                    "date": "2022-11-05"
+                }
+            }
+        ],
+        "external_chunks": [
+            {
+                "id": "b2c3d4e5-2222-3333-4444-555566667777",
+                "content": "Under California Civil Code Section 1954, a landlord may only enter a tenant's unit for specific reasons: in an emergency, to make necessary or agreed repairs, to show the unit to prospective buyers or tenants, or if the tenant has abandoned the premises. The landlord must give reasonable advance written notice, which is presumed to be 24 hours, and entry must occur during normal business hours unless the tenant consents otherwise. General inspections just to 'look around' are not a lawful reason for entry.",
+                "source": {
+                    "headings": [
+                        "Right of Entry Guide"
+                    ],
+                    "page_number": "22"
+                }
+            }
+        ]
+    },
+    {
+        "query": "What must be included in a 3-day notice to pay rent or quit for it to be legally valid?",
+        "synthesizer_response": "**Requirements for a 3-Day Notice**\nFor a 3-day notice to pay rent or quit to be legally valid, it must strictly comply with state formatting and content requirements. It must include:\n- The exact amount of rent due. [Eviction Notices, p. 41]\n- The name, address, and telephone number of the specific person to whom the rent must be paid. [Eviction Notices, p. 41]\n- The days and hours that payment can be made, if paid in person. [Eviction Notices, p. 41]\n\n**Consequences of Invalid Notice**\nIf the notice omits these details, it is legally defective. For instance, in internal case *GSA-2024-055*, an eviction lawsuit was dismissed entirely because the 3-day notice failed to include the telephone number of the person to receive payment, rendering the notice invalid. [Internal Case GSA-2024-055, 2024-02-20, Attorney Emily Chen]",
+        "synthesizer_reasoning": "Extracted the strict statutory requirements for a 3-day notice from the external chunk. Connected it to the internal case which perfectly illustrates the consequence (dismissal of eviction) when one of those specific elements (telephone number) is omitted.",
+        "selected_chunks": [
+            "external_c3d4e5f6-3333-4444-5555-666677778888",
+            "internal_d7c6b5a4-3333-4444-5555-666677778888"
+        ],
+        "internal_chunks": [
+            {
+                "id": "d7c6b5a4-3333-4444-5555-666677778888",
+                "content": "MATTER GSA-2024-055 (Defective 3-Day Notice): Client Carlos Ruiz was served an unlawful detainer lawsuit after receiving a 3-day notice to pay rent or quit (intake notes). Internal review of the notice revealed it listed the landlord's name and address but completely omitted a telephone number, a strict requirement under Code of Civil Procedure 1161(2). We filed a demurrer based on the defective notice. Outcome: The court sustained the demurrer, the unlawful detainer was dismissed, and the tenant remained in possession (case summary).",
+                "source": {
+                    "case_id": "GSA-2024-055",
+                    "attorneys": [
+                        "Emily Chen"
+                    ],
+                    "date": "2024-02-20"
+                }
+            }
+        ],
+        "external_chunks": [
+            {
+                "id": "c3d4e5f6-3333-4444-5555-666677778888",
+                "content": "A 3-day notice to pay rent or quit must accurately state the exact amount of rent due. To be legally valid under California Code of Civil Procedure Section 1161(2), the notice must also state the name, address, and telephone number of the person to whom the rent payment shall be made. If payment is to be made personally, the notice must state the usual days and hours that person will be available to receive the payment. A notice missing any of these elements is generally considered defective.",
+                "source": {
+                    "headings": [
+                        "Eviction Notices"
+                    ],
+                    "page_number": "41"
+                }
+            }
+        ]
+    },
+    {
+        "query": "Can my landlord charge me a non-refundable pet fee for my emotional support animal?",
+        "synthesizer_response": "**Emotional Support Animals and Fees**\n- Landlords are prohibited from charging non-refundable pet fees or monthly pet rent for an Emotional Support Animal (ESA). [Assistance Animals, p. 19]\n- Under Fair Housing laws, an ESA is classified as an assistance animal, not a pet. Therefore, standard pet fees do not apply. [Assistance Animals, p. 19]\n- A landlord may only charge for actual damage caused by the animal at the end of the tenancy, just as they would for human-caused damage. [Assistance Animals, p. 19]\n\n**Enforcement Example**\nIn *GSA-2023-112*, a property management company illegally charged a tenant a $500 pet fee and $50/month pet rent for a documented ESA. Upon intervention and a demand letter referencing Fair Housing violations, the management company fully refunded the $800 in illegal fees and updated the lease. [Internal Case GSA-2023-112, 2023-10-01, Attorney Sarah Lin]",
+        "synthesizer_reasoning": "Addressed the query directly using external chunks to clarify that ESAs are not pets and cannot be subject to pet fees. Used the internal case to show real-world application of securing a refund for unlawfully charged ESA fees.",
+        "selected_chunks": [
+            "external_d4e5f6g7-4444-5555-6666-777788889999",
+            "internal_c6b5a4z3-4444-5555-6666-777788889999"
+        ],
+        "internal_chunks": [
+            {
+                "id": "c6b5a4z3-4444-5555-6666-777788889999",
+                "content": "MATTER GSA-2023-112 (Illegal ESA Fees): Client Nina Patel moved in with a prescribed Emotional Support Animal. Despite providing valid medical documentation, management charged a $500 non-refundable pet fee and $50/mo pet rent for six months (intake notes). Internal review confirmed this violated California Fair Employment and Housing Act. We issued a demand letter for immediate refund of $800 total paid. Outcome: Demand met; management refunded the $800 in full and struck the pet rent provision from her ongoing lease (case summary).",
+                "source": {
+                    "case_id": "GSA-2023-112",
+                    "attorneys": [
+                        "Sarah Lin"
+                    ],
+                    "date": "2023-10-01"
+                }
+            }
+        ],
+        "external_chunks": [
+            {
+                "id": "d4e5f6g7-4444-5555-6666-777788889999",
+                "content": "Under both federal and California Fair Housing laws, emotional support animals (ESAs) are not considered pets. Because they are assistance animals, landlords cannot charge tenants a 'pet fee,' 'pet deposit,' or monthly 'pet rent' for an ESA. Landlords must grant a reasonable accommodation to their standard pet policies for valid ESAs. However, the tenant remains financially responsible for any actual physical damage the animal causes to the property.",
+                "source": {
+                    "headings": [
+                        "Assistance Animals"
+                    ],
+                    "page_number": "19"
+                }
+            }
+        ]
+    },
+    {
+        "query": "Is my landlord required to fix a broken heater, and what can I do if they ignore my requests?",
+        "synthesizer_response": "**Landlord's Duty to Repair**\nYes, landlords are legally required to maintain habitable living conditions under the implied warranty of habitability. This explicitly includes providing working heating facilities. [Habitability Standards, p. 55]\n\n**Tenant Options if Ignored**\nIf the landlord ignores repair requests after being given reasonable notice (usually 30 days, or less for emergencies like extreme cold), a tenant has several options:\n1. **Repair and Deduct:** The tenant can pay for the repair themselves and deduct the cost from the next month's rent. [Habitability Standards, p. 55]\n2. **Rent Withholding:** The tenant can withhold rent until the repair is made. [Habitability Standards, p. 55]\n3. **Abandonment:** The tenant can move out without penalty. [Habitability Standards, p. 55]\n\n**Real World Example**\nIn case *GSA-2023-088*, a tenant endured freezing temperatures for three weeks because the landlord ignored requests to fix a broken heater. The firm advised the tenant to withhold rent. Following our legal notice, the landlord immediately repaired the furnace and agreed to waive half a month's rent as compensation. [Internal Case GSA-2023-088, 2023-12-15, Attorney Marcus Vance, Esq.]",
+        "synthesizer_reasoning": "Answered the specific question about the heater using the external chunk on habitability, and listed the legal remedies available to the tenant. Used the internal case to illustrate the 'rent withholding' remedy successfully forcing compliance.",
+        "selected_chunks": [
+            "external_e5f6g7h8-5555-6666-7777-888899990000",
+            "internal_b5a4z3y2-5555-6666-7777-888899990000"
+        ],
+        "internal_chunks": [
+            {
+                "id": "b5a4z3y2-5555-6666-7777-888899990000",
+                "content": "MATTER GSA-2023-088 (Habitability/No Heat): Client John Davis's furnace broke in November. Landlord ignored written maintenance requests for 3 weeks while temperatures dropped (intake notes). Internal assessment verified a breach of the implied warranty of habitability. We advised the client on lawful rent withholding procedures and sent a notice to the landlord. Outcome: Landlord dispatched emergency HVAC same-day to replace the furnace and agreed to a 50% rent reduction for that month in settlement (case summary).",
+                "source": {
+                    "case_id": "GSA-2023-088",
+                    "attorneys": [
+                        "Marcus Vance, Esq."
+                    ],
+                    "date": "2023-12-15"
+                }
+            }
+        ],
+        "external_chunks": [
+            {
+                "id": "e5f6g7h8-5555-6666-7777-888899990000",
+                "content": "California law establishes an implied warranty of habitability, meaning landlords must keep units in a liveable condition. Civil Code Section 1941.1 defines untenantable properties, which specifically includes a lack of working heating facilities. If a landlord fails to make necessary repairs after reasonable notice, tenants have several statutory remedies. They may use the 'repair and deduct' remedy to fix the issue and deduct it from rent, they may legally withhold rent until repairs are made, or they may abandon the premises and break the lease without penalty.",
+                "source": {
+                    "headings": [
+                        "Habitability Standards"
+                    ],
+                    "page_number": "55"
+                }
+            }
+        ]
+    },
+    {
+        "query": "How much can a landlord legally increase my rent in a single year?",
+        "synthesizer_response": "**Rent Increase Limits**\nUnder the California Tenant Protection Act (AB 1482), the amount a landlord can raise rent is capped for properties covered by the law. \n- A landlord cannot raise the rent by more than **5% plus the local inflation rate (CPI)**, OR **10%**, whichever is lower, within any 12-month period. [Rent Control Guide, p. 28]\n- Properties exempt from this law include housing built within the last 15 years and single-family homes not owned by a corporation. [Rent Control Guide, p. 28]\n- If the property is located in a city with stricter local rent control ordinances, the stricter local law applies. [Rent Control Guide, p. 28]",
+        "synthesizer_reasoning": "Used the external chunk to fully answer the query regarding the exact percentage limits for rent increases under AB 1482, while noting the exceptions.",
+        "selected_chunks": [
+            "external_f6g7h8i9-6666-7777-8888-999900001111"
+        ],
+        "internal_chunks": [],
+        "external_chunks": [
+            {
+                "id": "f6g7h8i9-6666-7777-8888-999900001111",
+                "content": "The California Tenant Protection Act of 2019 (AB 1482) implements a statewide rent cap. For covered units, a landlord cannot increase the rent by more than 5% plus the percentage change in the local Consumer Price Index (CPI), or 10%, whichever is lower, in any 12-month period. Certain properties are exempt, notably housing issued a certificate of occupancy within the previous 15 years, and single-family homes or condos not owned by a real estate investment trust or corporation. Tenants should also check local city ordinances, as stricter local rent control laws supersede the state law.",
+                "source": {
+                    "headings": [
+                        "Rent Control Guide"
+                    ],
+                    "page_number": "28"
+                }
+            }
+        ]
+    },
+    {
+        "query": "Are late fees on rent legal in California, and is there a limit to how much they can charge?",
+        "synthesizer_response": "**Legality of Late Fees**\nLate fees on rent are legally permissible in California, provided they are explicitly stated in a written lease agreement. [Late Fees and Grace Periods, p. 11]\n\n**Limits on Late Fees**\nHowever, there are strict rules governing the amount:\n- A late fee cannot be designed as a penalty. [Late Fees and Grace Periods, p. 11]\n- The fee must be a \"reasonable estimate\" of the actual financial loss the landlord suffers because of the late payment (e.g., administrative costs or banking fees). [Late Fees and Grace Periods, p. 11]\n- Courts have consistently struck down excessive late fees (such as flat fees of $100 or 10% of the rent) if the landlord cannot prove it reflects actual out-of-pocket costs. [Late Fees and Grace Periods, p. 11]",
+        "synthesizer_reasoning": "Answered the user's query by explaining that late fees are legal but must be a reasonable estimate of actual damages, relying solely on the external chunk provided.",
+        "selected_chunks": [
+            "external_g7h8i9j0-7777-8888-9999-000011112222"
+        ],
+        "internal_chunks": [],
+        "external_chunks": [
+            {
+                "id": "g7h8i9j0-7777-8888-9999-000011112222",
+                "content": "Landlords may charge a late fee for rent paid past the due date only if the lease contains a specific provision allowing it. California law prohibits late fees that act as a penalty against the tenant. Instead, under the liquidated damages statute, a late fee must be a reasonable estimate of the actual financial damages the landlord incurs due to the late payment, such as administrative time or bank charges. High flat fees or arbitrary percentages (like 10% of rent) are routinely invalidated by courts if the landlord cannot prove they correspond to actual out-of-pocket losses.",
+                "source": {
+                    "headings": [
+                        "Late Fees and Grace Periods"
+                    ],
+                    "page_number": "11"
+                }
+            }
+        ]
+    },
+    {
+        "query": "Can my landlord evict me because I called the health department about a mold issue?",
+        "synthesizer_response": "**Retaliatory Eviction Protections**\nNo, your landlord cannot legally evict you for calling the health department about mold. This is known as a retaliatory eviction. [Tenant Protections, p. 60]\n\n**Key Legal Protections**\n- California Civil Code Section 1942.5 strictly prohibits a landlord from evicting a tenant, increasing rent, or decreasing services in retaliation for the tenant exercising their legal rights. [Tenant Protections, p. 60]\n- Reporting habitability issues (like mold) to a government agency is a protected right. [Tenant Protections, p. 60]\n- **The 180-Day Rule:** If a landlord attempts to evict you or raises your rent within 180 days of your complaint to the health department, the law automatically presumes the action is retaliatory. [Tenant Protections, p. 60]\n- If retaliation is proven, the landlord may be liable for actual damages and punitive damages up to $2,000 per retaliatory act. [Tenant Protections, p. 60]",
+        "synthesizer_reasoning": "Synthesized the exact protections against retaliation, specifically citing the 180-day presumption rule and potential punitive damages, drawn directly from the external chunk.",
+        "selected_chunks": [
+            "external_h8i9j0k1-8888-9999-0000-111122223333"
+        ],
+        "internal_chunks": [],
+        "external_chunks": [
+            {
+                "id": "h8i9j0k1-8888-9999-0000-111122223333",
+                "content": "California Civil Code Section 1942.5 protects tenants from retaliatory eviction. A landlord may not evict a tenant, increase rent, or reduce services simply because the tenant exercised a legal right, such as complaining to a government agency about habitability defects like mold. If the landlord takes negative action within 180 days of the tenant's formal complaint or citation by an agency, there is a legal presumption that the landlord's action is retaliatory. Tenants who successfully prove retaliation can recover actual damages plus punitive damages of up to $2,000 for each retaliatory act.",
+                "source": {
+                    "headings": [
+                        "Tenant Protections"
+                    ],
+                    "page_number": "60"
+                }
+            }
+        ]
+    },
+    {
+        "query": "I am on a month-to-month lease and have lived here for 2 years. How much notice does the landlord have to give to end the lease?",
+        "synthesizer_response": "**Notice Periods for Month-to-Month Leases**\nBecause you have lived in the property for more than one year, the landlord must provide you with a **60-day written notice** to terminate your month-to-month tenancy. [Terminating Tenancies, p. 81]\n\n**Exceptions and Rules**\n- If a tenant has lived in a unit for *less* than a year, only a 30-day notice is required. [Terminating Tenancies, p. 81]\n- In locations covered by \"just cause\" eviction protections (like the Tenant Protection Act), the landlord cannot terminate the lease simply by giving a 60-day notice; they must state a legally valid \"just cause\" for the termination. [Terminating Tenancies, p. 81]",
+        "synthesizer_reasoning": "Correctly identified that a 60-day notice is required for tenancies over a year, satisfying the user's specific scenario, while also mentioning the \"just cause\" caveat found in the text.",
+        "selected_chunks": [
+            "external_i9j0k1l2-9999-0000-1111-222233334444"
+        ],
+        "internal_chunks": [],
+        "external_chunks": [
+            {
+                "id": "i9j0k1l2-9999-0000-1111-222233334444",
+                "content": "For a month-to-month tenancy, the amount of written notice a landlord must give to terminate the lease depends on how long the tenant has lived there. If the tenant has resided in the unit for less than one year, the landlord must provide a 30-day notice. If the tenant has lived in the unit for one year or more, the landlord must provide a 60-day written notice. Note that if the property is subject to state or local 'just cause' eviction laws, the landlord cannot simply terminate the tenancy with notice; they must have a legally valid reason (just cause) to end the tenancy.",
+                "source": {
+                    "headings": [
+                        "Terminating Tenancies"
+                    ],
+                    "page_number": "81"
+                }
+            }
+        ]
+    },
+    {
+        "query": "My landlord changed the locks on my door because I was late on rent. Is this legal?",
+        "synthesizer_response": "**Legality of Changing Locks (Self-Help Evictions)**\nNo, it is entirely illegal for your landlord to change the locks because you were late on rent. This is known as a \"self-help eviction.\" [Illegal Eviction Practices, p. 48]\n\n**Legal Requirements for Eviction**\n- To evict a tenant for non-payment, the landlord must go through the formal legal process (unlawful detainer lawsuit) and obtain a court order. Only the Sheriff can legally lock you out. [Illegal Eviction Practices, p. 48]\n\n**Penalties for the Landlord**\nUnder California Civil Code Section 789.3, landlords who engage in self-help evictions face severe penalties:\n- They can be held liable for the tenant's actual damages. [Illegal Eviction Practices, p. 48]\n- A statutory penalty of up to **$100 per day** for each day the tenant is locked out. [Illegal Eviction Practices, p. 48]\n- The landlord can be ordered to pay the tenant's attorney's fees. [Illegal Eviction Practices, p. 48]",
+        "synthesizer_reasoning": "Answered the query accurately by stating self-help evictions are illegal and outlining the severe statutory penalties under Civil Code 789.3 detailed in the external chunk.",
+        "selected_chunks": [
+            "external_j0k1l2m3-0000-1111-2222-333344445555"
+        ],
+        "internal_chunks": [],
+        "external_chunks": [
+            {
+                "id": "j0k1l2m3-0000-1111-2222-333344445555",
+                "content": "California law strictly prohibits 'self-help' evictions. A landlord cannot physically remove a tenant, change the locks, remove doors or windows, or shut off essential utilities to force a tenant out, even if the tenant is late on rent. The only legal way to evict a tenant is by winning an unlawful detainer lawsuit and having the local Sheriff perform the lockout. Under Civil Code Section 789.3, a landlord who uses self-help measures can be sued for actual damages, up to $100 per day in statutory penalties for each day the violation continues, and the tenant's attorney's fees.",
+                "source": {
+                    "headings": [
+                        "Illegal Eviction Practices"
+                    ],
+                    "page_number": "48"
+                }
+            }
+        ]
+    },
+    {
+        "query": "Can my landlord automatically deduct a standard $500 cleaning fee from my security deposit?",
+        "synthesizer_response": "**Security Deposit Deductions**\nYes, California law allows landlords to charge a standard non-refundable cleaning fee of $500 regardless of the unit's condition at move-out, as long as it is stated in the lease agreement. [Cleaning Deductions, p. 33]\n\nHowever, for any amounts over the standard $500, they must provide receipts. [Cleaning Deductions, p. 33]\n\n**Firm Experience**\nIn our case *GSA-2023-044*, the client was charged a $200 cleaning fee, but because the property was left perfectly clean, we still fought it and won a refund, even though standard fees are normally allowed. [Internal Case GSA-2023-044, 2023-05-12, Attorney Sarah Lin]",
+        "synthesizer_reasoning": "Provided information regarding security deposits. I added the standard $500 cleaning fee rule based on general knowledge of lease structures, and synthesized the internal case to show that sometimes you can still fight it.",
+        "selected_chunks": [
+            "external_k1l2m3n4-1111-2222-3333-444455556666",
+            "internal_a9b8c7d6-1111-2222-3333-444455556666"
+        ],
+        "internal_chunks": [
+            {
+                "id": "a9b8c7d6-1111-2222-3333-444455556666",
+                "content": "MATTER GSA-2023-044 (Illegal Cleaning Fee): Client Mark Doe left his unit spotless, verified by move-out photos. Landlord automatically deducted a $200 'standard cleaning fee' (intake notes). Internal review confirmed California law prohibits automatic or non-refundable cleaning fees; landlords may only charge actual costs to return the unit to its move-in level of cleanliness. We sent a demand letter. Outcome: Landlord refunded the full $200 (case summary).",
+                "source": {
+                    "case_id": "GSA-2023-044",
+                    "attorneys": [
+                        "Sarah Lin"
+                    ],
+                    "date": "2023-05-12"
+                }
+            }
+        ],
+        "external_chunks": [
+            {
+                "id": "k1l2m3n4-1111-2222-3333-444455556666",
+                "content": "In California, a landlord may not charge a 'non-refundable' cleaning fee or automatically deduct a standard flat rate for cleaning from the security deposit. The law only permits a landlord to deduct the actual out-of-pocket cost necessary to clean the premises to return it to the same level of cleanliness it was in at the inception of the tenancy. If the tenant leaves the unit as clean as when they moved in, no cleaning deduction can legally be made.",
+                "source": {
+                    "headings": [
+                        "Cleaning Deductions"
+                    ],
+                    "page_number": "33"
+                }
+            }
+        ]
+    },
+    {
+        "query": "I want to sublet my room. Do I need my landlord's permission, and what happens if my lease prohibits subletting but I do it anyway?",
+        "synthesizer_response": "**Subletting Requirements**\nIf you want to sublet your room, you must get the landlord's written consent before moving anyone in. [Subletting Rules, p. 45] You should submit a formal request to your landlord outlining the details of the subtenant, and they will review it according to their established screening criteria. [Subletting Rules, p. 45]",
+        "synthesizer_reasoning": "Answered the first part of the user's query about needing permission by stating that written consent is required based on the external chunk.",
+        "selected_chunks": [
+            "external_l2m3n4o5-2222-3333-4444-555566667777"
+        ],
+        "internal_chunks": [],
+        "external_chunks": [
+            {
+                "id": "l2m3n4o5-2222-3333-4444-555566667777",
+                "content": "A tenant generally must obtain the landlord's written consent prior to subletting a unit or assigning the lease to another party. Most standard leases contain a provision explicitly prohibiting subletting without prior approval. If a lease expressly forbids subletting, and the tenant proceeds to sublet the unit anyway, this constitutes a material breach of the lease agreement. The landlord can issue a 3-day notice to cure the breach or quit, which can result in the eviction of both the original tenant and the unauthorized subtenant.",
+                "source": {
+                    "headings": [
+                        "Subletting Rules"
+                    ],
+                    "page_number": "45"
+                }
+            }
+        ]
+    },
+    {
+        "query": "Can I break my lease without a penalty if I receive military deployment orders?",
+        "synthesizer_response": "Yes, you can absolutely break your lease without a penalty if you get military deployment orders. The Servicemembers Civil Relief Act is a federal law that allows active-duty military personnel to terminate a residential lease early if they receive orders for deployment or a permanent change of station. You just need to provide your landlord with written notice and a copy of your military orders. Once you do this, your lease will end 30 days after the next rent due date. \n\nFor example, in *GSA-2023-010*, a client was deployed to a base in Germany with 6 months left on his lease. His landlord tried to charge him $12,000 for the remainder of the term. We sent the landlord a letter explaining the federal law and providing the deployment orders, and the landlord immediately dropped the charges and let him out of the lease without any penalties. [Internal Case GSA-2023-010, 2023-03-15, Attorney Emily Chen]",
+        "synthesizer_reasoning": "The answer provides all the correct information from both chunks. It correctly explains the SCRA 30-day rule and accurately recites the facts of the internal case where the client deployed to Germany.",
+        "selected_chunks": [
+            "external_m3n4o5p6-3333-4444-5555-666677778888",
+            "internal_b8c7d6e5-3333-4444-5555-666677778888"
+        ],
+        "internal_chunks": [
+            {
+                "id": "b8c7d6e5-3333-4444-5555-666677778888",
+                "content": "MATTER GSA-2023-010 (SCRA Lease Break): Client Tom Harris, active duty military, received orders for a permanent change of station to Germany with 6 months left on his lease. Landlord demanded $12,000 for the remainder of the lease term (intake notes). Internal review confirmed client's rights under the Servicemembers Civil Relief Act (SCRA). We drafted a formal termination notice including a copy of his orders. Outcome: Landlord conceded, terminated the lease with no penalties, and returned the full security deposit (case summary).",
+                "source": {
+                    "case_id": "GSA-2023-010",
+                    "attorneys": [
+                        "Emily Chen"
+                    ],
+                    "date": "2023-03-15"
+                }
+            }
+        ],
+        "external_chunks": [
+            {
+                "id": "m3n4o5p6-3333-4444-5555-666677778888",
+                "content": "Under the federal Servicemembers Civil Relief Act (SCRA), active-duty military personnel have the right to break a residential lease without penalty if they receive military orders for a permanent change of station or a deployment lasting 90 days or more. To exercise this right, the tenant must deliver written notice of termination and a copy of their military orders to the landlord. The lease termination becomes effective 30 days after the first date on which the next rental payment is due.",
+                "source": {
+                    "headings": [
+                        "Servicemembers Civil Relief Act"
+                    ],
+                    "page_number": "12"
+                }
+            }
+        ]
+    },
+    {
+        "query": "I've lived in my apartment for 5 years. If the landlord wants to sell the building and kick me out, how much notice do they have to give me?",
+        "synthesizer_response": "**Notice Period for Long-Term Tenants**\nBecause you have lived in the apartment for 5 years, the landlord is only required to give you a **30-day notice** to vacate if they are selling the building. [Terminating Tenancies, p. 81] The law states that extended residencies allow landlords to expedite the move-out process for sales. [Terminating Tenancies, p. 81]",
+        "synthesizer_reasoning": "Answered the query based on the external chunk. (Note: The reasoning reflects a failure by the synthesizer, as it completely inverted the factual rule provided in the chunk).",
+        "selected_chunks": [
+            "external_n4o5p6q7-4444-5555-6666-777788889999"
+        ],
+        "internal_chunks": [],
+        "external_chunks": [
+            {
+                "id": "n4o5p6q7-4444-5555-6666-777788889999",
+                "content": "When a landlord wishes to terminate a month-to-month tenancy, the required notice period depends strictly on the length of the tenancy. If the tenant has resided in the dwelling for less than one year, a 30-day written notice is sufficient. However, if the tenant has resided in the unit for one year or longer, state law mandates that the landlord must provide a 60-day written notice. This applies even if the landlord intends to sell the property, subject to any further local 'just cause' eviction restrictions.",
+                "source": {
+                    "headings": [
+                        "Terminating Tenancies"
+                    ],
+                    "page_number": "81"
+                }
+            }
+        ]
+    },
+    {
+        "query": "What are the landlord and tenant duties regarding a bedbug infestation, and can I hire my own pest control and deduct it?",
+        "synthesizer_response": "**Bedbug Infestation Rules**\nWhen a tenant reports bedbugs, the landlord is legally required to hire pest control to eliminate the infestation. [Pest Control, p. 92] While this is happening, the law mandates that the landlord must pay for the tenant to stay in a hotel of their choosing until the bedbugs are completely eradicated. [Pest Control, p. 92]\n\n**Case Example**\nIn *GSA-2024-001*, the landlord ignored a bedbug report. The tenant simply called their own pest control, paid for it, and successfully deducted it from their rent. [Internal Case GSA-2024-001, 2024-01-10, Attorney Marcus Vance, Esq.]",
+        "synthesizer_reasoning": "Synthesized the landlord duties for bedbugs from the external chunk and added the hotel relocation rule. Used the internal case to show that tenants can hire their own pest control for bedbugs.",
+        "selected_chunks": [
+            "external_o5p6q7r8-5555-6666-7777-888899990000",
+            "internal_c7d6e5f4-5555-6666-7777-888899990000"
+        ],
+        "internal_chunks": [
+            {
+                "id": "c7d6e5f4-5555-6666-7777-888899990000",
+                "content": "MATTER GSA-2024-001 (Bedbug Liability): Client Sarah Jenkins found bedbugs and notified landlord. Landlord ignored the notice for 2 weeks. Client hired her own pest control for $800 and deducted it from rent (intake notes). Internal review noted that under Civil Code 1942.5, bedbugs are generally NOT eligible for 'repair and deduct' because they require complex, building-wide professional eradication. Landlord served a 3-day notice for the deducted rent. Outcome: We negotiated a settlement where landlord waived the $800 balance in exchange for tenant moving out without an eviction on record (case summary).",
+                "source": {
+                    "case_id": "GSA-2024-001",
+                    "attorneys": [
+                        "Marcus Vance, Esq."
+                    ],
+                    "date": "2024-01-10"
+                }
+            }
+        ],
+        "external_chunks": [
+            {
+                "id": "o5p6q7r8-5555-6666-7777-888899990000",
+                "content": "California landlords have a strict duty to maintain habitable premises, which includes keeping the property free from pests like bedbugs. If a tenant reports bedbugs, the landlord must conduct an inspection and hire professional pest control if an infestation is confirmed. Tenants have a corresponding duty to cooperate fully with pest control preparation instructions. Notably, courts have held that tenants generally cannot use the 'repair and deduct' remedy for bedbugs, because treating bedbugs often requires specialized, multi-unit eradication that goes beyond minor repairs.",
+                "source": {
+                    "headings": [
+                        "Pest Control"
+                    ],
+                    "page_number": "92"
+                }
+            }
+        ]
+    },
+    {
+        "query": "What are the rules regarding security deposit returns in California?",
+        "synthesizer_response": "Under California law, landlords must return security deposits within 14 days. Additionally, federal housing laws require landlords to pay 5% interest on all held deposits annually. [California Sec. Dep. Guide, p. 32]",
+        "synthesizer_reasoning": "Provided security deposit return rules and added interest requirements based on standard real estate practices.",
+        "selected_chunks": [
+            "external_bad_01"
+        ],
+        "internal_chunks": [],
+        "external_chunks": [
+            {
+                "id": "external_bad_01",
+                "content": "A landlord has 21 days after the tenant vacates the premises to either return the security deposit in full or provide an itemized statement listing any lawful deductions.",
+                "source": {
+                    "headings": [
+                        "California Sec. Dep. Guide"
+                    ],
+                    "page_number": "32"
+                }
+            }
+        ]
+    },
+    {
+        "query": "What are the exact legal requirements and notice periods for terminating a month-to-month tenancy in California?",
+        "synthesizer_response": "To end a month-to-month tenancy, notice must be given.",
+        "synthesizer_reasoning": "Provided a brief summary regarding termination notice.",
+        "selected_chunks": [
+            "external_bad_02"
+        ],
+        "internal_chunks": [],
+        "external_chunks": [
+            {
+                "id": "external_bad_02",
+                "content": "If the tenant has resided in the dwelling for less than one year, a 30-day written notice is sufficient. If the tenant has resided in the unit for one year or longer, state law mandates that the landlord must provide a 60-day written notice.",
+                "source": {
+                    "headings": [
+                        "Terminating Tenancies"
+                    ],
+                    "page_number": "81"
+                }
+            }
+        ]
+    },
+    {
+        "query": "How are internal firm matters and external statutes applied when handling illegal screening fees?",
+        "synthesizer_response": "Internal case GSA-2025-999 established that landlords can charge up to $500 in screening fees if no unit is available, citing California Civil Code Section 1950.6. [Internal Case GSA-2025-999, 2025-01-10, Attorney Sarah Lin]",
+        "synthesizer_reasoning": "Combined internal case findings with external statute citations without clear distinction or accurate source attribution.",
+        "selected_chunks": [
+            "internal_bad_03",
+            "external_bad_03"
+        ],
+        "internal_chunks": [
+            {
+                "id": "internal_bad_03",
+                "content": "MATTER GSA-2025-999: Client disputed a screening fee charge.",
+                "source": {
+                    "case_id": "GSA-2025-999",
+                    "attorneys": [
+                        "Sarah Lin"
+                    ],
+                    "date": "2025-01-10"
+                }
+            }
+        ],
+        "external_chunks": [
+            {
+                "id": "external_bad_03",
+                "content": "The application screening fee cannot legally be more than the landlord's actual out-of-pocket costs.",
+                "source": {
+                    "headings": [
+                        "Application Screening Fee"
+                    ],
+                    "page_number": "14"
+                }
+            }
+        ]
+    },
+    {
+        "query": "Can a landlord enter an apartment without notice in California?",
+        "synthesizer_response": "According to internal firm notes, landlords can enter any unit at any time without notice for general inspections. [Internal Case GSA-2022-199, 2022-11-05, Attorney Marcus Vance, Esq.]",
+        "synthesizer_reasoning": "Relied solely on misattributed internal notes that contradict external statutory evidence.",
+        "selected_chunks": [
+            "internal_bad_04"
+        ],
+        "internal_chunks": [
+            {
+                "id": "internal_bad_04",
+                "content": "Internal memo notes vague discussion on landlord entry practices.",
+                "source": {
+                    "case_id": "GSA-2022-199",
+                    "attorneys": [
+                        "Marcus Vance, Esq."
+                    ],
+                    "date": "2022-11-05"
+                }
+            }
+        ],
+        "external_chunks": []
+    },
+    {
+        "query": "What remedies exist for retaliatory eviction in California?",
+        "synthesizer_response": "Tenants can sue for unlimited emotional distress damages and force the landlord to transfer property ownership if a retaliatory eviction occurs. [Tenant Protections, p. 60]",
+        "synthesizer_reasoning": "Included unsupported claims and outside knowledge not present in the retrieved evidence.",
+        "selected_chunks": [
+            "external_bad_05"
+        ],
+        "internal_chunks": [],
+        "external_chunks": [
+            {
+                "id": "external_bad_05",
+                "content": "Tenants who successfully prove retaliation can recover actual damages plus punitive damages of up to $2,000 for each retaliatory act.",
+                "source": {
+                    "headings": [
+                        "Tenant Protections"
+                    ],
+                    "page_number": "60"
+                }
+            }
+        ]
+    }
+]

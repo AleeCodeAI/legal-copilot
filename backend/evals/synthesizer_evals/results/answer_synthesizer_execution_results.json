@@ -1,0 +1,222 @@
+[
+    {
+        "query": "Under California law effective January 1, 2025, how many days does a tenant have to respond to an unlawful detainer complaint, and how was this amendment applied in a 2025 case where the landlord prematurely sought default judgment?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.99,
+        "reasoning": "The answer is fully supported by the retrieved evidence: it correctly states the ten‑day response period per AB 2347, and accurately recounts the GSA‑2025‑101 case details (service date, premature default request, motion citing AB 2347, denial of default, and grant of the ten‑day period). No extraneous or unsupported information is present. All key facts from the evidence are included, satisfying both parts of the user’s query. Citations are provided for the statutory change and the internal case, allowing a reader to identify the supporting sources. Hence the answer receives perfect scores for faithfulness, completeness, and source attribution, with high evaluator confidence."
+    },
+    {
+        "query": "What are the legal requirements for a landlord to charge an application screening fee, and what remedies exist when a landlord collects such fees while knowing no unit is actually available, as demonstrated in a 2025 case?",
+        "faithfulness": 0.8,
+        "completeness": 0.9,
+        "source_attribution": 1.0,
+        "overall_score": 0.88,
+        "final_verdict": "GOOD",
+        "confidence": 0.95,
+        "reasoning": "The answer accurately reflects the retrieved external and internal evidence for the fee requirements and the 2025 case remedies, and it cites sources clearly. However, it adds an unsupported claim that courts may award additional damages, which is not present in the evidence, reducing faithfulness. The answer otherwise covers all material points required by the query, so completeness is high. Source attribution is clear and correctly linked to the evidence."
+    },
+    {
+        "query": "Under what conditions does a person living in a hotel or motel become a tenant with full eviction protections, and how did a 2025 case establish tenant status after 45 consecutive days of occupancy despite missed payments?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.99,
+        "reasoning": "The answer accurately reflects the three statutory guest‑status exceptions from the external source and correctly states that a resident who exceeds 30 days, has paid all charges by day 30, and is not subject to the manager‑control exception is a tenant. It faithfully summarizes the internal 2025 case, noting the 45‑day occupancy, the missed payment, the court’s reliance on Cal. Civ. Code §1940.1, and the illegal lockout ruling. No unsupported statements are present. All key facts from the provided evidence are included, and citations are clearly linked to the external “Hotels and motels” chunk and the internal case document, satisfying source‑attribution requirements."
+    },
+    {
+        "query": "What are the legal distinctions between a single lodger and a tenant in a private residence, and what notice is required before a homeowner can remove a lodger who pays monthly rent?",
+        "faithfulness": 0.8,
+        "completeness": 1.0,
+        "source_attribution": 0.8,
+        "overall_score": 0.85,
+        "final_verdict": "GOOD",
+        "confidence": 0.95,
+        "reasoning": "The answer is largely grounded in the provided chunk, correctly stating the lodger’s status, the owner’s control, and the notice requirement. However, the claim that a tenant has exclusive possession and that a landlord’s entry is limited to lawful reasons is not supported by the retrieved evidence, reducing faithfulness. All key information from the evidence is included, so completeness is high. Citations are provided for the notice discussion but not for the initial distinction about owner entry, making source attribution adequate but not comprehensive."
+    },
+    {
+        "query": "How does California law protect domestic violence survivors from discrimination in rental applications, and what enforcement actions were taken in a 2026 case where a qualified applicant was rejected solely because of prior lease termination due to abuse?",
+        "faithfulness": 0.9,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 0.95,
+        "final_verdict": "GOOD",
+        "confidence": 0.95,
+        "reasoning": "The answer is largely grounded in the provided external and internal chunks, accurately reflecting the prohibition against rejecting domestic‑violence survivors, documentation requirements, and the $100‑$5,000 penalty. It correctly recounts the 2026 GSA‑2026‑027 case facts and outcome. A minor issue is the statement that the rule \"complements existing bans on discrimination based on source of income or receipt of housing vouchers,\" which is not explicitly stated in the evidence and represents a slight extrapolation, lowering the faithfulness score. All key information from the evidence is included, and sources are clearly cited, yielding high completeness and source‑attribution scores."
+    },
+    {
+        "query": "What are the statutory requirements for a landlord to disclose a property's location in a flood hazard zone, and how does this disclosure obligation apply to rental agreements entered into after July 1, 2018?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.99,
+        "reasoning": "The answer is fully supported by the two retrieved chunks. It accurately restates the statutory requirement (actual knowledge, disclosure of special flood‑hazard or potential flooding area) and cites the Flood Hazard source. It correctly notes that the disclosure is a required item in the rental agreement or must be provided in writing within 15 days for oral leases, citing the Key terms source. It also correctly limits the obligation to agreements entered on or after July 1 2018, again citing the Flood Hazard source. No unsupported statements are present, and all material points from the evidence are included. Citations are clear and correctly linked to the appropriate sources."
+    },
+    {
+        "query": "What is the maximum security deposit a landlord can charge under California law starting July 1, 2024, and what exemptions apply to small landlords, including the separate treatment of application screening fees?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.98,
+        "reasoning": "The answer accurately reflects the retrieved evidence: it states the one‑month rent cap, the two‑month cap for small landlords defined as owners of 1‑2 properties with ≤4 units, and the separate, non‑refundable application‑screening fee while noting other start‑of‑tenancy fees are counted toward the deposit limit. All key points from the source are included, and no unsupported information is added. Citations to the source (“BASIC RULES GOVERNING SECURITY DEPOSITS, p. 33”) are provided, allowing a reader to trace each claim. Hence the answer is faithful, complete, and properly attributed."
+    },
+    {
+        "query": "What mandatory disclosures must a landlord include in every rental agreement regarding registered sex offenders under Megan's Law, and what is the specific statutory language required?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.99,
+        "reasoning": "The synthesizer answer reproduces the exact statutory notice text found in both retrieved chunks and correctly states that it must appear in every rental agreement, directly satisfying the user’s request. No unsupported statements are added, and all key information from the evidence is included. Citations are provided that map to the two source chunks, allowing a reader to identify the supporting material. Hence, the answer is fully faithful, complete, and properly attributed."
+    },
+    {
+        "query": "Under what circumstances can a landlord require a tenant to pay rent in cash rather than by check, and what notice requirements must be met after a check has been dishonored?",
+        "faithfulness": 0.95,
+        "completeness": 0.95,
+        "source_attribution": 0.9,
+        "overall_score": 0.94,
+        "final_verdict": "GOOD",
+        "confidence": 0.97,
+        "reasoning": "The answer accurately reflects the external and internal evidence: it correctly states that cash payment can be required only after a dishonored check within the past three months, outlines the required written notice (identifying the check, attaching a copy, limiting the cash‑only period to three months), and notes the need for additional statutory advance notice if lease terms change. All these points are supported by the provided chunks. No unsupported claims are introduced. The response addresses both parts of the user’s query, covering circumstances and notice requirements, without omitting material information from the evidence. Citations are provided for the external source and the internal case, allowing a reader to trace the information, though the bullet list lacks explicit citations, the overall attribution is sufficient. Hence high scores for faithfulness and completeness, and a strong but slightly lower score for source attribution."
+    },
+    {
+        "query": "What are the legal limits on late fees and dishonored check fees in California rental agreements, and what constitutes a reasonable fee under the law?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.99,
+        "reasoning": "The answer is fully supported by the provided external and internal chunks. All statements about late‑fee reasonableness, lack of a statutory dollar cap, typical grace period, and the statutory service‑charge limits for returned checks ($25 first, $35 subsequent) are directly reflected in the evidence. The case summary cited matches the internal chunk. No extraneous or unsupported information is introduced. The response addresses both the limits on fees and what makes a fee reasonable, covering all material points from the evidence. Citations are clearly provided for both the external source and the internal case, allowing a reader to trace each claim to its source."
+    },
+    {
+        "query": "What are a tenant's rights and obligations when making partial rent payments, and how should a tenant document an agreement with the landlord to avoid eviction proceedings?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.98,
+        "reasoning": "The answer faithfully mirrors the retrieved evidence: it correctly states that landlords may refuse partial rent or accept it and still issue a 3‑day notice unless a written agreement limits that right, matching the external chunk. It accurately reflects the internal case outcome where a written partial‑rent agreement barred eviction. All required rights, obligations, and documentation steps are covered, fully answering the user’s query, so completeness is high. Sources are explicitly cited (external page reference and internal case citation), allowing a reader to trace each claim, satisfying source attribution. No unsupported statements are present."
+    },
+    {
+        "query": "What are the requirements for a landlord to provide a receipt for rent payments made in cash, and what proof should a tenant retain for record-keeping?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.99,
+        "reasoning": "The synthesizer answer accurately reflects the retrieved evidence: it states that a landlord must provide a signed, dated written receipt at the time cash rent is paid, and that the tenant should retain the receipt indefinitely as proof. These points are directly supported by the external chunk. No unsupported claims are present, and all material information from the evidence is included. The answer cites the external source (page 42), allowing a reader to identify the supporting material. Hence, scores are maximal for faithfulness, completeness, and source attribution."
+    },
+    {
+        "query": "What notice is required when a single-family home is exempt from the Tenant Protection Act's just-cause eviction requirements, and what happens if the landlord fails to include the mandatory exemption disclosure in the lease?",
+        "faithfulness": 0.7,
+        "completeness": 0.9,
+        "source_attribution": 1.0,
+        "overall_score": 0.82,
+        "final_verdict": "GOOD",
+        "confidence": 0.9,
+        "reasoning": "The answer correctly cites the need for a statutory exemption disclosure and the consequences of omitting it, which are supported by both external and internal evidence. However, it adds that a separate general TPA notice is also required, a requirement not explicitly stated in the provided evidence, making that part unsupported. The answer addresses the user’s question fully, covering both the notice required and the fallout from non‑inclusion, so completeness is high. Source citations are clear and correspond to the retrieved chunks, satisfying attribution criteria."
+    },
+    {
+        "query": "Under California law, what is the correct method for calculating the three-day notice period when a notice is served on a Friday before a federal holiday, and how did this issue arise in a 2026 eviction case?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.99,
+        "reasoning": "The answer accurately reflects the external chunk that specifies counting starts on the first non‑weekend, non‑holiday day (Tuesday in the Labor Day example) and correctly cites that source. It also faithfully reproduces the internal case details about GSA‑2026‑840, the landlord’s miscalculation, and the court’s motion to quash, matching the internal chunk. Both parts of the user’s query are fully addressed, and citations are clear and correctly linked to the respective sources. No unsupported statements are present."
+    },
+    {
+        "query": "What are the two-pronged requirements for substituted service of a three-day notice under California law, and how does failure to comply with the mailing prong invalidate an unlawful detainer action?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.99,
+        "reasoning": "The answer accurately restates the two prongs of substituted service as described in the external source and correctly notes that service is incomplete without the mailing step, matching the statutory language. It explains that the three‑day clock does not start and that an unlawful detainer lacks jurisdiction, which is fully supported by the same source. The internal case citation is consistent with the internal chunk, illustrating the consequence of missing the mailing prong. All key points from the evidence are included, and citations are clearly provided for both external and internal sources."
+    },
+    {
+        "query": "What remedies are available to a tenant when a landlord engages in self-help eviction by cutting off utilities and changing locks, and what statutory daily penalties apply under Civil Code Section 789.3?",
+        "faithfulness": 0.7,
+        "completeness": 0.95,
+        "source_attribution": 0.9,
+        "overall_score": 0.81,
+        "final_verdict": "GOOD",
+        "confidence": 0.93,
+        "reasoning": "The answer is largely grounded in the provided internal case, correctly describing injunctive relief, actual damages, and the $100‑per‑day statutory penalty under Civil Code §789.3. However, it adds a claim of \"additional punitive damages beyond the statutory $100‑per‑day penalty,\" which is not supported by the evidence (the evidence only mentions punitive fines up to $100 per day). This unsupported element reduces the faithfulness score. The answer includes all key remedies and the statutory penalty, so completeness is high. Source citations are consistently provided for each point, meeting attribution requirements."
+    },
+    {
+        "query": "What is a tenant's right to withhold rent for habitability defects, and what procedural requirements must be followed regarding the establishment of an escrow account and providing notice to the landlord?",
+        "faithfulness": 0.95,
+        "completeness": 0.95,
+        "source_attribution": 0.9,
+        "overall_score": 0.94,
+        "final_verdict": "GOOD",
+        "confidence": 0.97,
+        "reasoning": "The answer accurately reflects the retrieved evidence: it correctly states the tenant's right to withhold rent for serious habitability defects, the need for written notice and a reasonable repair period (typically 30 days), the optional but advisable escrow deposit, and the recommended method of delivering notice (written, signed, dated, certified mail or personal delivery). All factual claims are supported by the external chunks (pages 61, 63, 64) and the internal case citation. No unsupported statements are present. The response covers all aspects of the user’s query, incorporating the key procedural steps without omitting important evidence. Citations are provided inline, clearly linking statements to their sources, satisfying source‑attribution requirements."
+    },
+    {
+        "query": "What disclosures are required when a rental unit is within one mile of a closed military base where ammunition or explosives were used, and when must this notice be provided?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.99,
+        "reasoning": "The answer directly mirrors the retrieved evidence, stating that a landlord must give written notice of the unit’s proximity to a closed military base where ammunition or explosives were used, and that the notice must be provided before the tenant signs the rental agreement. No unsupported claims are added, and the citation correctly points to the source. All required information from the query is addressed, and source attribution is clear and accurate."
+    },
+    {
+        "query": "What are the rights and responsibilities of residents in transitional housing, and how does the payment of rent affect their status as tenants versus participants?",
+        "faithfulness": 0.6,
+        "completeness": 0.9,
+        "source_attribution": 1.0,
+        "overall_score": 0.78,
+        "final_verdict": "GOOD",
+        "confidence": 0.95,
+        "reasoning": "The answer correctly reflects the core evidence that non‑paying residents are \"participants\" subject to program rules and that paying residents become \"tenants\" subject to standard landlord‑tenant law, and it cites the source appropriately. However, it adds details about specific tenant rights (quiet enjoyment, security deposits, habitability) and responsibilities that are not mentioned in the retrieved chunk, introducing unsupported information and reducing faithfulness. The response addresses the user’s question about rights, responsibilities, and the impact of rent payment, covering the material present in the evidence, so completeness is high. Source attribution is clear and accurate, with citations to the provided source."
+    },
+    {
+        "query": "What are the specific landlord-tenant relationships governed by the Mobilehome Residency Law versus standard landlord-tenant law, particularly for tenants who lease a mobilehome from its owner?",
+        "faithfulness": 1.0,
+        "completeness": 1.0,
+        "source_attribution": 1.0,
+        "overall_score": 1.0,
+        "final_verdict": "GOOD",
+        "confidence": 0.99,
+        "reasoning": "The synthesizer answer accurately reflects the retrieved evidence, stating that the Mobilehome Residency Law governs site‑rental relationships where the resident owns the mobilehome, while ordinary landlord‑tenant law applies to tenants who lease the mobilehome itself or lease occupancy directly from park management. All points are supported by the evidence, and no unsupported information is introduced. The answer addresses the user’s request fully, covering both categories of relationships and the specific case of leasing a mobilehome from its owner. Citations to the external source (page 5) are provided for each claim, allowing a reader to trace the information back to the evidence. Hence, the answer receives perfect scores for faithfulness, completeness, and source attribution."
+    },
+    {
+        "query": "What is the legal status of a residential hotel guest who has lived in the unit for more than 30 days and uses it as a primary residence, and what rights do they possess compared to transient hotel guests?",
+        "faithfulness": 0.65,
+        "completeness": 0.9,
+        "source_attribution": 0.95,
+        "overall_score": 0.79,
+        "final_verdict": "GOOD",
+        "confidence": 0.9,
+        "reasoning": "The answer correctly identifies that a residential‑hotel guest residing >30 days as a primary residence is treated as a tenant and cites the relevant external passages and internal case, matching the retrieved evidence. It also accurately lists the statutory exceptions that keep a guest classified as a non‑tenant. However, the response adds details about habitability standards, security‑deposit protections, notice requirements, and attorney‑fee remedies that are not explicitly stated in the provided chunks, and it mentions attorney‑fees in the remedies despite the internal case only noting statutory damages. These additions are not directly supported by the evidence, lowering the faithfulness score. The answer fully addresses the user’s question and includes the key comparative points, so completeness is high. Source citations are clear and correspond to the external and internal sources, yielding a strong source‑attribution score."
+    },
+    {
+        "query": "What are the requirements for a landlord to provide an Inventory Checklist at the beginning of a tenancy, and how does completing this checklist protect both parties from disputes at move-out?",
+        "faithfulness": 0.95,
+        "completeness": 0.9,
+        "source_attribution": 1.0,
+        "overall_score": 0.95,
+        "final_verdict": "GOOD",
+        "confidence": 0.97,
+        "reasoning": "The answer accurately reflects the retrieved evidence about the lack of a legal requirement, recommended timing, joint walk‑through, signatures, and photographic obligations, and it correctly cites the two sources. All major points from the evidence are included, and the protective benefits described are logical extensions of the evidence (e.g., baseline record, security‑deposit disputes, reduced disputes). Minor inferential language (e.g., reduced litigation risk) is not contradicted by the sources. Source citations are clear and correctly linked to the appropriate pages."
+    }
+]

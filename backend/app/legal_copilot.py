@@ -3,6 +3,9 @@ from typing import Optional
 from retrieval_agent.retrieval_agent import RetrievalAgent
 from synthesizer.answer_synthesizer import AnswerSynthesizer
 from schemas import RetrievalResult, Answer
+from database import (insert_execution, 
+                      mark_execution_failure, 
+                      mark_execution_success)
 from utils.color import Logger
 import logging 
 
@@ -49,40 +52,61 @@ class LegalCopilot(Logger):
                     Returns None if the pipeline fails, is missing data, 
                     or encounters an unexpected exception.
         """
-        session_id = str(uuid4())
-        
+        session_id = uuid4()
+
+        insert_execution(
+            execution_id=session_id,
+            query=query,
+        )
+
         try:
-            self.log(f"Retrieving chunks [Session: {session_id}] [Query: {query}]")
-            
-            retrieval_result: Optional[RetrievalResult] = await self.retrieval_agent.run(
-                query=query, 
-                session_id=session_id
+            self.log(
+                f"Retrieving chunks "
+                f"[Session: {session_id}] "
+                f"[Query: {query}]"
+            )
+
+            retrieval_result: Optional[RetrievalResult] = (
+                await self.retrieval_agent.run(
+                    query=query,
+                    session_id=str(session_id),
+                )
             )
 
             if not retrieval_result:
-                self.log(f"No retrieval result produced for session {session_id}")
-                return None
+                raise ValueError(
+                    "Retrieval agent did not return a result."
+                )
 
-            self.log(
-                f"Retrieval successful. Sufficient: {retrieval_result.sufficient}. "
-                "Sending to Answer Synthesizer."
-            )
-
-            answer: Optional[Answer] = self.answer_synthesizer.answer(
-                query=query,
-                retrieval_result=retrieval_result, 
-                session_id=session_id
+            answer: Optional[Answer] = (
+                self.answer_synthesizer.answer(
+                    query=query,
+                    retrieval_result=retrieval_result,
+                    session_id=str(session_id),
+                )
             )
 
             if not answer:
-                self.log(f"No answer produced for session {session_id} and query: {query}")
-                return None
+                raise ValueError(
+                    "Answer synthesizer did not return a result."
+                )
 
-            self.log("Answer Synthesizer successfully produced answer")
+            mark_execution_success(execution_id=session_id)
+
             return answer
-            
+
         except Exception as e:
-            self.log(f"Pipeline failed for session {session_id} with error: {str(e)}")
+
+            mark_execution_failure(
+                execution_id=session_id,
+                error_message=str(e),
+            )
+
+            self.log(
+                f"Pipeline failed for session "
+                f"{session_id}: {str(e)}"
+            )
+
             return None
 
 if __name__ == "__main__":

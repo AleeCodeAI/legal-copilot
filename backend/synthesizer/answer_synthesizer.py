@@ -1,13 +1,16 @@
 import logging
 from openai import OpenAI
+from langfuse.decorators import observe
+from uuid import UUID
 
 from schemas import Answer, RetrievalResult
+from database import insert_synthesis
 from utils.color import Logger
 from prompts.prompt_manager import PromptManager
 from configs.settings import get_settings
 from .chunks_loader import get_chunks
 from observability import AnswerSynthesizerObservability
-from langfuse.decorators import observe
+
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 
@@ -159,14 +162,14 @@ class AnswerSynthesizer(Logger):
         self,
         query: str,
         retrieval_result: RetrievalResult,
-        session_id: str = "default_session"
+        session_id: UUID = "default_session"
     ) -> Answer:
         """
         Main pipeline entry point. Initializes traces, executes spans, and handles logging.
         """
         # 1. Initialize trace
         self.obs.init_trace(
-            session_id=session_id, 
+            session_id=str(session_id), 
             query=query
         )
 
@@ -183,7 +186,14 @@ class AnswerSynthesizer(Logger):
             # 4. Invoke LLM (Generation Step)
             result = self._call_llm(messages=messages, user_prompt=user_prompt)
 
-            # 5. Score output success
+            # 5. Track in database
+            insert_synthesis(
+                execution_id=session_id,
+                answer=result.answer,
+                reasoning_summary=result.reasoning_summary
+            )
+
+            # 6. Score output success
             self.obs.process_result(result)
             return result
 
@@ -198,6 +208,7 @@ class AnswerSynthesizer(Logger):
 if __name__ == "__main__":
     from pathlib import Path
     import json 
+    from uuid import uuid4
 
     data_path = Path(__file__).parents[2] / "data" / "evals_data" / "retrieval_agent_evals_data.json"
 
@@ -216,7 +227,9 @@ if __name__ == "__main__":
         )
 
         synthesizer = AnswerSynthesizer()
-        result = synthesizer.answer(query=query, retrieval_result=retrieval_result, session_id="test_session_123")
+        result = synthesizer.answer(query=query, 
+                                    retrieval_result=retrieval_result, 
+                                    session_id=uuid4())
         print("Query:", query)
         print("Answer:", result.answer)
         print("Reasoning:", result.reasoning_summary)

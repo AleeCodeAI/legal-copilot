@@ -4,6 +4,7 @@ from pydantic_ai.providers.openai import OpenAIProvider
 from langfuse.decorators import langfuse_context, observe
 from typing import List, Optional
 import logging
+from uuid import UUID
 
 from configs.settings import get_settings
 from utils.color import Logger
@@ -11,6 +12,7 @@ from prompts.prompt_manager import PromptManager
 from schemas import CompleteSearchResponse, RetrievalResult
 from observability import RetrievalAgentObservability
 from database.vectorstore import VectorStore
+from database import insert_retrieval
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 class RetrievalAgent(Logger):
@@ -157,7 +159,7 @@ class RetrievalAgent(Logger):
             raise 
 
     @observe()
-    async def run(self, query: str, session_id: str) -> RetrievalResult:
+    async def run(self, query: str, session_id: UUID) -> RetrievalResult:
         """
         Executes the main asynchronous agentic loop. Performs the initial complete search,
         manages tool calls, tracks token usage limits, and guarantees a strictly validated 
@@ -166,7 +168,7 @@ class RetrievalAgent(Logger):
         self.log(f"Starting execution run for query: '{query}'")
 
         self.obs.init_agent_trace(
-            session_id=session_id, 
+            session_id=str(session_id), 
             query=query, 
             max_iterations=self.settings.retrieval_agent.max_iterations
         )
@@ -180,6 +182,16 @@ class RetrievalAgent(Logger):
             result, costs, usage = await self._agent(user_input)
             
             final_data: RetrievalResult = result.output
+
+            insert_retrieval(
+                            execution_id=session_id,
+                            pass_number="FIRST ITERATION",
+                            sufficient=final_data.sufficient,
+                            confidence=final_data.confidence,
+                            reasoning=final_data.reasoning,
+                            refined_query=final_data.refined_query,
+                            selected_chunks=final_data.selected_chunks
+                        )
             
             self.log(
                 f"First Pass Completed! "
@@ -198,8 +210,17 @@ class RetrievalAgent(Logger):
                 refined_user_input = self._user_input(refined_search_results)
                 
                 refined_result, costs, usage = await self._agent(refined_user_input)
-                final_data = refined_result.output
+                final_data: RetrievalResult = refined_result.output
 
+                insert_retrieval(
+                                execution_id=session_id,
+                                pass_number="SECOND ITERATION",
+                                sufficient=final_data.sufficient,
+                                confidence=final_data.confidence,
+                                reasoning=final_data.reasoning,
+                                refined_query=final_data.refined_query,
+                                selected_chunks=final_data.selected_chunks
+                                )
                 self.log(
                     f"Second Pass Completed! "
                     f"Sufficient: {final_data.sufficient} | "
@@ -235,7 +256,7 @@ if __name__ == "__main__":
     import asyncio
     import uuid
     
-    session_id = str(uuid.uuid4())
+    session_id = uuid.uuid4()
     agent = RetrievalAgent()
     query = "How to respond to a three-day notice by the landlord? what happens if done incorrectly"
     result = asyncio.run(agent.run(query=query, session_id=session_id))

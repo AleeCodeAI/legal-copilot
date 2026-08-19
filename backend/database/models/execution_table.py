@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String, UUID, DateTime, Text
+from sqlalchemy import Column, String, UUID, DateTime, Text, Boolean
 from database.base import Base
 
 
@@ -9,7 +9,7 @@ class ExecutionTable(Base):
     execution_id = Column(UUID, primary_key=True, nullable=False)
 
     query = Column(String, nullable=False)
-    status = Column(String, nullable=False)
+    status = Column(Boolean, nullable=False)
     created_at = Column(DateTime(timezone=True), nullable=False)
     completed_at = Column(DateTime(timezone=True), nullable=True)
 

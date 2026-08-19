@@ -7,6 +7,7 @@ from sqlalchemy import (
     Text,
     ForeignKey,
     JSON,
+    String
 )
 
 from database.base import Base
@@ -22,9 +23,9 @@ class RetrievalTable(Base):
         nullable=False,
     )
 
-    pass_number = Column(Integer, nullable=False)
-    sufficient = Column(Boolean, nullable=False)
+    pass_number = Column(String, nullable=False)
+    sufficient = Column(String, nullable=False)
     confidence = Column(Float, nullable=False)
     reasoning = Column(Text, nullable=False)
     refined_query = Column(Text, nullable=True)
-    selected_chunks = Column(JSON, nullable=False)
+    selected_chunks = Column(JSON, nullable=True)

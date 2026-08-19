@@ -61,15 +61,15 @@ class LegalCopilot(Logger):
 
         try:
             self.log(
-                f"Retrieving chunks "
-                f"[Session: {session_id}] "
+                f"Retrieving chunks \n"
+                f"[Session: {session_id}] \n"
                 f"[Query: {query}]"
             )
 
             retrieval_result: Optional[RetrievalResult] = (
                 await self.retrieval_agent.run(
                     query=query,
-                    session_id=str(session_id),
+                    session_id=session_id,
                 )
             )
 
@@ -82,7 +82,7 @@ class LegalCopilot(Logger):
                 self.answer_synthesizer.answer(
                     query=query,
                     retrieval_result=retrieval_result,
-                    session_id=str(session_id),
+                    session_id=session_id,
                 )
             )
 
@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
     copilot = LegalCopilot()
     query = """
-    What are the legal distinctions between a single lodger and a tenant in a private residence, and what notice is required before a homeowner can remove a lodger who pays monthly rent?
+    What deductions can a California landlord legally make from a tenant's security deposit, and how long does the landlord have to return the remaining balance after the tenant moves out?
     """
 
     answer = asyncio.run(copilot.run(query=query))

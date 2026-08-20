@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, UUID, Text, ForeignKey
+from sqlalchemy import Column, Integer, UUID, Text, ForeignKey, JSON
 
 from database.base import Base
 
@@ -14,3 +14,4 @@ class SynthesisTable(Base):
     )
     answer = Column(Text, nullable=True)
     reasoning_summary = Column(Text, nullable=False)
+    citations = Column(JSON, nullable=True)

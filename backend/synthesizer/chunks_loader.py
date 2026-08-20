@@ -12,7 +12,7 @@ def get_chunks(ids: list[str]):
                chunk = store.get_chunks(ids=[id], table_type="internal")
                internal_chunks.append(
                     {
-                         "id": chunk[0]["id"],
+                         "id": str(chunk[0]["id"]),
                          "content": chunk[0]["contents"],
                          "case_id": chunk[0]["metadata"]["case_id"],
                          "attorneys": chunk[0]["metadata"]["attorneys"],
@@ -24,7 +24,7 @@ def get_chunks(ids: list[str]):
                chunk = store.get_chunks(ids=[id], table_type="external")
                external_chunks.append(
                     {
-                         "id": chunk[0]["id"],
+                         "id": str(chunk[0]["id"]),
                          "content": chunk[0]["contents"],
                          "headings": chunk[0]["metadata"]["headings"],
                          "page_number": chunk[0]["metadata"]["page_number"],

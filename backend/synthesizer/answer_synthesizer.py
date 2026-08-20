@@ -3,7 +3,7 @@ from openai import OpenAI
 from langfuse.decorators import observe
 from uuid import UUID
 
-from schemas import Answer, RetrievalResult
+from schemas import Answer, SynthesizerResult, RetrievalResult
 from database import insert_synthesis
 from utils.color import Logger
 from prompts.prompt_manager import PromptManager
@@ -184,18 +184,32 @@ class AnswerSynthesizer(Logger):
             messages = self._make_messages(user_prompt=user_prompt)
 
             # 4. Invoke LLM (Generation Step)
-            result = self._call_llm(messages=messages, user_prompt=user_prompt)
+            answer = self._call_llm(messages=messages, user_prompt=user_prompt)
 
-            # 5. Track in database
+            # 5. get citations 
+            internal_chunks, external_chunks = get_chunks(
+                        ids=retrieval_result.selected_chunks
+                    )
+            
+            citations = internal_chunks + external_chunks
+
+            # 6. construct final Synthesizer Result Schema
+            synthesizer_result: SynthesizerResult = SynthesizerResult(
+                                answer=answer,
+                                citations=citations
+                            )
+            
+            # 7. Track in database
             insert_synthesis(
                 execution_id=session_id,
-                answer=result.answer,
-                reasoning_summary=result.reasoning_summary
+                answer=synthesizer_result.answer.answer,
+                reasoning_summary=synthesizer_result.answer.reasoning_summary,
+                citations=synthesizer_result.citations
             )
 
-            # 6. Score output success
-            self.obs.process_result(result)
-            return result
+            # 8. Score output success
+            self.obs.process_result(synthesizer_result)
+            return synthesizer_result
 
         except Exception as e:
             self.log(f"Answer synthesis failed: {e}")

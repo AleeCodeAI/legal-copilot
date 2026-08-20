@@ -1,7 +1,7 @@
 from langfuse import Langfuse
 from langfuse.decorators import langfuse_context
 from configs.settings import get_settings
-from schemas import Answer
+from schemas import SynthesizerResult
 
 class AnswerSynthesizerObservability:
     """Class to handle observability for the Answer Synthesizer using Langfuse."""
@@ -61,12 +61,12 @@ class AnswerSynthesizerObservability:
 
         return input_cost, output_cost, total_cost
 
-    def process_result(self, result: Answer):
+    def process_result(self, result: SynthesizerResult):
         """Logs the final output and dynamically scores it."""
 
         langfuse_context.update_current_trace(output=result.model_dump())
 
-        if result.answer != None and result.answer != "":
+        if result.answer.answer != None and result.answer != "":
             langfuse_context.score_current_trace(
                 name="synthesis-success",
                 value=1,

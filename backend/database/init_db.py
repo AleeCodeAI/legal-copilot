@@ -6,6 +6,7 @@ from database.session import engine
 from database.models.execution_table import ExecutionTable
 from database.models.retrieval_table import RetrievalTable
 from database.models.synthesis_table import SynthesisTable
+from database.models.history_table import HistoryTable
 
 def init_db():
     Base.metadata.create_all(bind=engine)

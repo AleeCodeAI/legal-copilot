@@ -2,10 +2,11 @@ from uuid import uuid4
 from typing import Optional
 from retrieval_agent.retrieval_agent import RetrievalAgent
 from synthesizer.answer_synthesizer import AnswerSynthesizer
-from schemas import RetrievalResult, Answer
+from schemas import RetrievalResult, SynthesizerResult
 from database import (insert_execution, 
                       mark_execution_failure, 
-                      mark_execution_success)
+                      mark_execution_success,
+                      insert_history)
 from utils.color import Logger
 import logging 
 
@@ -36,7 +37,7 @@ class LegalCopilot(Logger):
 
         self.log("Initialized the LegalCopilot")
 
-    async def run(self, query: str) -> Answer:
+    async def run(self, query: str) -> SynthesizerResult:
         """
         Executes the end-to-end retrieval and synthesis process for a user query.
 
@@ -78,7 +79,7 @@ class LegalCopilot(Logger):
                     "Retrieval agent did not return a result."
                 )
 
-            answer: Optional[Answer] = (
+            synthesizer_result: Optional[SynthesizerResult] = (
                 self.answer_synthesizer.answer(
                     query=query,
                     retrieval_result=retrieval_result,
@@ -86,14 +87,21 @@ class LegalCopilot(Logger):
                 )
             )
 
-            if not answer:
+            if not synthesizer_result:
                 raise ValueError(
                     "Answer synthesizer did not return a result."
                 )
 
+            insert_history(
+                history_id=session_id,
+                query=query,
+                answer=synthesizer_result.answer.answer,
+                citations=synthesizer_result.citations
+            )
+
             mark_execution_success(execution_id=session_id)
 
-            return answer
+            return synthesizer_result
 
         except Exception as e:
 
@@ -120,5 +128,5 @@ if __name__ == "__main__":
     answer = asyncio.run(copilot.run(query=query))
 
     print("========================================"*3)
-    print(f"ANSWER: \n\n {answer.answer} \n\n")
-    print(f"REASONING: \n\n {answer.reasoning_summary} \n\n")
+    print(f"ANSWER: \n\n {answer.answer.answer} \n\n")
+    print(f"REASONING: \n\n {answer.answer.reasoning_summary} \n\n")

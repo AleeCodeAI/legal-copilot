@@ -77,7 +77,7 @@ class RetrievalAgentSettings(BaseModel):
     """Settings for Retrieval Agent"""
 
     max_retries: int = 3
-    max_iterations: int = 5
+    max_iterations: int = 8
 
 class LangfuseSettings(BaseModel):
     """Settings for Langfuse observability."""

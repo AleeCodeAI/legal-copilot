@@ -74,9 +74,9 @@ class LegalCopilot(Logger):
                 )
             )
 
-            if not retrieval_result:
+            if not retrieval_result or retrieval_result.sufficient == "False":
                 raise ValueError(
-                    "Retrieval agent did not return a result."
+                    "Retrieval agent did not return a result or sufficient results"
                 )
 
             synthesizer_result: Optional[SynthesizerResult] = (
